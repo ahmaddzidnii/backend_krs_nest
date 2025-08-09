@@ -1,0 +1,270 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+enum StatusMahasiswa {
+  AKTIF
+  CUTI
+  DISPENSASI
+}
+
+enum StatusPembayaran {
+  LUNAS
+  BELUM_LUNAS
+}
+
+enum JenjangStudi {
+  S1
+  S2
+  S3
+}
+
+enum JenisSemester {
+  GANJIL
+  GENAP
+  PENDEK
+}
+
+enum JenisMatkul {
+  WAJIB
+  PILIHAN
+}
+
+model Fakultas {
+  id_fakultas String @id @default(uuid(7))
+  kode_fakultas String @unique
+  nama String
+  singkatan String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  program_studi ProgramStudi[]
+
+  @@map("fakultas")
+}
+
+model ProgramStudi {
+  id_prodi String @id @default(uuid(7))
+  id_fakultas String @unique
+  kode_prodi String @unique
+  nama String
+  jenjang_studi JenjangStudi
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  kurikulum Kurikulum[]  
+
+  fakultas Fakultas @relation(fields: [id_fakultas], references: [id_fakultas])
+
+  @@map("program_studi")
+}
+
+model User {
+  id_user String @id @default(uuid(7))
+  id_role String
+  username String @unique
+  password String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  role Role @relation(fields: [id_role], references: [id_role])
+
+  mahasiswa Mahasiswa?
+  dosen Dosen?
+
+  @@map("users")
+}
+
+model Role {
+  id_role String @id @default(uuid(7))
+  nama_role String @unique
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  users User[]
+
+  @@map("roles")
+}
+ 
+model Mahasiswa {
+  id_mahasiswa        String      @id @default(uuid(7))
+  id_prodi      String
+  id_user     String   @unique
+  id_dpa     String
+  id_kurikulum     String
+  nim         String @unique
+  nama       String
+  ipk        Float
+  ips_lalu Float
+  semester_berjalan Int
+  sks_kumulatif Int
+  jatah_sks Int
+  status_mahasiswa StatusMahasiswa
+  status_pembayaran StatusPembayaran
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  user User @relation(fields: [id_user],references: [id_user])
+  krs KRS[]
+
+  @@map("mahasiswas")
+}
+
+
+model Dosen {
+  id_dosen String @id @default(uuid(7))
+  id_prodi String
+  id_user String @unique
+  nip String @unique
+  nama String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  mengampuKelas DosenPengajarKelas[]
+
+  user User @relation(fields: [id_user],references: [id_user])
+
+  @@map("dosens")
+}
+
+model PeriodeAkademik {
+  id_periode String @id @default(uuid(7))
+  tahun_akademik String
+  jenis_semester JenisSemester
+  tanggal_mulai_krs DateTime
+  tanggal_selesai_krs DateTime
+  jam_mulai_harian_krs DateTime
+  jam_selesai_harian_krs DateTime
+  is_active Boolean @default(false)
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  kelasDitawarkan KelasDitawarkan[]
+  periodeKrs KRS[]
+
+  @@map("periode_akademik")
+}
+
+model Kurikulum {
+  id_kurikulum String @id @default(uuid(7))
+  id_prodi String
+  kode_kurikulum String @unique
+  nama String
+  is_active Boolean @default(false)
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  detailKurikulum DetailKurikulum[]
+
+  programStudi ProgramStudi @relation(fields: [id_prodi], references: [id_prodi])
+
+  @@map("kurikulum")
+}
+
+model MataKuliah {
+  id_matkul String @id @default(uuid(7))
+  kode_matkul String @unique
+  nama String
+  sks Int
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  detailKurikulum DetailKurikulum[]
+  kelasDitawarkan KelasDitawarkan[]
+
+  @@map("mata_kuliah")
+}
+
+model DetailKurikulum {
+  id_detail_kurikulum String @id @default(uuid(7))
+  id_kurikulum String
+  id_matkul String
+  jenis_matkul JenisMatkul @default(WAJIB)
+  semester_paket Int
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  kurikulum Kurikulum @relation(fields: [id_kurikulum], references: [id_kurikulum])
+  mataKuliah MataKuliah @relation(fields: [id_matkul], references: [id_matkul])
+
+  @@map("detail_kurikulum")
+}
+
+model JadwalKelas {
+  id_jadwal String @id @default(uuid(7))
+  id_kelas String
+  hari String
+  waktu_mulai DateTime
+  waktu_selesai DateTime
+  ruang String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}
+
+model KelasDitawarkan {
+  id_kelas String @id @default(uuid(7))
+  id_periode String
+  id_matkul String
+  nama_kelas String
+  kuota Int
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  dosenPengajarKelas DosenPengajarKelas[]
+  detailKrs DetailKrs[]
+
+  periodeAkademik PeriodeAkademik @relation(fields: [id_periode], references: [id_periode])
+  mataKuliah MataKuliah @relation(fields: [id_matkul], references: [id_matkul])
+
+  @@map("kelas_ditawarkan")
+}
+
+model DosenPengajarKelas {
+  id_kelas String
+  id_dosen String
+
+  kelasDitawarkan KelasDitawarkan @relation(fields: [id_kelas], references: [id_kelas])
+  dosen Dosen @relation(fields: [id_dosen], references: [id_dosen])
+
+  @@id([id_kelas, id_dosen])
+  @@map("dosen_pengajar_kelas")
+}
+
+model KRS {
+  id_krs String @id @default(uuid(7))
+  id_mahasiswa String
+  id_periode String
+  total_sks_diambil Int
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  detailKrs DetailKrs[]
+
+  mahasiswa Mahasiswa @relation(fields: [id_mahasiswa], references: [id_mahasiswa])
+  periodeAkademik PeriodeAkademik @relation(fields: [id_periode], references: [id_periode])
+
+  @@map("krs")
+}
+
+model DetailKrs {
+  id_krs String
+  id_kelas String
+
+  krs KRS @relation(fields: [id_krs], references: [id_krs])
+  kelas KelasDitawarkan @relation(fields: [id_kelas],references: [id_kelas])
+
+  @@id([id_krs, id_kelas])
+  @@map("detail_krs")
+}
