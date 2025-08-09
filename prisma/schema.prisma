@@ -42,6 +42,12 @@ enum JenisMatkul {
   PILIHAN
 }
 
+enum JenisDosen {
+  DOSEN_TETAP_PNS
+  DOSEN_LUAR_BIASA
+  DOSEN_TETAP_BUKAN_PNS
+}
+
 model Fakultas {
   id_fakultas String @id @default(uuid(7))
   kode_fakultas String @unique
@@ -57,7 +63,7 @@ model Fakultas {
 
 model ProgramStudi {
   id_prodi String @id @default(uuid(7))
-  id_fakultas String @unique
+  id_fakultas String 
   kode_prodi String @unique
   nama String
   jenjang_studi JenjangStudi
@@ -129,6 +135,8 @@ model Dosen {
   id_user String @unique
   nip String @unique
   nama String
+  aktif_mengajar Boolean @default(false)
+  jenis_dosen JenisDosen
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
 

@@ -1,0 +1,4097 @@
+[
+  {
+    "kode_kurikulum": "S1AKS2024",
+    "nama_kurikulum": "S1 AKS 2024",
+    "kode_prodi": 84,
+    "tahun": 2024,
+    "program_studi": "Akuntansi Syari'ah",
+    "fakultas": "EKONOMI DAN BISNIS ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1AKS20",
+    "nama_kurikulum": "S1 AKUNTANSI SYARIAH 2020",
+    "kode_prodi": 84,
+    "tahun": 2020,
+    "program_studi": "Akuntansi Syari'ah",
+    "fakultas": "EKONOMI DAN BISNIS ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1AKS16",
+    "nama_kurikulum": "S1 AKUNTANSI SYARIAH 2016",
+    "kode_prodi": 84,
+    "tahun": 2016,
+    "program_studi": "Akuntansi Syari'ah",
+    "fakultas": "EKONOMI DAN BISNIS ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "AKS2015",
+    "nama_kurikulum": "AKUNTANSI SYARIAH 2015",
+    "kode_prodi": 84,
+    "tahun": 2015,
+    "program_studi": "Akuntansi Syari'ah",
+    "fakultas": "EKONOMI DAN BISNIS ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3AFI2024",
+    "nama_kurikulum": "S3 AFI 2024",
+    "kode_prodi": 24111,
+    "tahun": 2024,
+    "program_studi": "Aqidah dan Filsafat Islam",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3AFI2023",
+    "nama_kurikulum": "S3 Aqidah dan Filsafat Islam",
+    "kode_prodi": 24111,
+    "tahun": null,
+    "program_studi": "Aqidah dan Filsafat Islam",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3AFI23",
+    "nama_kurikulum": "S3 AFI 2023",
+    "kode_prodi": 24111,
+    "tahun": 2023,
+    "program_studi": "Aqidah dan Filsafat Islam",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2AFI2024",
+    "nama_kurikulum": "S2 AFI 2024",
+    "kode_prodi": 23803,
+    "tahun": 2024,
+    "program_studi": "Aqidah dan Filsafat Islam",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2AFI20",
+    "nama_kurikulum": "S2 AFI 2020",
+    "kode_prodi": 23803,
+    "tahun": 2020,
+    "program_studi": "Aqidah dan Filsafat Islam",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2AFI17",
+    "nama_kurikulum": "S2 Aqidah dan Filsafat Islam 2017",
+    "kode_prodi": 23803,
+    "tahun": 2017,
+    "program_studi": "Aqidah dan Filsafat Islam",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2KSY16",
+    "nama_kurikulum": "S2 KSY 2016",
+    "kode_prodi": 23803,
+    "tahun": 2016,
+    "program_studi": "Aqidah dan Filsafat Islam",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2ARK16",
+    "nama_kurikulum": "S2 ARK 2016",
+    "kode_prodi": 23803,
+    "tahun": 2016,
+    "program_studi": "Aqidah dan Filsafat Islam",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2SQH16",
+    "nama_kurikulum": "S2 SQH 2016",
+    "kode_prodi": 23803,
+    "tahun": 2016,
+    "program_studi": "Aqidah dan Filsafat Islam",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2FI16",
+    "nama_kurikulum": "S2 FI 2016",
+    "kode_prodi": 23803,
+    "tahun": 2016,
+    "program_studi": "Aqidah dan Filsafat Islam",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "SARK2015",
+    "nama_kurikulum": "SARK 2015",
+    "kode_prodi": 23803,
+    "tahun": 2015,
+    "program_studi": "Aqidah dan Filsafat Islam",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "SQH2015",
+    "nama_kurikulum": "SQH 2015",
+    "kode_prodi": 23803,
+    "tahun": 2015,
+    "program_studi": "Aqidah dan Filsafat Islam",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "FILI2015",
+    "nama_kurikulum": "FILSAFAT ISLAM 2015",
+    "kode_prodi": 23803,
+    "tahun": 2015,
+    "program_studi": "Aqidah dan Filsafat Islam",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1AFI2024",
+    "nama_kurikulum": "S1 AFI 2024",
+    "kode_prodi": 22302,
+    "tahun": 2024,
+    "program_studi": "Aqidah dan Filsafat Islam",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1AFI20",
+    "nama_kurikulum": "S1 AFI 2020",
+    "kode_prodi": 22302,
+    "tahun": 2020,
+    "program_studi": "Aqidah dan Filsafat Islam",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1FAG16",
+    "nama_kurikulum": "S1 FILSAFAT AGAMA 2016",
+    "kode_prodi": 22302,
+    "tahun": 2016,
+    "program_studi": "Aqidah dan Filsafat Islam",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "FAG2013",
+    "nama_kurikulum": "FILSAFAT AGAMA 2013",
+    "kode_prodi": 22302,
+    "tahun": 2013,
+    "program_studi": "Aqidah dan Filsafat Islam",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "5_AF-2005",
+    "nama_kurikulum": "FILSAFAT AGAMA 2005",
+    "kode_prodi": 22302,
+    "tahun": 2005,
+    "program_studi": "Aqidah dan Filsafat Islam",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "5_AF-2003",
+    "nama_kurikulum": "FILSAFAT AGAMA 2003",
+    "kode_prodi": 22302,
+    "tahun": 2003,
+    "program_studi": "Aqidah dan Filsafat Islam",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "5_AF-2001",
+    "nama_kurikulum": "FILSAFAT AGAMA 2001",
+    "kode_prodi": 22302,
+    "tahun": 2001,
+    "program_studi": "Aqidah dan Filsafat Islam",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "5_AF-1997",
+    "nama_kurikulum": "FILSAFAT AGAMA 1997",
+    "kode_prodi": 22302,
+    "tahun": 1997,
+    "program_studi": "Aqidah dan Filsafat Islam",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1ARS2024",
+    "nama_kurikulum": "S1 Arsitektur 2024",
+    "kode_prodi": 22605,
+    "tahun": 2024,
+    "program_studi": "Arsitektur",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "ARS23",
+    "nama_kurikulum": "S1 Arsitektur 2023",
+    "kode_prodi": 22605,
+    "tahun": 2023,
+    "program_studi": "Arsitektur",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2BSA2024",
+    "nama_kurikulum": "S2 BSA 2024",
+    "kode_prodi": 23602,
+    "tahun": 2024,
+    "program_studi": "Bahasa dan Sastra Arab",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2BSA22",
+    "nama_kurikulum": "S2 BSA 2022",
+    "kode_prodi": 23602,
+    "tahun": 2022,
+    "program_studi": "Bahasa dan Sastra Arab",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2BSA17",
+    "nama_kurikulum": "S2 BSA 2017",
+    "kode_prodi": 23602,
+    "tahun": 2017,
+    "program_studi": "Bahasa dan Sastra Arab",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2BSA16",
+    "nama_kurikulum": "S2 BSA 2016",
+    "kode_prodi": 23602,
+    "tahun": 2016,
+    "program_studi": "Bahasa dan Sastra Arab",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1BSA2024",
+    "nama_kurikulum": "S1 Bahasa dan Sastra Arab 2024",
+    "kode_prodi": 22508,
+    "tahun": 2024,
+    "program_studi": "Bahasa dan Sastra Arab",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1BSA20",
+    "nama_kurikulum": "S1 BSA 2020",
+    "kode_prodi": 22508,
+    "tahun": 2020,
+    "program_studi": "Bahasa dan Sastra Arab",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1BSA16",
+    "nama_kurikulum": "S1 BSA 2016",
+    "kode_prodi": 22508,
+    "tahun": 2016,
+    "program_studi": "Bahasa dan Sastra Arab",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "BSA2013",
+    "nama_kurikulum": "BAHASA DAN SASTRA ARAB 2013",
+    "kode_prodi": 22508,
+    "tahun": 2013,
+    "program_studi": "Bahasa dan Sastra Arab",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "1_BSA-2011",
+    "nama_kurikulum": "BAHASA DAN SASTRA ARAB 2011",
+    "kode_prodi": 22508,
+    "tahun": 2011,
+    "program_studi": "Bahasa dan Sastra Arab",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "1_BSA-2004",
+    "nama_kurikulum": "BAHASA DAN SASTRA ARAB 2004",
+    "kode_prodi": 22508,
+    "tahun": 2004,
+    "program_studi": "Bahasa dan Sastra Arab",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "1_BSA-2003",
+    "nama_kurikulum": "BAHASA DAN SASTRA ARAB 2003",
+    "kode_prodi": 22508,
+    "tahun": 2003,
+    "program_studi": "Bahasa dan Sastra Arab",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "1_BSA-1997",
+    "nama_kurikulum": "BAHASA DAN SASTRA ARAB 1997",
+    "kode_prodi": 22508,
+    "tahun": 1997,
+    "program_studi": "Bahasa dan Sastra Arab",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2BKI2024",
+    "nama_kurikulum": "S2 BKI 2024",
+    "kode_prodi": 23205,
+    "tahun": 2024,
+    "program_studi": "Bimbingan dan Konseling Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2BKI2023R",
+    "nama_kurikulum": "S2 BKI 2023 rev",
+    "kode_prodi": 23205,
+    "tahun": 2023,
+    "program_studi": "Bimbingan dan Konseling Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2BKI2023",
+    "nama_kurikulum": "S2 BKI 2023",
+    "kode_prodi": 23205,
+    "tahun": 2023,
+    "program_studi": "Bimbingan dan Konseling Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1BKI2024",
+    "nama_kurikulum": "S1 BKI 2024",
+    "kode_prodi": 22403,
+    "tahun": 2024,
+    "program_studi": "Bimbingan dan Konseling Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1BKI20",
+    "nama_kurikulum": "S1 BKI 2020",
+    "kode_prodi": 22403,
+    "tahun": 2020,
+    "program_studi": "Bimbingan dan Konseling Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1BKI16",
+    "nama_kurikulum": "S1 BKI 2016",
+    "kode_prodi": 22403,
+    "tahun": 2016,
+    "program_studi": "Bimbingan dan Konseling Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "BKI2013",
+    "nama_kurikulum": "BKI 2013",
+    "kode_prodi": 22403,
+    "tahun": 2013,
+    "program_studi": "Bimbingan dan Konseling Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "2_BKI-05 REV",
+    "nama_kurikulum": "BKI 2005 REVISI",
+    "kode_prodi": 22403,
+    "tahun": 2005,
+    "program_studi": "Bimbingan dan Konseling Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "2_BPI-SIA",
+    "nama_kurikulum": "BPI 2006 SIA",
+    "kode_prodi": 22403,
+    "tahun": 2006,
+    "program_studi": "Bimbingan dan Konseling Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "2_BPI-2005",
+    "nama_kurikulum": "BPI 2005",
+    "kode_prodi": 22403,
+    "tahun": 2005,
+    "program_studi": "Bimbingan dan Konseling Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "2_BPI-KBK",
+    "nama_kurikulum": "BPI 2003 KBK",
+    "kode_prodi": 22403,
+    "tahun": 2003,
+    "program_studi": "Bimbingan dan Konseling Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1BIO2024",
+    "nama_kurikulum": "S1 Biologi 2024",
+    "kode_prodi": 22602,
+    "tahun": 2024,
+    "program_studi": "Biologi",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1BIO20",
+    "nama_kurikulum": "S1 BIOLOGI 2020",
+    "kode_prodi": 22602,
+    "tahun": 2020,
+    "program_studi": "Biologi",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1BIO16",
+    "nama_kurikulum": "S1 BIO 2016",
+    "kode_prodi": 22602,
+    "tahun": 2016,
+    "program_studi": "Biologi",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "BIO2013",
+    "nama_kurikulum": "BIOLOGI 2013",
+    "kode_prodi": 22602,
+    "tahun": 2013,
+    "program_studi": "Biologi",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "BIO-2009",
+    "nama_kurikulum": "BIOLOGI 2009",
+    "kode_prodi": 22602,
+    "tahun": 2009,
+    "program_studi": "Biologi",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "BIO-2005",
+    "nama_kurikulum": "BIOLOGI 2005",
+    "kode_prodi": 22602,
+    "tahun": 2005,
+    "program_studi": "Biologi",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "7_BIO-2005",
+    "nama_kurikulum": "BIOLOGI 2005 P",
+    "kode_prodi": 22602,
+    "tahun": 2005,
+    "program_studi": "Biologi",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2ESY2024",
+    "nama_kurikulum": "S2 EKONOMI SYARIAH 2024",
+    "kode_prodi": 23801,
+    "tahun": 2024,
+    "program_studi": "Ekonomi Syari'ah",
+    "fakultas": "EKONOMI DAN BISNIS ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2ESY20",
+    "nama_kurikulum": "S2 EKONOMI SYARIAH 2020",
+    "kode_prodi": 23801,
+    "tahun": 2020,
+    "program_studi": "Ekonomi Syari'ah",
+    "fakultas": "EKONOMI DAN BISNIS ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2ESY16",
+    "nama_kurikulum": "S2 ESY 2016",
+    "kode_prodi": 23801,
+    "tahun": 2016,
+    "program_studi": "Ekonomi Syari'ah",
+    "fakultas": "EKONOMI DAN BISNIS ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1ESY2024",
+    "nama_kurikulum": "S1 ESY 2024",
+    "kode_prodi": 81,
+    "tahun": 2024,
+    "program_studi": "Ekonomi Syari'ah",
+    "fakultas": "EKONOMI DAN BISNIS ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1ESY20",
+    "nama_kurikulum": "S1 EKONOMI SYARIAH 2020",
+    "kode_prodi": 81,
+    "tahun": 2020,
+    "program_studi": "Ekonomi Syari'ah",
+    "fakultas": "EKONOMI DAN BISNIS ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1ESY16",
+    "nama_kurikulum": "S1 EKONOMI SYARIAH 2016",
+    "kode_prodi": 81,
+    "tahun": 2016,
+    "program_studi": "Ekonomi Syari'ah",
+    "fakultas": "EKONOMI DAN BISNIS ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "ESY2013",
+    "nama_kurikulum": "EKONOMI SYARIAH 2013",
+    "kode_prodi": 81,
+    "tahun": 2013,
+    "program_studi": "Ekonomi Syari'ah",
+    "fakultas": "EKONOMI DAN BISNIS ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "8_ES-2012",
+    "nama_kurikulum": "KURIKULUM KBK 2012",
+    "kode_prodi": 81,
+    "tahun": 2012,
+    "program_studi": "Ekonomi Syari'ah",
+    "fakultas": "EKONOMI DAN BISNIS ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1FIS2024",
+    "nama_kurikulum": "S1 Fisika 2024",
+    "kode_prodi": 22603,
+    "tahun": 2024,
+    "program_studi": "Fisika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1FIS20",
+    "nama_kurikulum": "S1 FISIKA 2020",
+    "kode_prodi": 22603,
+    "tahun": 2020,
+    "program_studi": "Fisika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1FIS16",
+    "nama_kurikulum": "S1 FIS 2016",
+    "kode_prodi": 22603,
+    "tahun": 2016,
+    "program_studi": "Fisika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "FIS2013",
+    "nama_kurikulum": "FISIKA 2013",
+    "kode_prodi": 22603,
+    "tahun": 2013,
+    "program_studi": "Fisika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "FIS-2009",
+    "nama_kurikulum": "FISIKA 2009",
+    "kode_prodi": 22603,
+    "tahun": 2009,
+    "program_studi": "Fisika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "FIS-2005",
+    "nama_kurikulum": "FISIKA 2005",
+    "kode_prodi": 22603,
+    "tahun": 2005,
+    "program_studi": "Fisika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "7_FIS-2005",
+    "nama_kurikulum": "FISIKA 2005 P",
+    "kode_prodi": 22603,
+    "tahun": 2005,
+    "program_studi": "Fisika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1HES2024",
+    "nama_kurikulum": "S1 Hukum Ekonomi Syariah 2024",
+    "kode_prodi": 22206,
+    "tahun": 2024,
+    "program_studi": "Hukum Ekonomi Syariah (Muamalah)",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1HES20",
+    "nama_kurikulum": "S1 HES 2020",
+    "kode_prodi": 22206,
+    "tahun": 2020,
+    "program_studi": "Hukum Ekonomi Syariah (Muamalah)",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1MUA16",
+    "nama_kurikulum": "S1 MUA 2016",
+    "kode_prodi": 22206,
+    "tahun": 2016,
+    "program_studi": "Hukum Ekonomi Syariah (Muamalah)",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "MUA2013",
+    "nama_kurikulum": "MUAMALAT 2013",
+    "kode_prodi": 22206,
+    "tahun": 2013,
+    "program_studi": "Hukum Ekonomi Syariah (Muamalah)",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "3_MU-2010",
+    "nama_kurikulum": "MUAMALAT 2010-2",
+    "kode_prodi": 22206,
+    "tahun": 2010,
+    "program_studi": "Hukum Ekonomi Syariah (Muamalah)",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "3_MU-2006",
+    "nama_kurikulum": "MUAMALAT 2006",
+    "kode_prodi": 22206,
+    "tahun": 2006,
+    "program_studi": "Hukum Ekonomi Syariah (Muamalah)",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "3_MU-2006-K",
+    "nama_kurikulum": "MUAMALAT 2006 KONVERSI SIA",
+    "kode_prodi": 22206,
+    "tahun": 2006,
+    "program_studi": "Hukum Ekonomi Syariah (Muamalah)",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1HKI2024",
+    "nama_kurikulum": "S1 Hukum Keluarga Islam 2024",
+    "kode_prodi": 22201,
+    "tahun": 2024,
+    "program_studi": "Hukum Keluarga Islam (Ahwal Syakhshiyyah)",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1HKI20",
+    "nama_kurikulum": "S1 HKI 2020",
+    "kode_prodi": 22201,
+    "tahun": 2020,
+    "program_studi": "Hukum Keluarga Islam (Ahwal Syakhshiyyah)",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1ASY16",
+    "nama_kurikulum": "S1 AS 2016",
+    "kode_prodi": 22201,
+    "tahun": 2016,
+    "program_studi": "Hukum Keluarga Islam (Ahwal Syakhshiyyah)",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "ASY2013",
+    "nama_kurikulum": "AS 2013",
+    "kode_prodi": 22201,
+    "tahun": 2013,
+    "program_studi": "Hukum Keluarga Islam (Ahwal Syakhshiyyah)",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "3_AS-2010",
+    "nama_kurikulum": "AS 2010",
+    "kode_prodi": 22201,
+    "tahun": 2010,
+    "program_studi": "Hukum Keluarga Islam (Ahwal Syakhshiyyah)",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "3_AS-2006",
+    "nama_kurikulum": "AS 2006",
+    "kode_prodi": 22201,
+    "tahun": 2006,
+    "program_studi": "Hukum Keluarga Islam (Ahwal Syakhshiyyah)",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "3_AS-2006-K",
+    "nama_kurikulum": "AS 2006 KONVERSI SIA",
+    "kode_prodi": 22201,
+    "tahun": 2006,
+    "program_studi": "Hukum Keluarga Islam (Ahwal Syakhshiyyah)",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1HTN2024",
+    "nama_kurikulum": "S1 Hukum Tata Negara 2024",
+    "kode_prodi": 22216,
+    "tahun": 2024,
+    "program_studi": "Hukum Tata Negara (Siyasah)",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1HTN20",
+    "nama_kurikulum": "S1 HTN 20",
+    "kode_prodi": 22216,
+    "tahun": null,
+    "program_studi": "Hukum Tata Negara (Siyasah)",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1HTN16",
+    "nama_kurikulum": "S1 HTN 2016",
+    "kode_prodi": 22216,
+    "tahun": 2016,
+    "program_studi": "Hukum Tata Negara (Siyasah)",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "JSY2013",
+    "nama_kurikulum": "JINAYAH SIYASAH 2013",
+    "kode_prodi": 22216,
+    "tahun": 2013,
+    "program_studi": "Hukum Tata Negara (Siyasah)",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "3_2010",
+    "nama_kurikulum": "JINAYAH SIYASAH 2010",
+    "kode_prodi": 22216,
+    "tahun": 2010,
+    "program_studi": "Hukum Tata Negara (Siyasah)",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "3_JS-2008",
+    "nama_kurikulum": "JINAYAH SIYASAH 2008",
+    "kode_prodi": 22216,
+    "tahun": 2008,
+    "program_studi": "Hukum Tata Negara (Siyasah)",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "3_JS-2006",
+    "nama_kurikulum": "JINAYAH SIYASAH 2006",
+    "kode_prodi": 22216,
+    "tahun": 2006,
+    "program_studi": "Hukum Tata Negara (Siyasah)",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "3_JS-2006-K",
+    "nama_kurikulum": "JINAYAH SIYASAH 2006 KONVERSI SIA",
+    "kode_prodi": 22216,
+    "tahun": 2006,
+    "program_studi": "Hukum Tata Negara (Siyasah)",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2IAT2024",
+    "nama_kurikulum": "S2 IAT 2024",
+    "kode_prodi": 23102,
+    "tahun": 2024,
+    "program_studi": "Ilmu Al-Quran dan Tafsir",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2IAT2020",
+    "nama_kurikulum": "S2 IAT 2020",
+    "kode_prodi": 23102,
+    "tahun": 2020,
+    "program_studi": "Ilmu Al-Quran dan Tafsir",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2IAT20R",
+    "nama_kurikulum": "S2 IAT 2020 REV",
+    "kode_prodi": 23102,
+    "tahun": 2020,
+    "program_studi": "Ilmu Al-Quran dan Tafsir",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1IAT2024",
+    "nama_kurikulum": "S1 IAT 2024",
+    "kode_prodi": 22312,
+    "tahun": 2024,
+    "program_studi": "Ilmu Al-Quran dan Tafsir",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1IAT20",
+    "nama_kurikulum": "S1 IAT 2020",
+    "kode_prodi": 22312,
+    "tahun": 2020,
+    "program_studi": "Ilmu Al-Quran dan Tafsir",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1IAT16",
+    "nama_kurikulum": "S1 IAT 2016",
+    "kode_prodi": 22312,
+    "tahun": 2016,
+    "program_studi": "Ilmu Al-Quran dan Tafsir",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "IAT2013",
+    "nama_kurikulum": "IAT 2013",
+    "kode_prodi": 22312,
+    "tahun": 2013,
+    "program_studi": "Ilmu Al-Quran dan Tafsir",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "5_TH-2005",
+    "nama_kurikulum": "IAT 2005",
+    "kode_prodi": 22312,
+    "tahun": 2005,
+    "program_studi": "Ilmu Al-Quran dan Tafsir",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "5_TH-2003",
+    "nama_kurikulum": "IAT 2003",
+    "kode_prodi": 22312,
+    "tahun": 2003,
+    "program_studi": "Ilmu Al-Quran dan Tafsir",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "5_TH-2001",
+    "nama_kurikulum": "IAT 2001",
+    "kode_prodi": 22312,
+    "tahun": 2001,
+    "program_studi": "Ilmu Al-Quran dan Tafsir",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "5_TH-1997",
+    "nama_kurikulum": "IAT 1997",
+    "kode_prodi": 22312,
+    "tahun": 1997,
+    "program_studi": "Ilmu Al-Quran dan Tafsir",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1IHD2024",
+    "nama_kurikulum": "S1 IHD 2024",
+    "kode_prodi": 22313,
+    "tahun": 2024,
+    "program_studi": "Ilmu Hadis",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1IHD20",
+    "nama_kurikulum": "S1 ILMU HADIS 2020",
+    "kode_prodi": 22313,
+    "tahun": 2020,
+    "program_studi": "Ilmu Hadis",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1IHD16",
+    "nama_kurikulum": "S1 ILMU HADITS 2016",
+    "kode_prodi": 22313,
+    "tahun": 2016,
+    "program_studi": "Ilmu Hadis",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "IHD2015",
+    "nama_kurikulum": "ILMU HADIS 2015",
+    "kode_prodi": 22313,
+    "tahun": 2015,
+    "program_studi": "Ilmu Hadis",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1IHK2024",
+    "nama_kurikulum": "S1 Ilmu Hukum 2024",
+    "kode_prodi": 40,
+    "tahun": 2024,
+    "program_studi": "Ilmu Hukum",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1IHK20",
+    "nama_kurikulum": "S1 ILMU HUKUM 2020",
+    "kode_prodi": 40,
+    "tahun": 2020,
+    "program_studi": "Ilmu Hukum",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1IHK16",
+    "nama_kurikulum": "S1 IHUKUM 2016",
+    "kode_prodi": 40,
+    "tahun": 2016,
+    "program_studi": "Ilmu Hukum",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "IHK2013",
+    "nama_kurikulum": "ILMU HUKUM 2013",
+    "kode_prodi": 40,
+    "tahun": 2013,
+    "program_studi": "Ilmu Hukum",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "3_2009-2",
+    "nama_kurikulum": "ILMU HUKUM 2009 FIX",
+    "kode_prodi": 40,
+    "tahun": 2009,
+    "program_studi": "Ilmu Hukum",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "3_IH-2009",
+    "nama_kurikulum": "ILMU HUKUM 2009",
+    "kode_prodi": 40,
+    "tahun": 2009,
+    "program_studi": "Ilmu Hukum",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1IKS2024",
+    "nama_kurikulum": "S1 IKS 2024",
+    "kode_prodi": 25,
+    "tahun": 2024,
+    "program_studi": "Ilmu Kesejahteraan Sosial",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1IKS20",
+    "nama_kurikulum": "S1 IKS 2020",
+    "kode_prodi": 25,
+    "tahun": 2020,
+    "program_studi": "Ilmu Kesejahteraan Sosial",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1IKS16",
+    "nama_kurikulum": "S1 IKS 2016",
+    "kode_prodi": 25,
+    "tahun": 2016,
+    "program_studi": "Ilmu Kesejahteraan Sosial",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "IKS2013",
+    "nama_kurikulum": "IKS 2013",
+    "kode_prodi": 25,
+    "tahun": 2013,
+    "program_studi": "Ilmu Kesejahteraan Sosial",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "2_IKS-2010",
+    "nama_kurikulum": "IKS 2010",
+    "kode_prodi": 25,
+    "tahun": 2010,
+    "program_studi": "Ilmu Kesejahteraan Sosial",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "2_IKS-2005",
+    "nama_kurikulum": "IKS 2005",
+    "kode_prodi": 25,
+    "tahun": 2005,
+    "program_studi": "Ilmu Kesejahteraan Sosial",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1KOM2024",
+    "nama_kurikulum": "S1 Ilmu Komunikasi 2024",
+    "kode_prodi": 22406,
+    "tahun": 2024,
+    "program_studi": "Ilmu Komunikasi",
+    "fakultas": "ILMU SOSIAL DAN HUMANIORA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1KOM20",
+    "nama_kurikulum": "S1 ILKOM 2020",
+    "kode_prodi": 22406,
+    "tahun": 2020,
+    "program_studi": "Ilmu Komunikasi",
+    "fakultas": "ILMU SOSIAL DAN HUMANIORA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1KOM16",
+    "nama_kurikulum": "S1 ILMU KOMUNIKASI 2016",
+    "kode_prodi": 22406,
+    "tahun": 2016,
+    "program_studi": "Ilmu Komunikasi",
+    "fakultas": "ILMU SOSIAL DAN HUMANIORA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "KOM2013",
+    "nama_kurikulum": "ILMU KOMUNIKASI 2013",
+    "kode_prodi": 22406,
+    "tahun": 2013,
+    "program_studi": "Ilmu Komunikasi",
+    "fakultas": "ILMU SOSIAL DAN HUMANIORA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "7_KUR-KOM 2009",
+    "nama_kurikulum": "ILMU KOMUNIKASI 2009",
+    "kode_prodi": 22406,
+    "tahun": 2009,
+    "program_studi": "Ilmu Komunikasi",
+    "fakultas": "ILMU SOSIAL DAN HUMANIORA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "7_KOM2006",
+    "nama_kurikulum": "ILMU KOMUNIKASI 2006-2",
+    "kode_prodi": 22406,
+    "tahun": 2006,
+    "program_studi": "Ilmu Komunikasi",
+    "fakultas": "ILMU SOSIAL DAN HUMANIORA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "7_KOM-2006",
+    "nama_kurikulum": "ILMU KOMUNIKASI 2006",
+    "kode_prodi": 22406,
+    "tahun": 2006,
+    "program_studi": "Ilmu Komunikasi",
+    "fakultas": "ILMU SOSIAL DAN HUMANIORA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "7_KOM-2005",
+    "nama_kurikulum": "ILMU KOMUNIKASI 2005",
+    "kode_prodi": 22406,
+    "tahun": 2005,
+    "program_studi": "Ilmu Komunikasi",
+    "fakultas": "ILMU SOSIAL DAN HUMANIORA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1IPT2024",
+    "nama_kurikulum": "S1 Ilmu Perpustakaan 2024",
+    "kode_prodi": 22510,
+    "tahun": 2024,
+    "program_studi": "Ilmu Perpustakaan",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1IPT20",
+    "nama_kurikulum": "S1 ILMU PERPUSTAKAAN 2020",
+    "kode_prodi": 22510,
+    "tahun": 2020,
+    "program_studi": "Ilmu Perpustakaan",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1IPT16",
+    "nama_kurikulum": "S1 ILMU PERPUSTAKAAN 2016",
+    "kode_prodi": 22510,
+    "tahun": 2016,
+    "program_studi": "Ilmu Perpustakaan",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "IPI2013",
+    "nama_kurikulum": "ILMU PERPUSTAKAAN 2013",
+    "kode_prodi": 22510,
+    "tahun": 2013,
+    "program_studi": "Ilmu Perpustakaan",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "1_IPI-2008",
+    "nama_kurikulum": "ILMU PERPUSTAKAAN 2008",
+    "kode_prodi": 22510,
+    "tahun": 2008,
+    "program_studi": "Ilmu Perpustakaan",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "1_IPI-2004",
+    "nama_kurikulum": "ILMU PERPUSTAKAAN 2004",
+    "kode_prodi": 22510,
+    "tahun": 2004,
+    "program_studi": "Ilmu Perpustakaan",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "1_IPI-2003",
+    "nama_kurikulum": "ILMU PERPUSTAKAAN 2003",
+    "kode_prodi": 22510,
+    "tahun": 2003,
+    "program_studi": "Ilmu Perpustakaan",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "1_IPI-2002",
+    "nama_kurikulum": "ILMU PERPUSTAKAAN 2002",
+    "kode_prodi": 22510,
+    "tahun": 2002,
+    "program_studi": "Ilmu Perpustakaan",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3ISY2020",
+    "nama_kurikulum": "S3 ILMU SYARIAH 2020",
+    "kode_prodi": 24201,
+    "tahun": 2020,
+    "program_studi": "Ilmu Syari'ah",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3ISY20R",
+    "nama_kurikulum": "S3 ILMU SYARIAH 2020 REVISI",
+    "kode_prodi": 24201,
+    "tahun": 2020,
+    "program_studi": "Ilmu Syari'ah",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2ISY2024",
+    "nama_kurikulum": "S2 Ilmu Syariah 2024",
+    "kode_prodi": 23605,
+    "tahun": 2024,
+    "program_studi": "Ilmu Syariah",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2KPS16",
+    "nama_kurikulum": "S2 KPS 2016",
+    "kode_prodi": 23605,
+    "tahun": 2016,
+    "program_studi": "Ilmu Syariah",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2HTN16",
+    "nama_kurikulum": "S2 HTN 2016",
+    "kode_prodi": 23605,
+    "tahun": 2016,
+    "program_studi": "Ilmu Syariah",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2MHI16",
+    "nama_kurikulum": "S2 MAGISTER HUKUM ISLAM 2016",
+    "kode_prodi": 23605,
+    "tahun": 2016,
+    "program_studi": "Ilmu Syariah",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2HBS16",
+    "nama_kurikulum": "S2 HBS 2016",
+    "kode_prodi": 23605,
+    "tahun": 2016,
+    "program_studi": "Ilmu Syariah",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2HKL16",
+    "nama_kurikulum": "S2 HKL 2016",
+    "kode_prodi": 23605,
+    "tahun": 2016,
+    "program_studi": "Ilmu Syariah",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "HK2015",
+    "nama_kurikulum": "HK 2015",
+    "kode_prodi": 23605,
+    "tahun": 2015,
+    "program_studi": "Ilmu Syariah",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "HBS2015",
+    "nama_kurikulum": "HBS 2015",
+    "kode_prodi": 23605,
+    "tahun": 2015,
+    "program_studi": "Ilmu Syariah",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "SPPI2015",
+    "nama_kurikulum": "SPPI 2015",
+    "kode_prodi": 23605,
+    "tahun": 2015,
+    "program_studi": "Ilmu Syariah",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "KPS2015",
+    "nama_kurikulum": "KPS 2015",
+    "kode_prodi": 23605,
+    "tahun": 2015,
+    "program_studi": "Ilmu Syariah",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2INF2024",
+    "nama_kurikulum": "S2 Informatika 2024",
+    "kode_prodi": 23802,
+    "tahun": 2024,
+    "program_studi": "Informatika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2INF20",
+    "nama_kurikulum": "S2 INFORMATIKA 2020",
+    "kode_prodi": 23802,
+    "tahun": 2020,
+    "program_studi": "Informatika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2INF18",
+    "nama_kurikulum": "S2 INFORMATIKA 2018",
+    "kode_prodi": 23802,
+    "tahun": 2018,
+    "program_studi": "Informatika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1INF2024",
+    "nama_kurikulum": "S1 Informatika 2024",
+    "kode_prodi": 22607,
+    "tahun": 2024,
+    "program_studi": "Informatika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1TIF20",
+    "nama_kurikulum": "S1 T. INFORMATIKA 2020",
+    "kode_prodi": 22607,
+    "tahun": 2020,
+    "program_studi": "Informatika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1TIF16",
+    "nama_kurikulum": "S1 TIF 2016",
+    "kode_prodi": 22607,
+    "tahun": 2016,
+    "program_studi": "Informatika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "TIF2013",
+    "nama_kurikulum": "TEKNIK INFORMATIKA 2013",
+    "kode_prodi": 22607,
+    "tahun": 2013,
+    "program_studi": "Informatika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "KUR-09",
+    "nama_kurikulum": "TEKNIK INFORMATIKA 2009",
+    "kode_prodi": 22607,
+    "tahun": 2009,
+    "program_studi": "Informatika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "TIF-2005",
+    "nama_kurikulum": "TEKNIK INFORMATIKA 2005",
+    "kode_prodi": 22607,
+    "tahun": 2005,
+    "program_studi": "Informatika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "7_TIF-2005",
+    "nama_kurikulum": "TEKNIK INFORMATIKA 2005 P",
+    "kode_prodi": 22607,
+    "tahun": 2005,
+    "program_studi": "Informatika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2IIS2024",
+    "nama_kurikulum": "S2 IIS 2024",
+    "kode_prodi": 200101,
+    "tahun": 2024,
+    "program_studi": "Interdiciplinary Islamic Studies",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2IIS21",
+    "nama_kurikulum": "S2 IIS 2021",
+    "kode_prodi": 200101,
+    "tahun": 2021,
+    "program_studi": "Interdiciplinary Islamic Studies",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2IIS18",
+    "nama_kurikulum": "S2 IIS 2018",
+    "kode_prodi": 200101,
+    "tahun": 2018,
+    "program_studi": "Interdiciplinary Islamic Studies",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2IPI2015",
+    "nama_kurikulum": "S2 IPI 2015",
+    "kode_prodi": 200101,
+    "tahun": 2015,
+    "program_studi": "Interdiciplinary Islamic Studies",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2IPKP2015",
+    "nama_kurikulum": "S2 IPKP 2015",
+    "kode_prodi": 200101,
+    "tahun": 2015,
+    "program_studi": "Interdiciplinary Islamic Studies",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2IKG2015",
+    "nama_kurikulum": "S2 IKG 2015",
+    "kode_prodi": 200101,
+    "tahun": 2015,
+    "program_studi": "Interdiciplinary Islamic Studies",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2KTT2015",
+    "nama_kurikulum": "S2 KTT 2015",
+    "kode_prodi": 200101,
+    "tahun": 2015,
+    "program_studi": "Interdiciplinary Islamic Studies",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2SDPI2015",
+    "nama_kurikulum": "S2 SDPI 2015",
+    "kode_prodi": 200101,
+    "tahun": 2015,
+    "program_studi": "Interdiciplinary Islamic Studies",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2BSA2015",
+    "nama_kurikulum": "S2 BSA 2015",
+    "kode_prodi": 200101,
+    "tahun": 2015,
+    "program_studi": "Interdiciplinary Islamic Studies",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2ISNAS2015",
+    "nama_kurikulum": "S2 ISNAS 2015",
+    "kode_prodi": 200101,
+    "tahun": 2015,
+    "program_studi": "Interdiciplinary Islamic Studies",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2KKMI2015",
+    "nama_kurikulum": "S2 KKMI 2015",
+    "kode_prodi": 200101,
+    "tahun": 2015,
+    "program_studi": "Interdiciplinary Islamic Studies",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2PSPI2015",
+    "nama_kurikulum": "S2 PSPI 2015",
+    "kode_prodi": 200101,
+    "tahun": 2015,
+    "program_studi": "Interdiciplinary Islamic Studies",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2BKI2015",
+    "nama_kurikulum": "S2 BKI 2015",
+    "kode_prodi": 200101,
+    "tahun": 2015,
+    "program_studi": "Interdiciplinary Islamic Studies",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2SKI2015",
+    "nama_kurikulum": "S2 SKI 2015",
+    "kode_prodi": 200101,
+    "tahun": 2015,
+    "program_studi": "Interdiciplinary Islamic Studies",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2IKS2015",
+    "nama_kurikulum": "S2 IKS 2015",
+    "kode_prodi": 200101,
+    "tahun": 2015,
+    "program_studi": "Interdiciplinary Islamic Studies",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2KMAS2015",
+    "nama_kurikulum": "S2KMAS2015",
+    "kode_prodi": 200101,
+    "tahun": null,
+    "program_studi": "Interdiciplinary Islamic Studies",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2HAQ2015",
+    "nama_kurikulum": "S2 HAQ 2015",
+    "kode_prodi": 200101,
+    "tahun": 2015,
+    "program_studi": "Interdiciplinary Islamic Studies",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2BSA2013R",
+    "nama_kurikulum": "S2 BSA 2013 Rev",
+    "kode_prodi": 200101,
+    "tahun": 2013,
+    "program_studi": "Interdiciplinary Islamic Studies",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2IKS2013",
+    "nama_kurikulum": "S2 IKS 2013",
+    "kode_prodi": 200101,
+    "tahun": 2013,
+    "program_studi": "Interdiciplinary Islamic Studies",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2SKI2013",
+    "nama_kurikulum": "S2 SKI 2013",
+    "kode_prodi": 200101,
+    "tahun": 2013,
+    "program_studi": "Interdiciplinary Islamic Studies",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2BSA2013",
+    "nama_kurikulum": "S2 BSA 2013",
+    "kode_prodi": 200101,
+    "tahun": 2013,
+    "program_studi": "Interdiciplinary Islamic Studies",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2IPI2013",
+    "nama_kurikulum": "S2 IPI 2013",
+    "kode_prodi": 200101,
+    "tahun": 2013,
+    "program_studi": "Interdiciplinary Islamic Studies",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2SKI2013R",
+    "nama_kurikulum": "S2 SKI 2013 Rev",
+    "kode_prodi": 200101,
+    "tahun": 2013,
+    "program_studi": "Interdiciplinary Islamic Studies",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "KSS2024",
+    "nama_kurikulum": "S2 KESSOS 2024",
+    "kode_prodi": 23107,
+    "tahun": 2024,
+    "program_studi": "Kesejahteraan Sosial",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1KIM2024",
+    "nama_kurikulum": "S1 Kimia 2024",
+    "kode_prodi": 22604,
+    "tahun": 2024,
+    "program_studi": "Kimia",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1KIM20",
+    "nama_kurikulum": "S1 KIMIA 2020",
+    "kode_prodi": 22604,
+    "tahun": 2020,
+    "program_studi": "Kimia",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1KIM16",
+    "nama_kurikulum": "S1 KIM 2016",
+    "kode_prodi": 22604,
+    "tahun": 2016,
+    "program_studi": "Kimia",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "KIM2013",
+    "nama_kurikulum": "KIMIA 2013",
+    "kode_prodi": 22604,
+    "tahun": 2013,
+    "program_studi": "Kimia",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "KIM-2009",
+    "nama_kurikulum": "KIMIA 2009",
+    "kode_prodi": 22604,
+    "tahun": 2009,
+    "program_studi": "Kimia",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "KIM-2006",
+    "nama_kurikulum": "KIMIA 2006",
+    "kode_prodi": 22604,
+    "tahun": 2006,
+    "program_studi": "Kimia",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "7_KIM-2006",
+    "nama_kurikulum": "KIMIA 2006 P",
+    "kode_prodi": 22604,
+    "tahun": 2006,
+    "program_studi": "Kimia",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "7_KIM-2005",
+    "nama_kurikulum": "KIMIA 2005 P",
+    "kode_prodi": 22604,
+    "tahun": 2005,
+    "program_studi": "Kimia",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "KIM-2005",
+    "nama_kurikulum": "KIMIA 2005",
+    "kode_prodi": 22604,
+    "tahun": 2005,
+    "program_studi": "Kimia",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "KIM-2004",
+    "nama_kurikulum": "KIMIA 2004",
+    "kode_prodi": 22604,
+    "tahun": 2004,
+    "program_studi": "Kimia",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "7_KIM-2004",
+    "nama_kurikulum": "KIMIA 2004 P",
+    "kode_prodi": 22604,
+    "tahun": 2004,
+    "program_studi": "Kimia",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2KPI2024",
+    "nama_kurikulum": "S2 KPI 2024",
+    "kode_prodi": 23701,
+    "tahun": 2024,
+    "program_studi": "Komunikasi dan Penyiaran Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2KPI20",
+    "nama_kurikulum": "S2 KPI 2020",
+    "kode_prodi": 23701,
+    "tahun": 2020,
+    "program_studi": "Komunikasi dan Penyiaran Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2KPI16",
+    "nama_kurikulum": "S2 KPI 2016",
+    "kode_prodi": 23701,
+    "tahun": 2016,
+    "program_studi": "Komunikasi dan Penyiaran Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1KPI2024",
+    "nama_kurikulum": "S1 KPI 2024",
+    "kode_prodi": 22407,
+    "tahun": 2024,
+    "program_studi": "Komunikasi dan Penyiaran Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1KPI20",
+    "nama_kurikulum": "S1 KPI 2020",
+    "kode_prodi": 22407,
+    "tahun": 2020,
+    "program_studi": "Komunikasi dan Penyiaran Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1KPI16",
+    "nama_kurikulum": "S1 KPI 2016",
+    "kode_prodi": 22407,
+    "tahun": 2016,
+    "program_studi": "Komunikasi dan Penyiaran Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "KPI2013",
+    "nama_kurikulum": "KPI 2013",
+    "kode_prodi": 22407,
+    "tahun": 2013,
+    "program_studi": "Komunikasi dan Penyiaran Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "2_KPI KONS",
+    "nama_kurikulum": "KPI 2011",
+    "kode_prodi": 22407,
+    "tahun": 2011,
+    "program_studi": "Komunikasi dan Penyiaran Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "2_KPI-SIA",
+    "nama_kurikulum": "KPI 2006 SIA",
+    "kode_prodi": 22407,
+    "tahun": 2006,
+    "program_studi": "Komunikasi dan Penyiaran Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "2_KPI-2005",
+    "nama_kurikulum": "KPI 2005",
+    "kode_prodi": 22407,
+    "tahun": 2005,
+    "program_studi": "Komunikasi dan Penyiaran Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "2_KPI-KBK",
+    "nama_kurikulum": "KPI 2003 KBK",
+    "kode_prodi": 22407,
+    "tahun": 2003,
+    "program_studi": "Komunikasi dan Penyiaran Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1MDW2024",
+    "nama_kurikulum": "S1 MDW 2024",
+    "kode_prodi": 22408,
+    "tahun": 2024,
+    "program_studi": "Manajemen Dakwah",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1MDW20",
+    "nama_kurikulum": "S1 MANAJEMEN DAKWAH 2020",
+    "kode_prodi": 22408,
+    "tahun": 2020,
+    "program_studi": "Manajemen Dakwah",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1MDW16",
+    "nama_kurikulum": "S1 MANAJEMEN DAKWAH 2016",
+    "kode_prodi": 22408,
+    "tahun": 2016,
+    "program_studi": "Manajemen Dakwah",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "MDW2013",
+    "nama_kurikulum": "MANAJEMEN DAKWAH 2013",
+    "kode_prodi": 22408,
+    "tahun": 2013,
+    "program_studi": "Manajemen Dakwah",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "2_MD-2008",
+    "nama_kurikulum": "MANAJEMEN DAKWAH 2008",
+    "kode_prodi": 22408,
+    "tahun": 2008,
+    "program_studi": "Manajemen Dakwah",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "2_MD-SIA",
+    "nama_kurikulum": "MANAJEMEN DAKWAH 2006 SIA",
+    "kode_prodi": 22408,
+    "tahun": 2006,
+    "program_studi": "Manajemen Dakwah",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "2_MD-2005",
+    "nama_kurikulum": "MANAJEMEN DAKWAH 2005",
+    "kode_prodi": 22408,
+    "tahun": 2005,
+    "program_studi": "Manajemen Dakwah",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "2_MD-KBK",
+    "nama_kurikulum": "MANAJEMEN DAKWAH 2003 KBK",
+    "kode_prodi": 22408,
+    "tahun": 2003,
+    "program_studi": "Manajemen Dakwah",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1MKS2024",
+    "nama_kurikulum": "S1 MKS 2024",
+    "kode_prodi": 83,
+    "tahun": 2024,
+    "program_studi": "Manajemen Keuangan Syari'ah",
+    "fakultas": "EKONOMI DAN BISNIS ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1MKS20",
+    "nama_kurikulum": "S1 MANAJEMEN KEUANGAN SYARIAH 2020",
+    "kode_prodi": 83,
+    "tahun": 2020,
+    "program_studi": "Manajemen Keuangan Syari'ah",
+    "fakultas": "EKONOMI DAN BISNIS ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1KSY16",
+    "nama_kurikulum": "S1 KEUANGAN SYARIAH 2016",
+    "kode_prodi": 83,
+    "tahun": 2016,
+    "program_studi": "Manajemen Keuangan Syari'ah",
+    "fakultas": "EKONOMI DAN BISNIS ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "KSY2014",
+    "nama_kurikulum": "KEUANGAN SYARIAH 2014",
+    "kode_prodi": 83,
+    "tahun": 2014,
+    "program_studi": "Manajemen Keuangan Syari'ah",
+    "fakultas": "EKONOMI DAN BISNIS ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2MPI2024",
+    "nama_kurikulum": "S2 MPI 2024",
+    "kode_prodi": 23202,
+    "tahun": 2024,
+    "program_studi": "Manajemen Pendidikan Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2MPI20",
+    "nama_kurikulum": "S2 MPI 2020",
+    "kode_prodi": 23202,
+    "tahun": 2020,
+    "program_studi": "Manajemen Pendidikan Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2MPI17",
+    "nama_kurikulum": "S2 MPI 2017",
+    "kode_prodi": 23202,
+    "tahun": 2017,
+    "program_studi": "Manajemen Pendidikan Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2MPI2018",
+    "nama_kurikulum": "S2 MANAJEMEN PENDIDIKAN ISLAM",
+    "kode_prodi": 23202,
+    "tahun": null,
+    "program_studi": "Manajemen Pendidikan Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1MPI2024",
+    "nama_kurikulum": "S1 MPI 2024",
+    "kode_prodi": 22128,
+    "tahun": 2024,
+    "program_studi": "Manajemen Pendidikan Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1MPI20",
+    "nama_kurikulum": "S1 MPI 2020",
+    "kode_prodi": 22128,
+    "tahun": 2020,
+    "program_studi": "Manajemen Pendidikan Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1MPI16",
+    "nama_kurikulum": "S1 MPI 2016",
+    "kode_prodi": 22128,
+    "tahun": 2016,
+    "program_studi": "Manajemen Pendidikan Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "MPI2013",
+    "nama_kurikulum": "MPI 2013",
+    "kode_prodi": 22128,
+    "tahun": 2013,
+    "program_studi": "Manajemen Pendidikan Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "4_MPI-12",
+    "nama_kurikulum": "MPI 2012",
+    "kode_prodi": 22128,
+    "tahun": 2012,
+    "program_studi": "Manajemen Pendidikan Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1MAT2024",
+    "nama_kurikulum": "S1 Matematika 2024",
+    "kode_prodi": 22625,
+    "tahun": 2024,
+    "program_studi": "Matematika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1MAT20",
+    "nama_kurikulum": "S1 MATEMATIKA 2020",
+    "kode_prodi": 22625,
+    "tahun": 2020,
+    "program_studi": "Matematika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1MAT16",
+    "nama_kurikulum": "S1 MAT 2016",
+    "kode_prodi": 22625,
+    "tahun": 2016,
+    "program_studi": "Matematika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "MAT2013",
+    "nama_kurikulum": "MATEMATIKA 2013",
+    "kode_prodi": 22625,
+    "tahun": 2013,
+    "program_studi": "Matematika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "MAT-2009",
+    "nama_kurikulum": "MATEMATIKA 2009",
+    "kode_prodi": 22625,
+    "tahun": 2009,
+    "program_studi": "Matematika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "MAT-2005",
+    "nama_kurikulum": "MATEMATIKA 2005",
+    "kode_prodi": 22625,
+    "tahun": 2005,
+    "program_studi": "Matematika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "7_MAT-2005",
+    "nama_kurikulum": "MATEMATIKA 2005 P",
+    "kode_prodi": 22625,
+    "tahun": 2005,
+    "program_studi": "Matematika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "MAT-2004",
+    "nama_kurikulum": "MATEMATIKA 2004",
+    "kode_prodi": 22625,
+    "tahun": 2004,
+    "program_studi": "Matematika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "7_MAT-2004",
+    "nama_kurikulum": "MATEMATIKA 2004 P",
+    "kode_prodi": 22625,
+    "tahun": 2004,
+    "program_studi": "Matematika",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2MKK25",
+    "nama_kurikulum": "S2 MEDIA DAN KOMUNIKASI",
+    "kode_prodi": 23110,
+    "tahun": null,
+    "program_studi": "Media dan Komunikasi",
+    "fakultas": "ILMU SOSIAL DAN HUMANIORA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3PAI2024",
+    "nama_kurikulum": "S3 PAI 2024",
+    "kode_prodi": 24301,
+    "tahun": 2024,
+    "program_studi": "Pendidikan Agama Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3PAI20",
+    "nama_kurikulum": "S3 PAI 2020",
+    "kode_prodi": 24301,
+    "tahun": 2020,
+    "program_studi": "Pendidikan Agama Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3PAI2018",
+    "nama_kurikulum": "S3 PAI 2018",
+    "kode_prodi": 24301,
+    "tahun": 2018,
+    "program_studi": "Pendidikan Agama Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2PAI2024",
+    "nama_kurikulum": "S2 PAI 2024",
+    "kode_prodi": 23606,
+    "tahun": 2024,
+    "program_studi": "Pendidikan Agama Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2PAI20",
+    "nama_kurikulum": "S2 PAI 2020",
+    "kode_prodi": 23606,
+    "tahun": 2020,
+    "program_studi": "Pendidikan Agama Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2PAI16",
+    "nama_kurikulum": "S2 PAI 2016",
+    "kode_prodi": 23606,
+    "tahun": 2016,
+    "program_studi": "Pendidikan Agama Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2PAI2016",
+    "nama_kurikulum": "S2 PAI 2016 Gabungan",
+    "kode_prodi": 23606,
+    "tahun": 2016,
+    "program_studi": "Pendidikan Agama Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2MPI16",
+    "nama_kurikulum": "S2 MPI 2016",
+    "kode_prodi": 23606,
+    "tahun": 2016,
+    "program_studi": "Pendidikan Agama Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2PBA16",
+    "nama_kurikulum": "S2 PBA 2016",
+    "kode_prodi": 23606,
+    "tahun": 2016,
+    "program_studi": "Pendidikan Agama Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2MPI2015",
+    "nama_kurikulum": "S2 MPI 2015",
+    "kode_prodi": 23606,
+    "tahun": 2015,
+    "program_studi": "Pendidikan Agama Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2PBA2015",
+    "nama_kurikulum": "S2 PBA 2015",
+    "kode_prodi": 23606,
+    "tahun": 2015,
+    "program_studi": "Pendidikan Agama Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2PAI2015",
+    "nama_kurikulum": "S2 PAI 2015",
+    "kode_prodi": 23606,
+    "tahun": 2015,
+    "program_studi": "Pendidikan Agama Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2PPI2015",
+    "nama_kurikulum": "S2 PPI 2015",
+    "kode_prodi": 23606,
+    "tahun": 2015,
+    "program_studi": "Pendidikan Agama Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PAI2024",
+    "nama_kurikulum": "S1 PAI 2024",
+    "kode_prodi": 22124,
+    "tahun": 2024,
+    "program_studi": "Pendidikan Agama Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PAI20",
+    "nama_kurikulum": "S1 PAI 2020",
+    "kode_prodi": 22124,
+    "tahun": 2020,
+    "program_studi": "Pendidikan Agama Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PAI16",
+    "nama_kurikulum": "S1PAI 2016",
+    "kode_prodi": 22124,
+    "tahun": 2016,
+    "program_studi": "Pendidikan Agama Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "PAI2013",
+    "nama_kurikulum": "PAI 2013",
+    "kode_prodi": 22124,
+    "tahun": 2013,
+    "program_studi": "Pendidikan Agama Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "4_PAI-2007",
+    "nama_kurikulum": "PAI 2007",
+    "kode_prodi": 22124,
+    "tahun": 2007,
+    "program_studi": "Pendidikan Agama Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "4_PGMI-2007",
+    "nama_kurikulum": "PAI 2007 PGMI (REVISI)",
+    "kode_prodi": 22124,
+    "tahun": 2007,
+    "program_studi": "Pendidikan Agama Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "4_PAI-2006",
+    "nama_kurikulum": "PAI 2006 KBK SIA",
+    "kode_prodi": 22124,
+    "tahun": 2006,
+    "program_studi": "Pendidikan Agama Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "4_PAI-2005",
+    "nama_kurikulum": "PAI 1995 DISEMPURNAKAN",
+    "kode_prodi": 22124,
+    "tahun": 1995,
+    "program_studi": "Pendidikan Agama Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "4_PAI-KBK",
+    "nama_kurikulum": "PAI 2004 (KBK)",
+    "kode_prodi": 22124,
+    "tahun": 2004,
+    "program_studi": "Pendidikan Agama Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "4_PAI-2003A",
+    "nama_kurikulum": "PAI 2003-2",
+    "kode_prodi": 22124,
+    "tahun": 2003,
+    "program_studi": "Pendidikan Agama Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "4_PAI-2003",
+    "nama_kurikulum": "PAI 2003",
+    "kode_prodi": 22124,
+    "tahun": 2003,
+    "program_studi": "Pendidikan Agama Islam",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3PBA2024",
+    "nama_kurikulum": "S3 PBA 2024",
+    "kode_prodi": 24108,
+    "tahun": 2024,
+    "program_studi": "Pendidikan Bahasa Arab",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3PBA20",
+    "nama_kurikulum": "S3 PBA 2020",
+    "kode_prodi": 24108,
+    "tahun": 2020,
+    "program_studi": "Pendidikan Bahasa Arab",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2PBA2024",
+    "nama_kurikulum": "S2 PBA 2024",
+    "kode_prodi": 23203,
+    "tahun": 2024,
+    "program_studi": "Pendidikan Bahasa Arab",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2PBA23",
+    "nama_kurikulum": "S2 PBA 2023",
+    "kode_prodi": 23203,
+    "tahun": 2023,
+    "program_studi": "Pendidikan Bahasa Arab",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2PBA20",
+    "nama_kurikulum": "S2 PBA 2020",
+    "kode_prodi": 23203,
+    "tahun": 2020,
+    "program_studi": "Pendidikan Bahasa Arab",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2PBA17",
+    "nama_kurikulum": "S2 PBA 2017",
+    "kode_prodi": 23203,
+    "tahun": 2017,
+    "program_studi": "Pendidikan Bahasa Arab",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PBA2024",
+    "nama_kurikulum": "S1 PBA 2024",
+    "kode_prodi": 22127,
+    "tahun": 2024,
+    "program_studi": "Pendidikan Bahasa Arab",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PBA20",
+    "nama_kurikulum": "S1 PBA 2020",
+    "kode_prodi": 22127,
+    "tahun": 2020,
+    "program_studi": "Pendidikan Bahasa Arab",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PBA16",
+    "nama_kurikulum": "S1 PBA 2016",
+    "kode_prodi": 22127,
+    "tahun": 2016,
+    "program_studi": "Pendidikan Bahasa Arab",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "PBA2013",
+    "nama_kurikulum": "PBA 2013",
+    "kode_prodi": 22127,
+    "tahun": 2013,
+    "program_studi": "Pendidikan Bahasa Arab",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "4_KUR-2006",
+    "nama_kurikulum": "PBA 2006",
+    "kode_prodi": 22127,
+    "tahun": 2006,
+    "program_studi": "Pendidikan Bahasa Arab",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "4_PBA-2006",
+    "nama_kurikulum": "PBA KURIKULUM KBK SIA 2006",
+    "kode_prodi": 22127,
+    "tahun": 2006,
+    "program_studi": "Pendidikan Bahasa Arab",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "4_PBA-2004",
+    "nama_kurikulum": "PBA 2004",
+    "kode_prodi": 22127,
+    "tahun": 2004,
+    "program_studi": "Pendidikan Bahasa Arab",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "4_PBA-2004SP",
+    "nama_kurikulum": "PBA SP 2004",
+    "kode_prodi": 22127,
+    "tahun": 2004,
+    "program_studi": "Pendidikan Bahasa Arab",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "4_PBA-1998",
+    "nama_kurikulum": "PBA 1998",
+    "kode_prodi": 22127,
+    "tahun": 1998,
+    "program_studi": "Pendidikan Bahasa Arab",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PBO2024",
+    "nama_kurikulum": "S1 PEND. BIOLOGI 2024",
+    "kode_prodi": 22116,
+    "tahun": 2024,
+    "program_studi": "Pendidikan Biologi",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PBO20",
+    "nama_kurikulum": "S1 PBIO 2020",
+    "kode_prodi": 22116,
+    "tahun": 2020,
+    "program_studi": "Pendidikan Biologi",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PBO16",
+    "nama_kurikulum": "S1 PBIO 2016",
+    "kode_prodi": 22116,
+    "tahun": 2016,
+    "program_studi": "Pendidikan Biologi",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "PBIO2013",
+    "nama_kurikulum": "PENDIDIKAN BIOLOGI 2013",
+    "kode_prodi": 22116,
+    "tahun": 2013,
+    "program_studi": "Pendidikan Biologi",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "PBIO-2009",
+    "nama_kurikulum": "PENDIDIKAN BIOLOGI 2009",
+    "kode_prodi": 22116,
+    "tahun": 2009,
+    "program_studi": "Pendidikan Biologi",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "TBIO-2006",
+    "nama_kurikulum": "PENDIDIKAN BIOLOGI 2006 REVISI",
+    "kode_prodi": 22116,
+    "tahun": 2006,
+    "program_studi": "Pendidikan Biologi",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "7_PBIO-2006",
+    "nama_kurikulum": "PENDIDIKAN BIOLOGI 2006 P",
+    "kode_prodi": 22116,
+    "tahun": 2006,
+    "program_studi": "Pendidikan Biologi",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "PBIO-2006",
+    "nama_kurikulum": "PENDIDIKAN BIOLOGI 2006",
+    "kode_prodi": 22116,
+    "tahun": 2006,
+    "program_studi": "Pendidikan Biologi",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "TBIO-KBK",
+    "nama_kurikulum": "PENDIDIKAN BIOLOGI 2004 REVISI",
+    "kode_prodi": 22116,
+    "tahun": 2004,
+    "program_studi": "Pendidikan Biologi",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "TBIO-2003",
+    "nama_kurikulum": "PENDIDIKAN BIOLOGI 2003 REVISI",
+    "kode_prodi": 22116,
+    "tahun": 2003,
+    "program_studi": "Pendidikan Biologi",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PFS2024",
+    "nama_kurikulum": "S1 PEND. FISKA 2024",
+    "kode_prodi": 22117,
+    "tahun": 2024,
+    "program_studi": "Pendidikan Fisika",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PFS20",
+    "nama_kurikulum": "S1 PFIS 2020",
+    "kode_prodi": 22117,
+    "tahun": 2020,
+    "program_studi": "Pendidikan Fisika",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PFS16",
+    "nama_kurikulum": "S1 PFIS 2016",
+    "kode_prodi": 22117,
+    "tahun": 2016,
+    "program_studi": "Pendidikan Fisika",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "PFIS2013",
+    "nama_kurikulum": "PENDIDIKAN FISIKA 2013",
+    "kode_prodi": 22117,
+    "tahun": 2013,
+    "program_studi": "Pendidikan Fisika",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "PFIS-2009",
+    "nama_kurikulum": "PENDIDIKAN FISIKA 2009",
+    "kode_prodi": 22117,
+    "tahun": 2009,
+    "program_studi": "Pendidikan Fisika",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "TFIS-2006",
+    "nama_kurikulum": "PENDIDIKAN FISIKA 2006 REVISI",
+    "kode_prodi": 22117,
+    "tahun": 2006,
+    "program_studi": "Pendidikan Fisika",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "7_PFIS-2006",
+    "nama_kurikulum": "PENDIDIKAN FISIKA 2006 P",
+    "kode_prodi": 22117,
+    "tahun": 2006,
+    "program_studi": "Pendidikan Fisika",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "PFIS-2006",
+    "nama_kurikulum": "PENDIDIKAN FISIKA 2006",
+    "kode_prodi": 22117,
+    "tahun": 2006,
+    "program_studi": "Pendidikan Fisika",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "TFIS-KBK",
+    "nama_kurikulum": "PENDIDIKAN FISIKA 2004 REVISI",
+    "kode_prodi": 22117,
+    "tahun": 2004,
+    "program_studi": "Pendidikan Fisika",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "TFIS-2003",
+    "nama_kurikulum": "PENDIDIKAN FISIKA 2003 REVISI",
+    "kode_prodi": 22117,
+    "tahun": 2003,
+    "program_studi": "Pendidikan Fisika",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3GMI2024",
+    "nama_kurikulum": "S3 PGMI 2024",
+    "kode_prodi": 24104,
+    "tahun": 2024,
+    "program_studi": "Pendidikan Guru Madrasah Ibtidaiyah",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3GMI2023",
+    "nama_kurikulum": "S3 PGMI 2023",
+    "kode_prodi": 24104,
+    "tahun": 2023,
+    "program_studi": "Pendidikan Guru Madrasah Ibtidaiyah",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2GMI2024",
+    "nama_kurikulum": "S2 PGMI 2024",
+    "kode_prodi": 23604,
+    "tahun": 2024,
+    "program_studi": "Pendidikan Guru Madrasah Ibtidaiyah",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2GMI20",
+    "nama_kurikulum": "S2 PGMI 2020",
+    "kode_prodi": 23604,
+    "tahun": 2020,
+    "program_studi": "Pendidikan Guru Madrasah Ibtidaiyah",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2SMI16",
+    "nama_kurikulum": "S2 SMI 2016",
+    "kode_prodi": 23604,
+    "tahun": 2016,
+    "program_studi": "Pendidikan Guru Madrasah Ibtidaiyah",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2GMI16",
+    "nama_kurikulum": "S2 GMI 2016",
+    "kode_prodi": 23604,
+    "tahun": 2016,
+    "program_studi": "Pendidikan Guru Madrasah Ibtidaiyah",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2PGM16",
+    "nama_kurikulum": "S2 PGM 2016",
+    "kode_prodi": 23604,
+    "tahun": 2016,
+    "program_studi": "Pendidikan Guru Madrasah Ibtidaiyah",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2PAM16",
+    "nama_kurikulum": "S2 PAM 2016",
+    "kode_prodi": 23604,
+    "tahun": 2016,
+    "program_studi": "Pendidikan Guru Madrasah Ibtidaiyah",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2SMI2015",
+    "nama_kurikulum": "S2 SMI 2015",
+    "kode_prodi": 23604,
+    "tahun": 2015,
+    "program_studi": "Pendidikan Guru Madrasah Ibtidaiyah",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2GMI2015",
+    "nama_kurikulum": "S2 GMI 2015",
+    "kode_prodi": 23604,
+    "tahun": 2015,
+    "program_studi": "Pendidikan Guru Madrasah Ibtidaiyah",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2PAM2015",
+    "nama_kurikulum": "S2 PAM 2015",
+    "kode_prodi": 23604,
+    "tahun": 2015,
+    "program_studi": "Pendidikan Guru Madrasah Ibtidaiyah",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1GMI2024",
+    "nama_kurikulum": "S1 PGMI 2024",
+    "kode_prodi": 22122,
+    "tahun": 2024,
+    "program_studi": "Pendidikan Guru Madrasah Ibtidaiyah",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1GMI20",
+    "nama_kurikulum": "S1 PGMI 2020",
+    "kode_prodi": 22122,
+    "tahun": 2020,
+    "program_studi": "Pendidikan Guru Madrasah Ibtidaiyah",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1GMI16",
+    "nama_kurikulum": "S1 PGMI 2016",
+    "kode_prodi": 22122,
+    "tahun": 2016,
+    "program_studi": "Pendidikan Guru Madrasah Ibtidaiyah",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "PGMI2013",
+    "nama_kurikulum": "PGMI 2013",
+    "kode_prodi": 22122,
+    "tahun": 2013,
+    "program_studi": "Pendidikan Guru Madrasah Ibtidaiyah",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "4_PGMI2007",
+    "nama_kurikulum": "PGMI 2007",
+    "kode_prodi": 22122,
+    "tahun": 2007,
+    "program_studi": "Pendidikan Guru Madrasah Ibtidaiyah",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "4_PGMI2004",
+    "nama_kurikulum": "PGMI 2004",
+    "kode_prodi": 22122,
+    "tahun": 2004,
+    "program_studi": "Pendidikan Guru Madrasah Ibtidaiyah",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2AUD2024",
+    "nama_kurikulum": "S2 AUD 2024",
+    "kode_prodi": 23601,
+    "tahun": 2024,
+    "program_studi": "Pendidikan Islam Anak Usia Dini",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2AUD20",
+    "nama_kurikulum": "S2 PIAUD 2020",
+    "kode_prodi": 23601,
+    "tahun": 2020,
+    "program_studi": "Pendidikan Islam Anak Usia Dini",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2AUD20R",
+    "nama_kurikulum": "S2 PIAUD 2020 R",
+    "kode_prodi": 23601,
+    "tahun": 2020,
+    "program_studi": "Pendidikan Islam Anak Usia Dini",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2GRA16",
+    "nama_kurikulum": "S2 GRA 2016",
+    "kode_prodi": 23601,
+    "tahun": 2016,
+    "program_studi": "Pendidikan Islam Anak Usia Dini",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2PGRA2015",
+    "nama_kurikulum": "S2 PGRA 2015",
+    "kode_prodi": 23601,
+    "tahun": 2015,
+    "program_studi": "Pendidikan Islam Anak Usia Dini",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1AUD2024",
+    "nama_kurikulum": "S1 PIAUD 2024",
+    "kode_prodi": 22129,
+    "tahun": 2024,
+    "program_studi": "Pendidikan Islam Anak Usia Dini",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1AUD20",
+    "nama_kurikulum": "S1 PIAUD 2020",
+    "kode_prodi": 22129,
+    "tahun": 2020,
+    "program_studi": "Pendidikan Islam Anak Usia Dini",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1GRA16",
+    "nama_kurikulum": "S1 PGRA 2016",
+    "kode_prodi": 22129,
+    "tahun": 2016,
+    "program_studi": "Pendidikan Islam Anak Usia Dini",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "PGRA2013",
+    "nama_kurikulum": "PGRA 2013",
+    "kode_prodi": 22129,
+    "tahun": 2013,
+    "program_studi": "Pendidikan Islam Anak Usia Dini",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PKM2024",
+    "nama_kurikulum": "S1 PEND. KIMIA 2024",
+    "kode_prodi": 22121,
+    "tahun": 2024,
+    "program_studi": "Pendidikan Kimia",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PKM21",
+    "nama_kurikulum": "S1 PKIM 2021",
+    "kode_prodi": 22121,
+    "tahun": 2021,
+    "program_studi": "Pendidikan Kimia",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PKM20",
+    "nama_kurikulum": "S1 PKIM 2020",
+    "kode_prodi": 22121,
+    "tahun": 2020,
+    "program_studi": "Pendidikan Kimia",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PKM16",
+    "nama_kurikulum": "S1 PKIMIA 2016",
+    "kode_prodi": 22121,
+    "tahun": 2016,
+    "program_studi": "Pendidikan Kimia",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "PKIM2013",
+    "nama_kurikulum": "PENDIDIKAN KIMIA 2013",
+    "kode_prodi": 22121,
+    "tahun": 2013,
+    "program_studi": "Pendidikan Kimia",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "PKIM-2009",
+    "nama_kurikulum": "PENDIDIKAN KIMIA 2009",
+    "kode_prodi": 22121,
+    "tahun": 2009,
+    "program_studi": "Pendidikan Kimia",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "7_PKIM-2006",
+    "nama_kurikulum": "PENDIDIKAN KIMIA 2006 P",
+    "kode_prodi": 22121,
+    "tahun": 2006,
+    "program_studi": "Pendidikan Kimia",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "TKIM-2006",
+    "nama_kurikulum": "PENDIDIKAN KIMIA 2006 REVISI",
+    "kode_prodi": 22121,
+    "tahun": 2006,
+    "program_studi": "Pendidikan Kimia",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "PKIM-2006",
+    "nama_kurikulum": "PENDIDIKAN KIMIA 2006",
+    "kode_prodi": 22121,
+    "tahun": 2006,
+    "program_studi": "Pendidikan Kimia",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "TKIM-KBK",
+    "nama_kurikulum": "PENDIDIKAN KIMIA 2004 REVISI",
+    "kode_prodi": 22121,
+    "tahun": 2004,
+    "program_studi": "Pendidikan Kimia",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "TKIM-2003",
+    "nama_kurikulum": "PENDIDIKAN KIMIA 2003 REVISI",
+    "kode_prodi": 22121,
+    "tahun": 2003,
+    "program_studi": "Pendidikan Kimia",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PMT2024",
+    "nama_kurikulum": "S1 PEND. MATEMATIKA 2024",
+    "kode_prodi": 22123,
+    "tahun": 2024,
+    "program_studi": "Pendidikan Matematika",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PMT20",
+    "nama_kurikulum": "S1 PMAT 2020",
+    "kode_prodi": 22123,
+    "tahun": 2020,
+    "program_studi": "Pendidikan Matematika",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PMT16",
+    "nama_kurikulum": "S1 PMT 2016",
+    "kode_prodi": 22123,
+    "tahun": 2016,
+    "program_studi": "Pendidikan Matematika",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "PMAT2013",
+    "nama_kurikulum": "PENDIDIKAN MATEMATIKA 2013",
+    "kode_prodi": 22123,
+    "tahun": 2013,
+    "program_studi": "Pendidikan Matematika",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "PMAT-2009",
+    "nama_kurikulum": "PENDIDIKAN MATEMATIKA 2009",
+    "kode_prodi": 22123,
+    "tahun": 2009,
+    "program_studi": "Pendidikan Matematika",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "TMAT-2006",
+    "nama_kurikulum": "PENDIDIKAN MATEMATIKA 2006 REVISI",
+    "kode_prodi": 22123,
+    "tahun": 2006,
+    "program_studi": "Pendidikan Matematika",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "7_PMAT-2006",
+    "nama_kurikulum": "PENDIDIKAN MATEMATIKA 2006 P",
+    "kode_prodi": 22123,
+    "tahun": 2006,
+    "program_studi": "Pendidikan Matematika",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "PMAT-2006",
+    "nama_kurikulum": "PENDIDIKAN MATEMATIKA 2006",
+    "kode_prodi": 22123,
+    "tahun": 2006,
+    "program_studi": "Pendidikan Matematika",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "TMAT-KBK",
+    "nama_kurikulum": "PENDIDIKAN MATEMATIKA 2004 REVISI",
+    "kode_prodi": 22123,
+    "tahun": 2004,
+    "program_studi": "Pendidikan Matematika",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "TMAT-2003",
+    "nama_kurikulum": "PENDIDIKAN MATEMATIKA 2003 REVISI",
+    "kode_prodi": 22123,
+    "tahun": 2003,
+    "program_studi": "Pendidikan Matematika",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2PMI2024",
+    "nama_kurikulum": "S2 PMI 2024",
+    "kode_prodi": 23113,
+    "tahun": 2024,
+    "program_studi": "Pengembangan Masyarakat Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2PMI2023",
+    "nama_kurikulum": "S2 PMI 2023",
+    "kode_prodi": 23113,
+    "tahun": 2023,
+    "program_studi": "Pengembangan Masyarakat Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PMI2024",
+    "nama_kurikulum": "S1 PMI 2024",
+    "kode_prodi": 22411,
+    "tahun": 2024,
+    "program_studi": "Pengembangan Masyarakat Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PMI20",
+    "nama_kurikulum": "S1 PENGEMBANGAN MASYARAKAT ISLAM 2020",
+    "kode_prodi": 22411,
+    "tahun": 2020,
+    "program_studi": "Pengembangan Masyarakat Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PMI16",
+    "nama_kurikulum": "S1 PMI 2016",
+    "kode_prodi": 22411,
+    "tahun": 2016,
+    "program_studi": "Pengembangan Masyarakat Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "PMI2013",
+    "nama_kurikulum": "PMI 2013",
+    "kode_prodi": 22411,
+    "tahun": 2013,
+    "program_studi": "Pengembangan Masyarakat Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "2_PMI-2010",
+    "nama_kurikulum": "PMI 2010",
+    "kode_prodi": 22411,
+    "tahun": 2010,
+    "program_studi": "Pengembangan Masyarakat Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "2_PMI-SIA",
+    "nama_kurikulum": "PMI 2006 SIA",
+    "kode_prodi": 22411,
+    "tahun": 2006,
+    "program_studi": "Pengembangan Masyarakat Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "2_PMI-2005",
+    "nama_kurikulum": "PMI 2005",
+    "kode_prodi": 22411,
+    "tahun": 2005,
+    "program_studi": "Pengembangan Masyarakat Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "2_PMI-KBK",
+    "nama_kurikulum": "PMI 2003 KBK",
+    "kode_prodi": 22411,
+    "tahun": 2003,
+    "program_studi": "Pengembangan Masyarakat Islam",
+    "fakultas": "DAKWAH DAN KOMUNIKASI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PMZ2024",
+    "nama_kurikulum": "S1 perbandingan Mazhab 2024",
+    "kode_prodi": 22207,
+    "tahun": 2024,
+    "program_studi": "Perbandingan Mazhab",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PMZ20",
+    "nama_kurikulum": "S1 PMZ 2020",
+    "kode_prodi": 22207,
+    "tahun": 2020,
+    "program_studi": "Perbandingan Mazhab",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PMZ16",
+    "nama_kurikulum": "S1 PMZ 2016",
+    "kode_prodi": 22207,
+    "tahun": 2016,
+    "program_studi": "Perbandingan Mazhab",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "PMH2013",
+    "nama_kurikulum": "PMH 2013",
+    "kode_prodi": 22207,
+    "tahun": 2013,
+    "program_studi": "Perbandingan Mazhab",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "3_PMH-2010",
+    "nama_kurikulum": "PMH 2010",
+    "kode_prodi": 22207,
+    "tahun": 2010,
+    "program_studi": "Perbandingan Mazhab",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "3_SL-2008",
+    "nama_kurikulum": "SL 2008",
+    "kode_prodi": 22207,
+    "tahun": 2008,
+    "program_studi": "Perbandingan Mazhab",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "3_PMH-2006",
+    "nama_kurikulum": "PMH 2006",
+    "kode_prodi": 22207,
+    "tahun": 2006,
+    "program_studi": "Perbandingan Mazhab",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "3_PMH-2006-K",
+    "nama_kurikulum": "PMH 2006 KONVERSI SIA",
+    "kode_prodi": 22207,
+    "tahun": 2006,
+    "program_studi": "Perbandingan Mazhab",
+    "fakultas": "SYARIAH DAN HUKUM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PSY2024",
+    "nama_kurikulum": "S1 PSY 2024",
+    "kode_prodi": 82,
+    "tahun": 2024,
+    "program_studi": "Perbankan Syari'ah",
+    "fakultas": "EKONOMI DAN BISNIS ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PSY20",
+    "nama_kurikulum": "S1 PERBANKAN SYARIAH 2020",
+    "kode_prodi": 82,
+    "tahun": 2020,
+    "program_studi": "Perbankan Syari'ah",
+    "fakultas": "EKONOMI DAN BISNIS ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PSY16",
+    "nama_kurikulum": "S1 PERBANKAN SYARIAH 2016",
+    "kode_prodi": 82,
+    "tahun": 2016,
+    "program_studi": "Perbankan Syari'ah",
+    "fakultas": "EKONOMI DAN BISNIS ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "PSY2015",
+    "nama_kurikulum": "PERBANKAN SYARIAH 2015",
+    "kode_prodi": 82,
+    "tahun": 2015,
+    "program_studi": "Perbankan Syari'ah",
+    "fakultas": "EKONOMI DAN BISNIS ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "PSY2013",
+    "nama_kurikulum": "PERBANKAN SYARIAH 2013",
+    "kode_prodi": 82,
+    "tahun": 2013,
+    "program_studi": "Perbankan Syari'ah",
+    "fakultas": "EKONOMI DAN BISNIS ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "8_KBK-2012",
+    "nama_kurikulum": "KURIKULUM KBK 2012",
+    "kode_prodi": 82,
+    "tahun": 2012,
+    "program_studi": "Perbankan Syari'ah",
+    "fakultas": "EKONOMI DAN BISNIS ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PAIPMPTK2013",
+    "nama_kurikulum": "S1 PAI PMPTK 2013",
+    "kode_prodi": "22124P",
+    "tahun": 2013,
+    "program_studi": "PMPTK Pendidikan Agama Islam (S1)",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "PAI-2007-PMPTK",
+    "nama_kurikulum": "PAI 2007 PMPTK",
+    "kode_prodi": "22124P",
+    "tahun": 2007,
+    "program_studi": "PMPTK Pendidikan Agama Islam (S1)",
+    "fakultas": "ILMU TARBIYAH DAN KEGURUAN",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PSI2024",
+    "nama_kurikulum": "S1 Psikologi 2024",
+    "kode_prodi": 22620,
+    "tahun": 2024,
+    "program_studi": "Psikologi",
+    "fakultas": "ILMU SOSIAL DAN HUMANIORA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PSI20",
+    "nama_kurikulum": "S1 PIKOLOGI 2020",
+    "kode_prodi": 22620,
+    "tahun": 2020,
+    "program_studi": "Psikologi",
+    "fakultas": "ILMU SOSIAL DAN HUMANIORA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PSI16",
+    "nama_kurikulum": "S1 PSIKOLOGI 2016",
+    "kode_prodi": 22620,
+    "tahun": 2016,
+    "program_studi": "Psikologi",
+    "fakultas": "ILMU SOSIAL DAN HUMANIORA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "PSI2013",
+    "nama_kurikulum": "PSIKOLOGI 2013",
+    "kode_prodi": 22620,
+    "tahun": 2013,
+    "program_studi": "Psikologi",
+    "fakultas": "ILMU SOSIAL DAN HUMANIORA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "7_KUR-2009",
+    "nama_kurikulum": "PSIKOLOGI 2009",
+    "kode_prodi": 22620,
+    "tahun": 2009,
+    "program_studi": "Psikologi",
+    "fakultas": "ILMU SOSIAL DAN HUMANIORA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "7_PSI-2006",
+    "nama_kurikulum": "PSIKOLOGI 2006",
+    "kode_prodi": 22620,
+    "tahun": 2006,
+    "program_studi": "Psikologi",
+    "fakultas": "ILMU SOSIAL DAN HUMANIORA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "7_PSI-2005",
+    "nama_kurikulum": "PSIKOLOGI 2005",
+    "kode_prodi": 22620,
+    "tahun": 2005,
+    "program_studi": "Psikologi",
+    "fakultas": "ILMU SOSIAL DAN HUMANIORA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1SBM2024",
+    "nama_kurikulum": "S1 SAINS BIOMEDIS 2024",
+    "kode_prodi": 23108,
+    "tahun": 2024,
+    "program_studi": "Sains Biomedis",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1ING2024",
+    "nama_kurikulum": "S1 Sastra Inggris 2024",
+    "kode_prodi": 15,
+    "tahun": 2024,
+    "program_studi": "Sastra Inggris",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1ING20",
+    "nama_kurikulum": "S1 SASTRA INGGRIS 2020",
+    "kode_prodi": 15,
+    "tahun": 2020,
+    "program_studi": "Sastra Inggris",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1ING16",
+    "nama_kurikulum": "S1 SASTRA INGGRIS 2016",
+    "kode_prodi": 15,
+    "tahun": 2016,
+    "program_studi": "Sastra Inggris",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "ING2013",
+    "nama_kurikulum": "SASTRA INGGRIS 2013",
+    "kode_prodi": 15,
+    "tahun": 2013,
+    "program_studi": "Sastra Inggris",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "1_SI 2010",
+    "nama_kurikulum": "SASTRA INGGRIS 2010",
+    "kode_prodi": 15,
+    "tahun": 2010,
+    "program_studi": "Sastra Inggris",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "1_PBI-0910",
+    "nama_kurikulum": "PBI 2010",
+    "kode_prodi": 15,
+    "tahun": 2010,
+    "program_studi": "Sastra Inggris",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1SKI2024",
+    "nama_kurikulum": "S1 Sejarah dan Kebudayaan Islam 2024",
+    "kode_prodi": 22513,
+    "tahun": 2024,
+    "program_studi": "Sejarah dan Kebudayaan Islam",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1SKI20",
+    "nama_kurikulum": "S1 SKI 2020",
+    "kode_prodi": 22513,
+    "tahun": 2020,
+    "program_studi": "Sejarah dan Kebudayaan Islam",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1SKI16",
+    "nama_kurikulum": "S1 SKI 2016",
+    "kode_prodi": 22513,
+    "tahun": 2016,
+    "program_studi": "Sejarah dan Kebudayaan Islam",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "SKI2013",
+    "nama_kurikulum": "SEJARAH DAN KEBUDAYAAN ISLAM 2013",
+    "kode_prodi": 22513,
+    "tahun": 2013,
+    "program_studi": "Sejarah dan Kebudayaan Islam",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "SKI2013P",
+    "nama_kurikulum": "SEJARAH DAN KEBUDAYAAN ISLAM (SMT PENDEK 2013)",
+    "kode_prodi": 22513,
+    "tahun": 2013,
+    "program_studi": "Sejarah dan Kebudayaan Islam",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "1_2008/2009",
+    "nama_kurikulum": "SEJARAH DAN KEBUDAYAAN ISLAM 2008/2009",
+    "kode_prodi": 22513,
+    "tahun": 2008,
+    "program_studi": "Sejarah dan Kebudayaan Islam",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "1_SPI-2004",
+    "nama_kurikulum": "SEJARAH DAN KEBUDAYAAN ISLAM 2004",
+    "kode_prodi": 22513,
+    "tahun": 2004,
+    "program_studi": "Sejarah dan Kebudayaan Islam",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "1_SPI-2003",
+    "nama_kurikulum": "SEJARAH DAN KEBUDAYAAN ISLAM 2003",
+    "kode_prodi": 22513,
+    "tahun": 2003,
+    "program_studi": "Sejarah dan Kebudayaan Islam",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "1_SPI-1997",
+    "nama_kurikulum": "SEJARAH DAN KEBUDAYAAN ISLAM 1997",
+    "kode_prodi": 22513,
+    "tahun": 1997,
+    "program_studi": "Sejarah dan Kebudayaan Islam",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2SPI2024",
+    "nama_kurikulum": "S2 SPI 2024",
+    "kode_prodi": 23603,
+    "tahun": 2024,
+    "program_studi": "Sejarah Peradaban Islam",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2SPI22",
+    "nama_kurikulum": "S2 SPI 2022",
+    "kode_prodi": 23603,
+    "tahun": 2022,
+    "program_studi": "Sejarah Peradaban Islam",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2SKI16",
+    "nama_kurikulum": "S2 SKI 2016",
+    "kode_prodi": 23603,
+    "tahun": 2016,
+    "program_studi": "Sejarah Peradaban Islam",
+    "fakultas": "ADAB DAN ILMU BUDAYA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1ISAG2024",
+    "nama_kurikulum": "S1 SAG 2024",
+    "kode_prodi": 22311,
+    "tahun": 2024,
+    "program_studi": "Sosiologi Agama",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1SAG20",
+    "nama_kurikulum": "S1 SOSIOLOGI AGAMA 2020",
+    "kode_prodi": 22311,
+    "tahun": 2020,
+    "program_studi": "Sosiologi Agama",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1SAG16",
+    "nama_kurikulum": "S1 SOSIOLOGI AGAMA 2016",
+    "kode_prodi": 22311,
+    "tahun": 2016,
+    "program_studi": "Sosiologi Agama",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "SAG2013",
+    "nama_kurikulum": "SOSIOLOGI AGAMA 2013",
+    "kode_prodi": 22311,
+    "tahun": 2013,
+    "program_studi": "Sosiologi Agama",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "5_SA-2008",
+    "nama_kurikulum": "SOSIOLOGI AGAMA 2008",
+    "kode_prodi": 22311,
+    "tahun": 2008,
+    "program_studi": "Sosiologi Agama",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "5_SA-2005",
+    "nama_kurikulum": "SOSIOLOGI AGAMA 2005",
+    "kode_prodi": 22311,
+    "tahun": 2005,
+    "program_studi": "Sosiologi Agama",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "5_SA-2003",
+    "nama_kurikulum": "SOSIOLOGI AGAMA 2003",
+    "kode_prodi": 22311,
+    "tahun": 2003,
+    "program_studi": "Sosiologi Agama",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "5_SA-2001",
+    "nama_kurikulum": "SOSIOLOGI AGAMA 2001",
+    "kode_prodi": 22311,
+    "tahun": 2001,
+    "program_studi": "Sosiologi Agama",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "5_SA-1997",
+    "nama_kurikulum": "SOSIOLOGI AGAMA 1997",
+    "kode_prodi": 22311,
+    "tahun": 1997,
+    "program_studi": "Sosiologi Agama",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2SOS2024",
+    "nama_kurikulum": "S2 SOSIOLOGI 2024",
+    "kode_prodi": 23401,
+    "tahun": 2024,
+    "program_studi": "Sosiologi",
+    "fakultas": "ILMU SOSIAL DAN HUMANIORA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1SOS2024",
+    "nama_kurikulum": "S1 Sosiologi 2024",
+    "kode_prodi": 22412,
+    "tahun": 2024,
+    "program_studi": "Sosiologi",
+    "fakultas": "ILMU SOSIAL DAN HUMANIORA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1SOS20",
+    "nama_kurikulum": "S1 SOSIOLOGI 2020",
+    "kode_prodi": 22412,
+    "tahun": 2020,
+    "program_studi": "Sosiologi",
+    "fakultas": "ILMU SOSIAL DAN HUMANIORA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1SOS16",
+    "nama_kurikulum": "S1 SOSIOLOGI 2016",
+    "kode_prodi": 22412,
+    "tahun": 2016,
+    "program_studi": "Sosiologi",
+    "fakultas": "ILMU SOSIAL DAN HUMANIORA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "SOS2013",
+    "nama_kurikulum": "SOSIOLOGI 2013",
+    "kode_prodi": 22412,
+    "tahun": 2013,
+    "program_studi": "Sosiologi",
+    "fakultas": "ILMU SOSIAL DAN HUMANIORA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "7_KUR-SOS 2009",
+    "nama_kurikulum": "SOSIOLOGI 2009",
+    "kode_prodi": 22412,
+    "tahun": 2009,
+    "program_studi": "Sosiologi",
+    "fakultas": "ILMU SOSIAL DAN HUMANIORA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "7_SOS-2006",
+    "nama_kurikulum": "SOSIOLOGI 2006",
+    "kode_prodi": 22412,
+    "tahun": 2006,
+    "program_studi": "Sosiologi",
+    "fakultas": "ILMU SOSIAL DAN HUMANIORA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "7_SOS-2005",
+    "nama_kurikulum": "SOSIOLOGI 2005",
+    "kode_prodi": 22412,
+    "tahun": 2005,
+    "program_studi": "Sosiologi",
+    "fakultas": "ILMU SOSIAL DAN HUMANIORA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2ISAA2024",
+    "nama_kurikulum": "S2 SAA 2024",
+    "kode_prodi": 23103,
+    "tahun": 2024,
+    "program_studi": "Studi Agama-Agama",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2SAA2020",
+    "nama_kurikulum": "S2 SAA 2020",
+    "kode_prodi": 23103,
+    "tahun": 2020,
+    "program_studi": "Studi Agama-Agama",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2SAA20R",
+    "nama_kurikulum": "S2 SAA 2020 REV",
+    "kode_prodi": 23103,
+    "tahun": 2020,
+    "program_studi": "Studi Agama-Agama",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1SAA2024",
+    "nama_kurikulum": "S1 SAA 2024",
+    "kode_prodi": 22310,
+    "tahun": 2024,
+    "program_studi": "Studi Agama-Agama",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1SAA20",
+    "nama_kurikulum": "S1 STUDI AGAMA AGAMA 2020",
+    "kode_prodi": 22310,
+    "tahun": 2020,
+    "program_studi": "Studi Agama-Agama",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1PAG16",
+    "nama_kurikulum": "S1 PERBANDINGAN AGAMA 2016",
+    "kode_prodi": 22310,
+    "tahun": 2016,
+    "program_studi": "Studi Agama-Agama",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "PAG2013",
+    "nama_kurikulum": "PERBANDINGAN AGAMA 2013",
+    "kode_prodi": 22310,
+    "tahun": 2013,
+    "program_studi": "Studi Agama-Agama",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "5_PAK  2009",
+    "nama_kurikulum": "PERBANDINGAN AGAMA 2009",
+    "kode_prodi": 22310,
+    "tahun": 2009,
+    "program_studi": "Studi Agama-Agama",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "5_PA  2005",
+    "nama_kurikulum": "PERBANDINGAN AGAMA 2005",
+    "kode_prodi": 22310,
+    "tahun": 2005,
+    "program_studi": "Studi Agama-Agama",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "5_PA-2003",
+    "nama_kurikulum": "PERBANDINGAN AGAMA 2003",
+    "kode_prodi": 22310,
+    "tahun": 2003,
+    "program_studi": "Studi Agama-Agama",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "5_PA-2001",
+    "nama_kurikulum": "PERBANDINGAN AGAMA 2001",
+    "kode_prodi": 22310,
+    "tahun": 2001,
+    "program_studi": "Studi Agama-Agama",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "5_PA-1997",
+    "nama_kurikulum": "PERBANDINGAN AGAMA 1997",
+    "kode_prodi": 22310,
+    "tahun": 1997,
+    "program_studi": "Studi Agama-Agama",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3STI21",
+    "nama_kurikulum": "S3 STUDI ISLAM 2021",
+    "kode_prodi": 24101,
+    "tahun": 2021,
+    "program_studi": "Studi Islam",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3SAI16",
+    "nama_kurikulum": "S3 SAI 2016",
+    "kode_prodi": 24101,
+    "tahun": 2016,
+    "program_studi": "Studi Islam",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3STI16",
+    "nama_kurikulum": "S3 STUDI ISLAM 2016",
+    "kode_prodi": 24101,
+    "tahun": 2016,
+    "program_studi": "Studi Islam",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3SKI2015",
+    "nama_kurikulum": "S3 SKI 2015",
+    "kode_prodi": 24101,
+    "tahun": 2015,
+    "program_studi": "Studi Islam",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3DIA2015",
+    "nama_kurikulum": "AL-DIRASAT AL-ISLAMIYYA WA AL-ARABIYYA 2015",
+    "kode_prodi": 24101,
+    "tahun": 2015,
+    "program_studi": "Studi Islam",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3SI2015",
+    "nama_kurikulum": "S3 STUDI ISLAM 2015",
+    "kode_prodi": 24101,
+    "tahun": 2015,
+    "program_studi": "Studi Islam",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3ITMS2015",
+    "nama_kurikulum": "ISLAMIC THOGHT AND MUSLIM SOCIETIES 2015",
+    "kode_prodi": 24101,
+    "tahun": 2015,
+    "program_studi": "Studi Islam",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3EI2015",
+    "nama_kurikulum": "S3 EI 2015",
+    "kode_prodi": 24101,
+    "tahun": 2015,
+    "program_studi": "Studi Islam",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3SQH2015",
+    "nama_kurikulum": "S3 SQH 2015",
+    "kode_prodi": 24101,
+    "tahun": 2015,
+    "program_studi": "Studi Islam",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3KI2015",
+    "nama_kurikulum": "S3 KI 2015",
+    "kode_prodi": 24101,
+    "tahun": 2015,
+    "program_studi": "Studi Islam",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3IHPSI2015",
+    "nama_kurikulum": "S3 IHPSI 2015",
+    "kode_prodi": 24101,
+    "tahun": 2015,
+    "program_studi": "Studi Islam",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3IPII2015",
+    "nama_kurikulum": "S3 IPII 2015",
+    "kode_prodi": 24101,
+    "tahun": 2015,
+    "program_studi": "Studi Islam",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3PAUDI2015",
+    "nama_kurikulum": "S3 PAUDI 2015",
+    "kode_prodi": 24101,
+    "tahun": 2015,
+    "program_studi": "Studi Islam",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3KTT2015",
+    "nama_kurikulum": "S3 KTT 2015",
+    "kode_prodi": 24101,
+    "tahun": 2015,
+    "program_studi": "Studi Islam",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3SEI2013",
+    "nama_kurikulum": "S3 SEI 2013",
+    "kode_prodi": 24101,
+    "tahun": 2013,
+    "program_studi": "Studi Islam",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3SKI2013",
+    "nama_kurikulum": "S3 SKI 2013",
+    "kode_prodi": 24101,
+    "tahun": 2013,
+    "program_studi": "Studi Islam",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3SSI2013",
+    "nama_kurikulum": "S3 SSI 2013",
+    "kode_prodi": 24101,
+    "tahun": 2013,
+    "program_studi": "Studi Islam",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3SQH2013",
+    "nama_kurikulum": "S3 SQH 2013",
+    "kode_prodi": 24101,
+    "tahun": 2013,
+    "program_studi": "Studi Islam",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3MPI2013",
+    "nama_kurikulum": "S3 MPI 2013",
+    "kode_prodi": 24101,
+    "tahun": 2013,
+    "program_studi": "Studi Islam",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3SEI2012",
+    "nama_kurikulum": "S3 SEI 2012",
+    "kode_prodi": 24101,
+    "tahun": 2012,
+    "program_studi": "Studi Islam",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3MPI2012",
+    "nama_kurikulum": "S3 MPI 2012",
+    "kode_prodi": 24101,
+    "tahun": 2012,
+    "program_studi": "Studi Islam",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S3SSI2012",
+    "nama_kurikulum": "S3 SSI 2012",
+    "kode_prodi": 24101,
+    "tahun": 2012,
+    "program_studi": "Studi Islam",
+    "fakultas": "PASCASARJANA",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1SII2024",
+    "nama_kurikulum": "S1 SII 2024",
+    "kode_prodi": 23109,
+    "tahun": 2024,
+    "program_studi": "Studi Islam",
+    "fakultas": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2TIN2024",
+    "nama_kurikulum": "S2 Teknik Industri 2024",
+    "kode_prodi": 23204,
+    "tahun": 2024,
+    "program_studi": "Teknik Industri",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S2TIN22",
+    "nama_kurikulum": "S2 TEKNIK INDUSTRI 2022",
+    "kode_prodi": 23204,
+    "tahun": 2022,
+    "program_studi": "Teknik Industri",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1TIN2024",
+    "nama_kurikulum": "S1 Teknik Indutrri 2024",
+    "kode_prodi": 22608,
+    "tahun": 2024,
+    "program_studi": "Teknik Industri",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1TIN20",
+    "nama_kurikulum": "S1 T. INDUSTRI 2020",
+    "kode_prodi": 22608,
+    "tahun": 2020,
+    "program_studi": "Teknik Industri",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "S1TIN16",
+    "nama_kurikulum": "S1 TIN 2016",
+    "kode_prodi": 22608,
+    "tahun": 2016,
+    "program_studi": "Teknik Industri",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "TIN2013",
+    "nama_kurikulum": "TEKNIK INDUSTRI 2013",
+    "kode_prodi": 22608,
+    "tahun": 2013,
+    "program_studi": "Teknik Industri",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "TIN-2009",
+    "nama_kurikulum": "TEKNIK INDUSTRI 2009",
+    "kode_prodi": 22608,
+    "tahun": 2009,
+    "program_studi": "Teknik Industri",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "TIN-2005",
+    "nama_kurikulum": "TEKNIK INDUSTRI 2005",
+    "kode_prodi": 22608,
+    "tahun": 2005,
+    "program_studi": "Teknik Industri",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  },
+  {
+    "kode_kurikulum": "7_TIN-2005",
+    "nama_kurikulum": "TEKNIK INDUSTRI 2005 P",
+    "kode_prodi": 22608,
+    "tahun": 2005,
+    "program_studi": "Teknik Industri",
+    "fakultas": "SAINS DAN TEKNOLOGI",
+    "universitas": "UIN Sunan Kalijaga"
+  }
+]

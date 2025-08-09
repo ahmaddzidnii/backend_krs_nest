@@ -1,0 +1,506 @@
+[
+  {
+    "KODE_FAKULTAS": "F01",
+    "NAMA_FAKULTAS": "ADAB DAN ILMU BUDAYA",
+    "KODE_PRODI": 22508,
+    "NAMA_PRODI": "Bahasa dan Sastra Arab",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F01",
+    "NAMA_FAKULTAS": "ADAB DAN ILMU BUDAYA",
+    "KODE_PRODI": 23602,
+    "NAMA_PRODI": "Bahasa dan Sastra Arab",
+    "JENJANG": "Magister (S2)"
+  },
+  {
+    "KODE_FAKULTAS": "F01",
+    "NAMA_FAKULTAS": "ADAB DAN ILMU BUDAYA",
+    "KODE_PRODI": 22510,
+    "NAMA_PRODI": "Ilmu Perpustakaan",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F01",
+    "NAMA_FAKULTAS": "ADAB DAN ILMU BUDAYA",
+    "KODE_PRODI": 15,
+    "NAMA_PRODI": "Sastra Inggris",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F01",
+    "NAMA_FAKULTAS": "ADAB DAN ILMU BUDAYA",
+    "KODE_PRODI": 22513,
+    "NAMA_PRODI": "Sejarah dan Kebudayaan Islam",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F01",
+    "NAMA_FAKULTAS": "ADAB DAN ILMU BUDAYA",
+    "KODE_PRODI": 23603,
+    "NAMA_PRODI": "Sejarah Peradaban Islam",
+    "JENJANG": "Magister (S2)"
+  },
+  {
+    "KODE_FAKULTAS": "F02",
+    "NAMA_FAKULTAS": "DAKWAH DAN KOMUNIKASI",
+    "KODE_PRODI": 22403,
+    "NAMA_PRODI": "Bimbingan dan Konseling Islam",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F02",
+    "NAMA_FAKULTAS": "DAKWAH DAN KOMUNIKASI",
+    "KODE_PRODI": 23205,
+    "NAMA_PRODI": "Bimbingan dan Konseling Islam",
+    "JENJANG": "Magister (S2)"
+  },
+  {
+    "KODE_FAKULTAS": "F02",
+    "NAMA_FAKULTAS": "DAKWAH DAN KOMUNIKASI",
+    "KODE_PRODI": 25,
+    "NAMA_PRODI": "Ilmu Kesejahteraan Sosial",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F02",
+    "NAMA_FAKULTAS": "DAKWAH DAN KOMUNIKASI",
+    "KODE_PRODI": 23107,
+    "NAMA_PRODI": "Kesejahteraan Sosial",
+    "JENJANG": "Magister (S2)"
+  },
+  {
+    "KODE_FAKULTAS": "F02",
+    "NAMA_FAKULTAS": "DAKWAH DAN KOMUNIKASI",
+    "KODE_PRODI": 22407,
+    "NAMA_PRODI": "Komunikasi dan Penyiaran Islam",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F02",
+    "NAMA_FAKULTAS": "DAKWAH DAN KOMUNIKASI",
+    "KODE_PRODI": 23701,
+    "NAMA_PRODI": "Komunikasi dan Penyiaran Islam",
+    "JENJANG": "Magister (S2)"
+  },
+  {
+    "KODE_FAKULTAS": "F02",
+    "NAMA_FAKULTAS": "DAKWAH DAN KOMUNIKASI",
+    "KODE_PRODI": 22408,
+    "NAMA_PRODI": "Manajemen Dakwah",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F02",
+    "NAMA_FAKULTAS": "DAKWAH DAN KOMUNIKASI",
+    "KODE_PRODI": 22411,
+    "NAMA_PRODI": "Pengembangan Masyarakat Islam",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F02",
+    "NAMA_FAKULTAS": "DAKWAH DAN KOMUNIKASI",
+    "KODE_PRODI": 23113,
+    "NAMA_PRODI": "Pengembangan Masyarakat Islam",
+    "JENJANG": "Magister (S2)"
+  },
+  {
+    "KODE_FAKULTAS": "F03",
+    "NAMA_FAKULTAS": "EKONOMI DAN BISNIS ISLAM",
+    "KODE_PRODI": 84,
+    "NAMA_PRODI": "Akuntansi Syari'ah",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F03",
+    "NAMA_FAKULTAS": "EKONOMI DAN BISNIS ISLAM",
+    "KODE_PRODI": 81,
+    "NAMA_PRODI": "Ekonomi Syari'ah",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F03",
+    "NAMA_FAKULTAS": "EKONOMI DAN BISNIS ISLAM",
+    "KODE_PRODI": 23801,
+    "NAMA_PRODI": "Ekonomi Syari'ah",
+    "JENJANG": "Magister (S2)"
+  },
+  {
+    "KODE_FAKULTAS": "F03",
+    "NAMA_FAKULTAS": "EKONOMI DAN BISNIS ISLAM",
+    "KODE_PRODI": 83,
+    "NAMA_PRODI": "Manajemen Keuangan Syari'ah",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F03",
+    "NAMA_FAKULTAS": "EKONOMI DAN BISNIS ISLAM",
+    "KODE_PRODI": 82,
+    "NAMA_PRODI": "Perbankan Syari'ah",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F04",
+    "NAMA_FAKULTAS": "ILMU SOSIAL DAN HUMANIORA",
+    "KODE_PRODI": 22406,
+    "NAMA_PRODI": "Ilmu Komunikasi",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F04",
+    "NAMA_FAKULTAS": "ILMU SOSIAL DAN HUMANIORA",
+    "KODE_PRODI": 23110,
+    "NAMA_PRODI": "Media dan Komunikasi",
+    "JENJANG": "Magister (S2)"
+  },
+  {
+    "KODE_FAKULTAS": "F04",
+    "NAMA_FAKULTAS": "ILMU SOSIAL DAN HUMANIORA",
+    "KODE_PRODI": 22620,
+    "NAMA_PRODI": "Psikologi",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F04",
+    "NAMA_FAKULTAS": "ILMU SOSIAL DAN HUMANIORA",
+    "KODE_PRODI": 22412,
+    "NAMA_PRODI": "Sosiologi",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F04",
+    "NAMA_FAKULTAS": "ILMU SOSIAL DAN HUMANIORA",
+    "KODE_PRODI": 23401,
+    "NAMA_PRODI": "Sosiologi",
+    "JENJANG": "Magister (S2)"
+  },
+  {
+    "KODE_FAKULTAS": "F05",
+    "NAMA_FAKULTAS": "ILMU TARBIYAH DAN KEGURUAN",
+    "KODE_PRODI": 22128,
+    "NAMA_PRODI": "Manajemen Pendidikan Islam",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F05",
+    "NAMA_FAKULTAS": "ILMU TARBIYAH DAN KEGURUAN",
+    "KODE_PRODI": 23202,
+    "NAMA_PRODI": "Manajemen Pendidikan Islam",
+    "JENJANG": "Magister (S2)"
+  },
+  {
+    "KODE_FAKULTAS": "F05",
+    "NAMA_FAKULTAS": "ILMU TARBIYAH DAN KEGURUAN",
+    "KODE_PRODI": 22124,
+    "NAMA_PRODI": "Pendidikan Agama Islam",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F05",
+    "NAMA_FAKULTAS": "ILMU TARBIYAH DAN KEGURUAN",
+    "KODE_PRODI": 23606,
+    "NAMA_PRODI": "Pendidikan Agama Islam",
+    "JENJANG": "Magister (S2)"
+  },
+  {
+    "KODE_FAKULTAS": "F05",
+    "NAMA_FAKULTAS": "ILMU TARBIYAH DAN KEGURUAN",
+    "KODE_PRODI": 24301,
+    "NAMA_PRODI": "Pendidikan Agama Islam",
+    "JENJANG": "Doktor (S3)"
+  },
+  {
+    "KODE_FAKULTAS": "F05",
+    "NAMA_FAKULTAS": "ILMU TARBIYAH DAN KEGURUAN",
+    "KODE_PRODI": 22127,
+    "NAMA_PRODI": "Pendidikan Bahasa Arab",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F05",
+    "NAMA_FAKULTAS": "ILMU TARBIYAH DAN KEGURUAN",
+    "KODE_PRODI": 23203,
+    "NAMA_PRODI": "Pendidikan Bahasa Arab",
+    "JENJANG": "Magister (S2)"
+  },
+  {
+    "KODE_FAKULTAS": "F05",
+    "NAMA_FAKULTAS": "ILMU TARBIYAH DAN KEGURUAN",
+    "KODE_PRODI": 24108,
+    "NAMA_PRODI": "Pendidikan Bahasa Arab",
+    "JENJANG": "Doktor (S3)"
+  },
+  {
+    "KODE_FAKULTAS": "F05",
+    "NAMA_FAKULTAS": "ILMU TARBIYAH DAN KEGURUAN",
+    "KODE_PRODI": 22116,
+    "NAMA_PRODI": "Pendidikan Biologi",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F05",
+    "NAMA_FAKULTAS": "ILMU TARBIYAH DAN KEGURUAN",
+    "KODE_PRODI": 22117,
+    "NAMA_PRODI": "Pendidikan Fisika",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F05",
+    "NAMA_FAKULTAS": "ILMU TARBIYAH DAN KEGURUAN",
+    "KODE_PRODI": 22122,
+    "NAMA_PRODI": "Pendidikan Guru Madrasah Ibtidaiyah",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F05",
+    "NAMA_FAKULTAS": "ILMU TARBIYAH DAN KEGURUAN",
+    "KODE_PRODI": 23604,
+    "NAMA_PRODI": "Pendidikan Guru Madrasah Ibtidaiyah",
+    "JENJANG": "Magister (S2)"
+  },
+  {
+    "KODE_FAKULTAS": "F05",
+    "NAMA_FAKULTAS": "ILMU TARBIYAH DAN KEGURUAN",
+    "KODE_PRODI": 24104,
+    "NAMA_PRODI": "Pendidikan Guru Madrasah Ibtidaiyah",
+    "JENJANG": "Doktor (S3)"
+  },
+  {
+    "KODE_FAKULTAS": "F05",
+    "NAMA_FAKULTAS": "ILMU TARBIYAH DAN KEGURUAN",
+    "KODE_PRODI": 22129,
+    "NAMA_PRODI": "Pendidikan Islam Anak Usia Dini",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F05",
+    "NAMA_FAKULTAS": "ILMU TARBIYAH DAN KEGURUAN",
+    "KODE_PRODI": 23601,
+    "NAMA_PRODI": "Pendidikan Islam Anak Usia Dini",
+    "JENJANG": "Magister (S2)"
+  },
+  {
+    "KODE_FAKULTAS": "F05",
+    "NAMA_FAKULTAS": "ILMU TARBIYAH DAN KEGURUAN",
+    "KODE_PRODI": 22121,
+    "NAMA_PRODI": "Pendidikan Kimia",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F05",
+    "NAMA_FAKULTAS": "ILMU TARBIYAH DAN KEGURUAN",
+    "KODE_PRODI": 22123,
+    "NAMA_PRODI": "Pendidikan Matematika",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F05",
+    "NAMA_FAKULTAS": "ILMU TARBIYAH DAN KEGURUAN",
+    "KODE_PRODI": "22124P",
+    "NAMA_PRODI": "PMPTK Pendidikan Agama Islam (S1)",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F06",
+    "NAMA_FAKULTAS": "SAINS DAN TEKNOLOGI",
+    "KODE_PRODI": 22605,
+    "NAMA_PRODI": "Arsitektur",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F06",
+    "NAMA_FAKULTAS": "SAINS DAN TEKNOLOGI",
+    "KODE_PRODI": 22602,
+    "NAMA_PRODI": "Biologi",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F06",
+    "NAMA_FAKULTAS": "SAINS DAN TEKNOLOGI",
+    "KODE_PRODI": 22603,
+    "NAMA_PRODI": "Fisika",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F06",
+    "NAMA_FAKULTAS": "SAINS DAN TEKNOLOGI",
+    "KODE_PRODI": 22607,
+    "NAMA_PRODI": "Informatika",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F06",
+    "NAMA_FAKULTAS": "SAINS DAN TEKNOLOGI",
+    "KODE_PRODI": 23802,
+    "NAMA_PRODI": "Informatika",
+    "JENJANG": "Magister (S2)"
+  },
+  {
+    "KODE_FAKULTAS": "F06",
+    "NAMA_FAKULTAS": "SAINS DAN TEKNOLOGI",
+    "KODE_PRODI": 22604,
+    "NAMA_PRODI": "Kimia",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F06",
+    "NAMA_FAKULTAS": "SAINS DAN TEKNOLOGI",
+    "KODE_PRODI": 22625,
+    "NAMA_PRODI": "Matematika",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F06",
+    "NAMA_FAKULTAS": "SAINS DAN TEKNOLOGI",
+    "KODE_PRODI": 23108,
+    "NAMA_PRODI": "Sains Biomedis",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F06",
+    "NAMA_FAKULTAS": "SAINS DAN TEKNOLOGI",
+    "KODE_PRODI": 22608,
+    "NAMA_PRODI": "Teknik Industri",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F06",
+    "NAMA_FAKULTAS": "SAINS DAN TEKNOLOGI",
+    "KODE_PRODI": 23204,
+    "NAMA_PRODI": "Teknik Industri",
+    "JENJANG": "Magister (S2)"
+  },
+  {
+    "KODE_FAKULTAS": "F07",
+    "NAMA_FAKULTAS": "SYARIAH DAN HUKUM",
+    "KODE_PRODI": 22206,
+    "NAMA_PRODI": "Hukum Ekonomi Syariah (Muamalah)",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F07",
+    "NAMA_FAKULTAS": "SYARIAH DAN HUKUM",
+    "KODE_PRODI": 22201,
+    "NAMA_PRODI": "Hukum Keluarga Islam (Ahwal Syakhshiyyah)",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F07",
+    "NAMA_FAKULTAS": "SYARIAH DAN HUKUM",
+    "KODE_PRODI": 22216,
+    "NAMA_PRODI": "Hukum Tata Negara (Siyasah)",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F07",
+    "NAMA_FAKULTAS": "SYARIAH DAN HUKUM",
+    "KODE_PRODI": 40,
+    "NAMA_PRODI": "Ilmu Hukum",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F07",
+    "NAMA_FAKULTAS": "SYARIAH DAN HUKUM",
+    "KODE_PRODI": 23605,
+    "NAMA_PRODI": "Ilmu Syariah",
+    "JENJANG": "Magister (S2)"
+  },
+  {
+    "KODE_FAKULTAS": "F07",
+    "NAMA_FAKULTAS": "SYARIAH DAN HUKUM",
+    "KODE_PRODI": 24201,
+    "NAMA_PRODI": "Ilmu Syari'ah",
+    "JENJANG": "Doktor (S3)"
+  },
+  {
+    "KODE_FAKULTAS": "F07",
+    "NAMA_FAKULTAS": "SYARIAH DAN HUKUM",
+    "KODE_PRODI": 22207,
+    "NAMA_PRODI": "Perbandingan Mazhab",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F08",
+    "NAMA_FAKULTAS": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "KODE_PRODI": 22302,
+    "NAMA_PRODI": "Aqidah dan Filsafat Islam",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F08",
+    "NAMA_FAKULTAS": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "KODE_PRODI": 23803,
+    "NAMA_PRODI": "Aqidah dan Filsafat Islam",
+    "JENJANG": "Magister (S2)"
+  },
+  {
+    "KODE_FAKULTAS": "F08",
+    "NAMA_FAKULTAS": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "KODE_PRODI": 24111,
+    "NAMA_PRODI": "Aqidah dan Filsafat Islam",
+    "JENJANG": "Doktor (S3)"
+  },
+  {
+    "KODE_FAKULTAS": "F08",
+    "NAMA_FAKULTAS": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "KODE_PRODI": 22312,
+    "NAMA_PRODI": "Ilmu Al-Quran dan Tafsir",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F08",
+    "NAMA_FAKULTAS": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "KODE_PRODI": 23102,
+    "NAMA_PRODI": "Ilmu Al-Quran dan Tafsir",
+    "JENJANG": "Magister (S2)"
+  },
+  {
+    "KODE_FAKULTAS": "F08",
+    "NAMA_FAKULTAS": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "KODE_PRODI": 22313,
+    "NAMA_PRODI": "Ilmu Hadis",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F08",
+    "NAMA_FAKULTAS": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "KODE_PRODI": 22311,
+    "NAMA_PRODI": "Sosiologi Agama",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F08",
+    "NAMA_FAKULTAS": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "KODE_PRODI": 22310,
+    "NAMA_PRODI": "Studi Agama-Agama",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F08",
+    "NAMA_FAKULTAS": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "KODE_PRODI": 23103,
+    "NAMA_PRODI": "Studi Agama-Agama",
+    "JENJANG": "Magister (S2)"
+  },
+  {
+    "KODE_FAKULTAS": "F08",
+    "NAMA_FAKULTAS": "USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "KODE_PRODI": 23109,
+    "NAMA_PRODI": "Studi Islam",
+    "JENJANG": "Sarjana (S1)"
+  },
+  {
+    "KODE_FAKULTAS": "F09",
+    "NAMA_FAKULTAS": "PASCASARJANA",
+    "KODE_PRODI": 200101,
+    "NAMA_PRODI": "Interdiciplinary Islamic Studies",
+    "JENJANG": "Magister (S2)"
+  },
+  {
+    "KODE_FAKULTAS": "F09",
+    "NAMA_FAKULTAS": "PASCASARJANA",
+    "KODE_PRODI": 24101,
+    "NAMA_PRODI": "Studi Islam",
+    "JENJANG": "Doktor (S3)"
+  }
+]

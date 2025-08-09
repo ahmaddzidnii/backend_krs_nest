@@ -1,0 +1,394 @@
+[
+  {
+    "kode_fakultas": "F0000001",
+    "nama_fakultas": "FAKULTAS ADAB DAN ILMU BUDAYA",
+    "kode": "79203",
+    "nama": "Bahasa dan Sastra Arab",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000001",
+    "nama_fakultas": "FAKULTAS ADAB DAN ILMU BUDAYA",
+    "kode": "80230",
+    "nama": "Sejarah dan Kebudayaan Islam",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000001",
+    "nama_fakultas": "FAKULTAS ADAB DAN ILMU BUDAYA",
+    "kode": "71201",
+    "nama": "Ilmu Perpustakaan",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000001",
+    "nama_fakultas": "FAKULTAS ADAB DAN ILMU BUDAYA",
+    "kode": "79202",
+    "nama": "Sastra Inggris",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000001",
+    "nama_fakultas": "FAKULTAS ADAB DAN ILMU BUDAYA",
+    "kode": "79103",
+    "nama": "Bahasa dan Sastra Arab",
+    "jenjang": "Magister (S2)"
+  },
+  {
+    "kode_fakultas": "F0000001",
+    "nama_fakultas": "FAKULTAS ADAB DAN ILMU BUDAYA",
+    "kode": "80130",
+    "nama": "Sejarah Peradaban Islam",
+    "jenjang": "Magister (S2)"
+  },
+  {
+    "kode_fakultas": "F0000002",
+    "nama_fakultas": "FAKULTAS DAKWAH DAN KOMUNIKASI",
+    "kode": "70233",
+    "nama": "Komunikasi dan Penyiaran Islam",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000002",
+    "nama_fakultas": "FAKULTAS DAKWAH DAN KOMUNIKASI",
+    "kode": "70232",
+    "nama": "Bimbingan dan Konseling Islam",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000002",
+    "nama_fakultas": "FAKULTAS DAKWAH DAN KOMUNIKASI",
+    "kode": "70231",
+    "nama": "Pengembangan Masyarakat Islam",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000002",
+    "nama_fakultas": "FAKULTAS DAKWAH DAN KOMUNIKASI",
+    "kode": "70230",
+    "nama": "Manajemen Dakwah",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000002",
+    "nama_fakultas": "FAKULTAS DAKWAH DAN KOMUNIKASI",
+    "kode": "72201",
+    "nama": "Ilmu Kesejahteraan Sosial",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000002",
+    "nama_fakultas": "FAKULTAS DAKWAH DAN KOMUNIKASI",
+    "kode": "70133",
+    "nama": "Komunikasi dan Penyiaran Islam",
+    "jenjang": "Magister (S2)"
+  },
+  {
+    "kode_fakultas": "F0000003",
+    "nama_fakultas": "FAKULTAS SYARIAH DAN HUKUM",
+    "kode": "74230",
+    "nama": "Hukum Keluarga Islam (Ahwal Syakhshiyyah)",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000003",
+    "nama_fakultas": "FAKULTAS SYARIAH DAN HUKUM",
+    "kode": "74233",
+    "nama": "Perbandingan Mazhab",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000003",
+    "nama_fakultas": "FAKULTAS SYARIAH DAN HUKUM",
+    "kode": "74235",
+    "nama": "Hukum Tata Negara",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000003",
+    "nama_fakultas": "FAKULTAS SYARIAH DAN HUKUM",
+    "kode": "74234",
+    "nama": "Muamalah/Hukum Ekonomi Syariah",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000003",
+    "nama_fakultas": "FAKULTAS SYARIAH DAN HUKUM",
+    "kode": "74201",
+    "nama": "Ilmu Hukum",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000003",
+    "nama_fakultas": "FAKULTAS SYARIAH DAN HUKUM",
+    "kode": "74101",
+    "nama": "Hukum Islam/Ilmu Syariah",
+    "jenjang": "Magister (S2)"
+  },
+  {
+    "kode_fakultas": "F0000004",
+    "nama_fakultas": "FAKULTAS ILMU TARBIYAH DAN KEGURUAN",
+    "kode": "86208",
+    "nama": "Pendidikan Agama Islam",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000004",
+    "nama_fakultas": "FAKULTAS ILMU TARBIYAH DAN KEGURUAN",
+    "kode": "88004",
+    "nama": "Pendidikan Bahasa Arab",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000004",
+    "nama_fakultas": "FAKULTAS ILMU TARBIYAH DAN KEGURUAN",
+    "kode": "86231",
+    "nama": "Manajemen Pendidikan Islam",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000004",
+    "nama_fakultas": "FAKULTAS ILMU TARBIYAH DAN KEGURUAN",
+    "kode": "86232",
+    "nama": "Pendidikan Guru Madrasah Ibtidaiyah",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000004",
+    "nama_fakultas": "FAKULTAS ILMU TARBIYAH DAN KEGURUAN",
+    "kode": "86207",
+    "nama": "Pendidikan Islam Anak Usia Dini",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000004",
+    "nama_fakultas": "FAKULTAS ILMU TARBIYAH DAN KEGURUAN",
+    "kode": "84203",
+    "nama": "Pendidikan Fisika",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000004",
+    "nama_fakultas": "FAKULTAS ILMU TARBIYAH DAN KEGURUAN",
+    "kode": "84204",
+    "nama": "Pendidikan Kimia",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000004",
+    "nama_fakultas": "FAKULTAS ILMU TARBIYAH DAN KEGURUAN",
+    "kode": "84205",
+    "nama": "Pendidikan Biologi",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000004",
+    "nama_fakultas": "FAKULTAS ILMU TARBIYAH DAN KEGURUAN",
+    "kode": "84202",
+    "nama": "Pendidikan Matematika",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000004",
+    "nama_fakultas": "FAKULTAS ILMU TARBIYAH DAN KEGURUAN",
+    "kode": "86108",
+    "nama": "Pendidikan Agama Islam",
+    "jenjang": "Magister (S2)"
+  },
+  {
+    "kode_fakultas": "F0000004",
+    "nama_fakultas": "FAKULTAS ILMU TARBIYAH DAN KEGURUAN",
+    "kode": "86133",
+    "nama": "Pendidikan Islam Anak Usia Dini",
+    "jenjang": "Magister (S2)"
+  },
+  {
+    "kode_fakultas": "F0000004",
+    "nama_fakultas": "FAKULTAS ILMU TARBIYAH DAN KEGURUAN",
+    "kode": "86132",
+    "nama": "Pendidikan Guru Madrasah Ibtidaiyah",
+    "jenjang": "Magister (S2)"
+  },
+  {
+    "kode_fakultas": "F0000004",
+    "nama_fakultas": "FAKULTAS ILMU TARBIYAH DAN KEGURUAN",
+    "kode": "86131",
+    "nama": "Manajemen Pendidikan Islam",
+    "jenjang": "Magister (S2)"
+  },
+  {
+    "kode_fakultas": "F0000004",
+    "nama_fakultas": "FAKULTAS ILMU TARBIYAH DAN KEGURUAN",
+    "kode": "88104",
+    "nama": "Pendidikan Bahasa Arab",
+    "jenjang": "Magister (S2)"
+  },
+  {
+    "kode_fakultas": "F0000005",
+    "nama_fakultas": "FAKULTAS USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "kode": "76237",
+    "nama": "Aqidah dan Filsafat Islam",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000005",
+    "nama_fakultas": "FAKULTAS USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "kode": null,
+    "nama": "Studi Agama-Agama",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000005",
+    "nama_fakultas": "FAKULTAS USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "kode": "76231",
+    "nama": "Ilmu Al-Quran dan Tafsir",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000005",
+    "nama_fakultas": "FAKULTAS USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "kode": "69202",
+    "nama": "Sosiologi Agama",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000005",
+    "nama_fakultas": "FAKULTAS USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "kode": "76235",
+    "nama": "Ilmu Hadis",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000005",
+    "nama_fakultas": "FAKULTAS USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "kode": "76137",
+    "nama": "Aqidah dan Filsafat Islam",
+    "jenjang": "Magister (S2)"
+  },
+  {
+    "kode_fakultas": "F0000005",
+    "nama_fakultas": "FAKULTAS USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "kode": "76134",
+    "nama": "Studi Agama-Agama",
+    "jenjang": "Magister (S2)"
+  },
+  {
+    "kode_fakultas": "F0000005",
+    "nama_fakultas": "FAKULTAS USHULUDDIN DAN PEMIKIRAN ISLAM",
+    "kode": "76131",
+    "nama": "Ilmu Al-Quran dan Tafsir",
+    "jenjang": "Magister (S2)"
+  },
+  {
+    "kode_fakultas": "F0000006",
+    "nama_fakultas": "FAKULTAS SAINS DAN TEKNOLOGI",
+    "kode": "45201",
+    "nama": "Fisika",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000006",
+    "nama_fakultas": "FAKULTAS SAINS DAN TEKNOLOGI",
+    "kode": "47201",
+    "nama": "Kimia",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000006",
+    "nama_fakultas": "FAKULTAS SAINS DAN TEKNOLOGI",
+    "kode": "46201",
+    "nama": "Biologi",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000006",
+    "nama_fakultas": "FAKULTAS SAINS DAN TEKNOLOGI",
+    "kode": "44201",
+    "nama": "Matematika",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000006",
+    "nama_fakultas": "FAKULTAS SAINS DAN TEKNOLOGI",
+    "kode": "26201",
+    "nama": "Teknik Industri",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000006",
+    "nama_fakultas": "FAKULTAS SAINS DAN TEKNOLOGI",
+    "kode": "55201",
+    "nama": "Teknik Informatika",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000006",
+    "nama_fakultas": "FAKULTAS SAINS DAN TEKNOLOGI",
+    "kode": "55102",
+    "nama": "Informatika",
+    "jenjang": "Magister (S2)"
+  },
+  {
+    "kode_fakultas": "F0000007",
+    "nama_fakultas": "FAKULTAS ILMU SOSIAL DAN HUMANIORA",
+    "kode": "70201",
+    "nama": "Ilmu Komunikasi",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000007",
+    "nama_fakultas": "FAKULTAS ILMU SOSIAL DAN HUMANIORA",
+    "kode": "73201",
+    "nama": "Psikologi",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000007",
+    "nama_fakultas": "FAKULTAS ILMU SOSIAL DAN HUMANIORA",
+    "kode": "69201",
+    "nama": "Sosiologi",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000008",
+    "nama_fakultas": "FAKULTAS EKONOMI DAN BISNIS ISLAM",
+    "kode": "60202",
+    "nama": "Ekonomi Syari'ah",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000008",
+    "nama_fakultas": "FAKULTAS EKONOMI DAN BISNIS ISLAM",
+    "kode": "61206",
+    "nama": "Perbankan Syari'ah",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000008",
+    "nama_fakultas": "FAKULTAS EKONOMI DAN BISNIS ISLAM",
+    "kode": "60204",
+    "nama": "Manajemen Keuangan Syari'ah",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000008",
+    "nama_fakultas": "FAKULTAS EKONOMI DAN BISNIS ISLAM",
+    "kode": "62202",
+    "nama": "Akuntansi Syari'ah",
+    "jenjang": "Sarjana (S1)"
+  },
+  {
+    "kode_fakultas": "F0000008",
+    "nama_fakultas": "FAKULTAS EKONOMI DAN BISNIS ISLAM",
+    "kode": "60102",
+    "nama": "Ekonomi Syari'ah",
+    "jenjang": "Magister (S2)"
+  },
+  {
+    "kode_fakultas": "F0000009",
+    "nama_fakultas": "PASCASARJANA",
+    "kode": "76103",
+    "nama": "Interdiciplinary Islamic Studies",
+    "jenjang": "Magister (S2)"
+  }
+]
