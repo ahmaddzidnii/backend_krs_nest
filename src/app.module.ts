@@ -14,6 +14,7 @@ import { MatakuliahModule } from './matakuliah/matakuliah.module';
 import { DosenModule } from './dosen/dosen.module';
 import { AuthMiddleware } from './auth/auth.middleware';
 import { KrsScheduleMiddleware } from './common/krs-schedule.middleware';
+import { ScheduleModule } from './schedule/schedule.module';
 
 @Module({
   imports: [
@@ -43,6 +44,7 @@ import { KrsScheduleMiddleware } from './common/krs-schedule.middleware';
     MahasiswaModule,
     MatakuliahModule,
     DosenModule,
+    ScheduleModule,
   ],
   controllers: [AppController],
   providers: [AppService],

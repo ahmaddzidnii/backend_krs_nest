@@ -123,6 +123,7 @@ model Mahasiswa {
 
   user User @relation(fields: [id_user],references: [id_user])
   krs KRS[]
+  kurikulum Kurikulum @relation(fields: [id_kurikulum], references: [id_kurikulum])
 
   @@map("mahasiswas")
 }
@@ -174,6 +175,7 @@ model Kurikulum {
   updated_at DateTime @updatedAt
 
   detailKurikulum DetailKurikulum[]
+  mahasiswa Mahasiswa[]
 
   programStudi ProgramStudi @relation(fields: [id_prodi], references: [id_prodi])
 
@@ -218,12 +220,15 @@ model JadwalKelas {
   ruang String
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
+
+  kelas KelasDitawarkan @relation(fields: [id_kelas],references: [id_kelas])
 }
 
 model KelasDitawarkan {
   id_kelas String @id @default(uuid(7))
   id_periode String
   id_matkul String
+  id_jadwal String
   nama_kelas String
   kuota Int
   created_at DateTime @default(now())
@@ -231,6 +236,7 @@ model KelasDitawarkan {
 
   dosenPengajarKelas DosenPengajarKelas[]
   detailKrs DetailKrs[]
+  jadwalKelas JadwalKelas[]
 
   periodeAkademik PeriodeAkademik @relation(fields: [id_periode], references: [id_periode])
   mataKuliah MataKuliah @relation(fields: [id_matkul], references: [id_matkul])
