@@ -150,10 +150,10 @@ model PeriodeAkademik {
   id_periode String @id @default(uuid(7))
   tahun_akademik String
   jenis_semester JenisSemester
-  tanggal_mulai_krs DateTime
-  tanggal_selesai_krs DateTime
-  jam_mulai_harian_krs DateTime
-  jam_selesai_harian_krs DateTime
+  tanggal_mulai_krs DateTime @db.Date()
+  tanggal_selesai_krs DateTime @db.Date()
+  jam_mulai_harian_krs DateTime @db.Time()
+  jam_selesai_harian_krs DateTime @db.Time()
   is_active Boolean @default(false)
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt

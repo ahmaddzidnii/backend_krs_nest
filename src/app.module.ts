@@ -13,6 +13,7 @@ import { MahasiswaModule } from './mahasiswa/mahasiswa.module';
 import { MatakuliahModule } from './matakuliah/matakuliah.module';
 import { DosenModule } from './dosen/dosen.module';
 import { AuthMiddleware } from './auth/auth.middleware';
+import { KrsScheduleMiddleware } from './common/krs-schedule.middleware';
 
 @Module({
   imports: [
@@ -48,6 +49,7 @@ import { AuthMiddleware } from './auth/auth.middleware';
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
+    consumer.apply(KrsScheduleMiddleware).forRoutes('*');
     consumer.apply(AuthMiddleware).forRoutes('*');
   }
 }
