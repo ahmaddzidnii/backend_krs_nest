@@ -1,5 +1,5 @@
 import * as winston from 'winston';
-import { Module } from '@nestjs/common';
+import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 import { WinstonModule } from 'nest-winston';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { RedisModule } from '@liaoliaots/nestjs-redis';
@@ -12,6 +12,7 @@ import { KrsModule } from './krs/krs.module';
 import { MahasiswaModule } from './mahasiswa/mahasiswa.module';
 import { MatakuliahModule } from './matakuliah/matakuliah.module';
 import { DosenModule } from './dosen/dosen.module';
+import { AuthMiddleware } from './auth/auth.middleware';
 
 @Module({
   imports: [
@@ -45,4 +46,8 @@ import { DosenModule } from './dosen/dosen.module';
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule implements NestModule {
+  configure(consumer: MiddlewareConsumer) {
+    consumer.apply(AuthMiddleware).forRoutes('*');
+  }
+}

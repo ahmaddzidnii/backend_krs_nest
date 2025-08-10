@@ -1,4 +1,4 @@
-import { PrismaClient } from '../generated/prisma';
+import { PrismaClient } from '@prisma/client';
 import kurikulumjson from '../seeders/data/kurikulum_master.json';
 import dotenv from 'dotenv';
 

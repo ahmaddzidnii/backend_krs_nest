@@ -1,4 +1,4 @@
-import { PrismaClient } from '../generated/prisma';
+import { PrismaClient } from '@prisma/client';
 import matakuliahJson from '../seeders/data/matakuliah_master.json';
 import dotenv from 'dotenv';
 

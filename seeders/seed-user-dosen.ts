@@ -1,4 +1,4 @@
-import { JenisDosen, Prisma, PrismaClient } from '../generated/prisma';
+import { JenisDosen, Prisma, PrismaClient } from '@prisma/client';
 import dosenData from '../seeders/data/gabungan_dosen.json';
 import dotenv from 'dotenv';
 

@@ -1,6 +1,6 @@
 import dataMhs from '../seeders/data/angkatan-2023.json';
 
-import { Prisma, PrismaClient } from '../generated/prisma';
+import { Prisma, PrismaClient } from '@prisma/client';
 import * as bcrypt from 'bcrypt';
 
 const prisma = new PrismaClient();

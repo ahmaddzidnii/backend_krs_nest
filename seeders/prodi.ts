@@ -1,4 +1,4 @@
-import { JenjangStudi, PrismaClient } from '../generated/prisma';
+import { JenjangStudi, PrismaClient } from '@prisma/client';
 import dataProdi from '../seeders/data/mentahan.json';
 import dotenv from 'dotenv';
 
