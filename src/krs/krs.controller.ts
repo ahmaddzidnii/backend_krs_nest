@@ -1,8 +1,9 @@
 import { Controller, Get, HttpCode, Post } from '@nestjs/common';
+
 import { KrsService } from './krs.service';
-import { KrsRequirementsResponse } from './response-model';
 import { WebResponse } from '../model/web.model';
 import { Auth, SessionObject } from '../auth/auth.decorator';
+import { ClassTakenResponse, KrsRequirementsResponse } from './response-model';
 
 @Controller({
   path: 'krs',
@@ -28,9 +29,14 @@ export class KrsController {
     return null;
   }
 
-  @Get('history')
-  async getKrsHistory(): Promise<any> {
-    return null;
+  @Get('get-classes-taken')
+  async getTakenClasses(
+    @Auth() session: SessionObject,
+  ): Promise<WebResponse<ClassTakenResponse[]>> {
+    const data = await this.krsService.getKrsTakenByNIM(session.user.username);
+    return {
+      data,
+    };
   }
 
   @Post('remove')

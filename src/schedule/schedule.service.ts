@@ -1,7 +1,7 @@
 import { Prisma } from '@prisma/client';
 import { Injectable } from '@nestjs/common';
 
-import { DaftarPenawaranKelas } from './response-model';
+import { ClassOfferingList, ClassStatusBatch } from './response-model';
 import { PrismaService } from '../common/prisma.service';
 
 @Injectable()
@@ -17,7 +17,7 @@ export class ScheduleService {
   async getClassScheduleOffered(
     idKurikulum: string,
     semesterPaket?: number,
-  ): Promise<DaftarPenawaranKelas> {
+  ): Promise<ClassOfferingList> {
     const whereClause: Prisma.KelasDitawarkanWhereInput = {
       periodeAkademik: {
         is_active: true,
@@ -37,7 +37,7 @@ export class ScheduleService {
     }
 
     const kelasDitawarkan = await this.prismaService.kelasDitawarkan.findMany({
-      where: whereClause, // Gunakan objek where yang sudah dibangun
+      where: whereClause,
       include: {
         mataKuliah: {
           include: {
@@ -116,5 +116,62 @@ export class ScheduleService {
     return {
       semester_paket: groupedBySemester,
     };
+  }
+
+  async getClassStatusBatch(
+    classIds: string[],
+    nim: string,
+  ): Promise<ClassStatusBatch> {
+    const classesWithStatus = await this.prismaService.kelasDitawarkan.findMany(
+      {
+        where: {
+          id_kelas: {
+            in: classIds,
+          },
+        },
+        select: {
+          id_kelas: true,
+          kuota: true,
+
+          // Menghitung jumlah mahasiswa terdaftar untuk mendapatkan nilai 'terisi'
+          _count: {
+            select: {
+              detailKrs: true,
+            },
+          },
+
+          // Mengecek apakah MAHASISWA INI sudah terdaftar di kelas untuk 'is_joined'
+          detailKrs: {
+            where: {
+              krs: {
+                mahasiswa: {
+                  nim: nim,
+                },
+              },
+            },
+            // Kita hanya butuh tahu apakah relasinya ada, jadi select satu field saja sudah cukup
+            select: {
+              id_krs: true,
+            },
+          },
+        },
+      },
+    );
+
+    const result = classesWithStatus.reduce((acc, kelas) => {
+      const terisi = kelas._count.detailKrs;
+      const kuota = kelas.kuota;
+      acc[kelas.id_kelas] = {
+        id_kelas: kelas.id_kelas,
+        is_full: terisi >= kuota,
+        is_joined: kelas.detailKrs.length > 0,
+        kuota: kuota,
+        terisi: terisi,
+      };
+
+      return acc;
+    }, {} as ClassStatusBatch);
+
+    return result;
   }
 }

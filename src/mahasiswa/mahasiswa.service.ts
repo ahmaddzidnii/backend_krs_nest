@@ -14,6 +14,18 @@ export class MahasiswaService {
       where: {
         nim,
       },
+      include: {
+        krs: {
+          where: {
+            periodeAkademik: {
+              is_active: true,
+            },
+          },
+          select: {
+            total_sks_diambil: true,
+          },
+        },
+      },
     });
 
     const periodeAkademikPromise = this.prismaService.periodeAkademik.findFirst(
@@ -37,19 +49,19 @@ export class MahasiswaService {
       ips_lalu,
       jatah_sks,
       semester: semester_berjalan.toString(),
-      sisa_sks: 24, // TODO: implement real case
-      sks_ambil: 0, // TODO: implement real case
+      sisa_sks: jatah_sks - mahasiswa.krs[0].total_sks_diambil,
+      sks_ambil: mahasiswa.krs[0].total_sks_diambil,
       sks_kumulatif,
       tahun_akademik: periodeAkademik.tahun_akademik,
     };
   }
 
-  async getCuriculumStudentByNim(nim: string) {
+  async getStudentAndCuriculumByNim(nim: string) {
     const mahasiswa = await this.prismaService.mahasiswa.findUnique({
       where: {
         nim,
       },
-      select: {
+      include: {
         kurikulum: true,
       },
     });
@@ -58,6 +70,6 @@ export class MahasiswaService {
       throw new HttpException('Mahasiswa not found', 400);
     }
 
-    return mahasiswa.kurikulum;
+    return mahasiswa;
   }
 }

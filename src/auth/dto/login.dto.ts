@@ -1,10 +1,13 @@
-import { IsString, Length } from 'class-validator';
+import { IsNotEmpty, IsString, Length } from 'class-validator';
 
 export class LoginDto {
   @IsString()
-  @Length(3, 20)
+  @IsNotEmpty({ message: 'Username is required.' })
+  @Length(1, undefined, {
+    message: 'Username must be at least 1 characters long.',
+  })
   username: string;
   @IsString()
-  @Length(6, 100)
+  @Length(6, 100, { message: 'Password must be at least 6 characters long.' })
   password: string;
 }

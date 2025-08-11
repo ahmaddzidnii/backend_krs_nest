@@ -1,4 +1,4 @@
-export class DaftarPenawaranKelas {
+export class ClassOfferingList {
   semester_paket: Record<
     string,
     Array<{
@@ -22,4 +22,16 @@ export class DaftarPenawaranKelas {
       }[];
     }>
   >;
+}
+
+type ClassQuotaStatus = {
+  id_kelas: string;
+  terisi: number;
+  kuota: number;
+  is_full: boolean;
+  is_joined: boolean;
+};
+
+export class ClassStatusBatch {
+  [id_kelas: string]: ClassQuotaStatus;
 }

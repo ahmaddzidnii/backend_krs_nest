@@ -1,6 +1,6 @@
 import { HttpException, Injectable } from '@nestjs/common';
 import { PrismaService } from 'src/common/prisma.service';
-import { KrsRequirementsResponse } from './response-model';
+import { ClassTakenResponse, KrsRequirementsResponse } from './response-model';
 
 @Injectable()
 export class KrsService {
@@ -62,5 +62,90 @@ export class KrsService {
       data_syarat,
       pengisisan_krs_enabled: data_syarat.every((s) => s.status),
     };
+  }
+
+  async getKrsTakenByNIM(nim: string): Promise<ClassTakenResponse[]> {
+    const krsRecords = await this.prismaService.kRS.findMany({
+      where: {
+        mahasiswa: {
+          nim,
+        },
+      },
+      include: {
+        detailKrs: {
+          include: {
+            kelas: {
+              include: {
+                mataKuliah: {
+                  include: {
+                    detailKurikulum: {
+                      include: {
+                        kurikulum: {
+                          select: {
+                            kode_kurikulum: true,
+                          },
+                        },
+                      },
+                    },
+                  },
+                },
+                dosenPengajarKelas: {
+                  include: {
+                    dosen: {
+                      select: { nip: true, nama: true },
+                    },
+                  },
+                },
+                jadwalKelas: true,
+              },
+            },
+          },
+        },
+      },
+    });
+
+    const formattedClasses = krsRecords.flatMap((krs) =>
+      krs.detailKrs.map((detail) => {
+        const kelas = detail.kelas;
+        const mataKuliah = kelas?.mataKuliah;
+        const detailKurikulum = mataKuliah?.detailKurikulum?.[0];
+
+        return {
+          id_kelas: kelas?.id_kelas || '',
+          kode_mata_kuliah: mataKuliah?.kode_matkul || '',
+          kode_kurikulum: detailKurikulum?.kurikulum?.kode_kurikulum || '',
+          nama_mata_kuliah: mataKuliah?.nama || '',
+          jenis_mata_kuliah: detailKurikulum?.jenis_matkul || 'Umum',
+          sks: mataKuliah?.sks || 0,
+          semester_paket: detailKurikulum?.semester_paket || 0,
+          nama_kelas: kelas?.nama_kelas || '',
+          dosen_pengajar:
+            kelas?.dosenPengajarKelas.map((p) => ({
+              nip_dosen: p.dosen.nip,
+              nama_dosen: p.dosen.nama,
+            })) || [],
+          jadwal:
+            kelas?.jadwalKelas.map((j) => ({
+              hari: j.hari,
+              waktu_mulai: new Date(j.waktu_mulai).toLocaleTimeString('id-ID', {
+                hour: '2-digit',
+                minute: '2-digit',
+                hour12: false,
+              }),
+              waktu_selesai: new Date(j.waktu_selesai).toLocaleTimeString(
+                'id-ID',
+                {
+                  hour: '2-digit',
+                  minute: '2-digit',
+                  hour12: false,
+                },
+              ),
+              ruangan: j.ruang,
+            })) || [],
+        };
+      }),
+    );
+
+    return formattedClasses;
   }
 }
