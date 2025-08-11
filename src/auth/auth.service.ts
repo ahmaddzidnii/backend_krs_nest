@@ -6,11 +6,11 @@ import { WINSTON_MODULE_PROVIDER } from 'nest-winston';
 import { RedisService } from '@liaoliaots/nestjs-redis';
 import { HttpException, Inject, Injectable } from '@nestjs/common';
 
-import { SessionObject } from './auth.decorator';
-import { PrismaService } from '../common/prisma.service';
-import { LoginResponse } from './response-model';
-import { generateSessionId } from '../common/utils/generate-random-string';
 import { LoginDto } from './dto/login.dto';
+import { SessionObject } from './auth.decorator';
+import { LoginResponse } from './response-model';
+import { PrismaService } from '../common/prisma.service';
+import { generateSessionId } from '../common/utils/generate-random-string';
 
 @Injectable()
 export class AuthService {

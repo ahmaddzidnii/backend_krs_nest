@@ -1,8 +1,8 @@
 import { Prisma } from '@prisma/client';
 import { Injectable } from '@nestjs/common';
 
-import { ClassOfferingList, ClassStatusBatch } from './response-model';
 import { PrismaService } from '../common/prisma.service';
+import { ClassOfferingList, ClassStatusBatch } from './response-model';
 
 @Injectable()
 export class ScheduleService {

@@ -1,7 +1,15 @@
-import { Controller, Get, HttpCode, Post } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Get,
+  HttpCode,
+  Post,
+  ValidationPipe,
+} from '@nestjs/common';
 
 import { KrsService } from './krs.service';
 import { WebResponse } from '../model/web.model';
+import { TakeKRSDto } from './dto/take-krs.dto';
 import { Auth, SessionObject } from '../auth/auth.decorator';
 import { ClassTakenResponse, KrsRequirementsResponse } from './response-model';
 
@@ -25,8 +33,21 @@ export class KrsController {
 
   @Post('take')
   @HttpCode(200)
-  async takeKrs(id_kelas: string): Promise<void> {
-    return null;
+  async takeKrs(
+    @Body(new ValidationPipe({ whitelist: true, forbidNonWhitelisted: true }))
+    takeKRSDto: TakeKRSDto,
+    @Auth() session: SessionObject,
+  ): Promise<
+    WebResponse<{
+      ok: boolean;
+    }>
+  > {
+    await this.krsService.takeKrs(session.user.username, takeKRSDto.classId);
+    return {
+      data: {
+        ok: true,
+      },
+    };
   }
 
   @Get('get-classes-taken')

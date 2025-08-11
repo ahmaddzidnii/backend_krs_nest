@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
-import { KrsController } from './krs.controller';
+
 import { KrsService } from './krs.service';
+import { KrsController } from './krs.controller';
 
 @Module({
   controllers: [KrsController],

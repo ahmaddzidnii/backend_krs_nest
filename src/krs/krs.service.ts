@@ -1,10 +1,61 @@
 import { HttpException, Injectable } from '@nestjs/common';
-import { PrismaService } from 'src/common/prisma.service';
+
+import { PrismaService } from '../common/prisma.service';
 import { ClassTakenResponse, KrsRequirementsResponse } from './response-model';
 
 @Injectable()
 export class KrsService {
   constructor(private prismaService: PrismaService) {}
+
+  async takeKrs(nim: string, classId: string): Promise<void> {
+    const mahasiswa = await this.prismaService.mahasiswa.findUnique({
+      where: { nim },
+      select: {
+        id_mahasiswa: true,
+      },
+    });
+
+    const periodeAkademik = await this.prismaService.periodeAkademik.findFirst({
+      where: {
+        is_active: true,
+      },
+      select: {
+        id_periode: true,
+      },
+    });
+
+    if (!mahasiswa) {
+      throw new HttpException('Unauthorized', 401);
+    }
+
+    // TODO : Implement KRS taking logic validation properly
+
+    await this.prismaService.$transaction(async ($tx) => {
+      const krsRecord = await $tx.kRS.upsert({
+        where: {
+          id_mahasiswa_id_periode: {
+            id_periode: periodeAkademik.id_periode,
+            id_mahasiswa: mahasiswa.id_mahasiswa,
+          },
+        },
+        create: {
+          total_sks_diambil: 0,
+          id_mahasiswa: mahasiswa.id_mahasiswa,
+          id_periode: periodeAkademik.id_periode,
+        },
+        update: {},
+      });
+
+      await $tx.detailKrs.create({
+        data: {
+          id_krs: krsRecord.id_krs,
+          id_kelas: classId,
+        },
+      });
+    });
+  }
+
+  async deleteKrs(nim: string, classId: string): Promise<void> {}
 
   async getKrsRequirementByNIM(nim: string): Promise<KrsRequirementsResponse> {
     const mahasiswaPromise = this.prismaService.mahasiswa.findUnique({

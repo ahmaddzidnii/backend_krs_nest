@@ -268,7 +268,7 @@ model DosenPengajarKelas {
 model KRS {
   id_krs String @id @default(uuid(7))
   id_mahasiswa String
-  id_periode String
+  id_periode String 
   total_sks_diambil Int
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
@@ -277,7 +277,7 @@ model KRS {
 
   mahasiswa Mahasiswa @relation(fields: [id_mahasiswa], references: [id_mahasiswa])
   periodeAkademik PeriodeAkademik @relation(fields: [id_periode], references: [id_periode])
-
+  @@unique([id_mahasiswa,id_periode])
   @@map("krs")
 }
 

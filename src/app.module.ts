@@ -1,20 +1,20 @@
 import * as winston from 'winston';
-import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
-import { WinstonModule } from 'nest-winston';
 import { ConfigModule, ConfigService } from '@nestjs/config';
+import { WinstonModule } from 'nest-winston';
 import { RedisModule } from '@liaoliaots/nestjs-redis';
+import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 
 import { AppService } from './app.service';
-import { AppController } from './app.controller';
-import { CommonModule } from './common/common.module';
-import { AuthModule } from './auth/auth.module';
 import { KrsModule } from './krs/krs.module';
+import { AuthModule } from './auth/auth.module';
+import { AppController } from './app.controller';
+import { DosenModule } from './dosen/dosen.module';
+import { CommonModule } from './common/common.module';
+import { AuthMiddleware } from './auth/auth.middleware';
+import { ScheduleModule } from './schedule/schedule.module';
 import { MahasiswaModule } from './mahasiswa/mahasiswa.module';
 import { MatakuliahModule } from './matakuliah/matakuliah.module';
-import { DosenModule } from './dosen/dosen.module';
-import { AuthMiddleware } from './auth/auth.middleware';
 import { KrsScheduleMiddleware } from './common/krs-schedule.middleware';
-import { ScheduleModule } from './schedule/schedule.module';
 
 @Module({
   imports: [
