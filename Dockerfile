@@ -1,31 +1,38 @@
-# Use the official Node.js image as the base image
-FROM node:22-alpine
+# STAGE 1: Build Environment
+# Tahap ini digunakan untuk meng-install semua dependensi (termasuk dev) dan membangun aplikasi.
+FROM node:22-alpine AS builder
 
-# Set the working directory inside the container
 WORKDIR /usr/src/app
 
-# Copy package.json and package-lock.json to the working directory
+# Salin package.json dan install semua dependensi
 COPY package*.json ./
-
-# Install the application dependencies
-# This will also install Prisma as a dev dependency
 RUN npm install
 
-# Copy the Prisma schema file first to leverage Docker cache
-COPY prisma ./prisma/
-
-# Generate the Prisma Client
-# This is the crucial step that was missing. It creates all the necessary TypeScript types.
-RUN npx prisma generate
-
-# Copy the rest of the application files
+# Salin sisa kode sumber aplikasi
 COPY . .
 
-# Build the NestJS application
+# Generate Prisma Client untuk memastikan semua tipe data tersedia sebelum build
+RUN npx prisma generate
+
+# Bangun aplikasi NestJS
 RUN npm run build
 
-# Expose the application port
+# STAGE 2: Production Environment
+# Tahap ini hanya akan berisi hasil build dan dependensi yang diperlukan untuk runtime.
+FROM node:22-alpine
+
+WORKDIR /usr/src/app
+
+# Salin package.json dan install HANYA dependensi produksi
+COPY package*.json ./
+RUN npm install --omit=dev
+
+# Salin hasil build dan skema prisma dari tahap 'builder'
+COPY --from=builder /usr/src/app/dist ./dist
+COPY --from=builder /usr/src/app/prisma ./prisma
+
+# Expose port aplikasi
 EXPOSE 3000
 
-# Command to run the application
+# Perintah untuk menjalankan aplikasi yang sudah di-build
 CMD ["node", "dist/main"]
