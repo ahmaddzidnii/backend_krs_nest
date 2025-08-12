@@ -24,7 +24,30 @@ import { KrsScheduleMiddleware } from './common/krs-schedule.middleware';
     WinstonModule.forRoot({
       format: winston.format.json(),
       level: 'debug',
-      transports: [new winston.transports.Console()],
+      transports: [
+        // Console log (warna + timestamp)
+        new winston.transports.Console({
+          format: winston.format.combine(
+            winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+            winston.format.colorize({ all: true }),
+            winston.format.printf(({ timestamp, level, message, ...meta }) => {
+              const metaStr = Object.keys(meta).length
+                ? JSON.stringify(meta)
+                : '';
+              return `[${timestamp}] [${level}] ${message} ${metaStr}`;
+            }),
+          ),
+        }),
+
+        // File log (JSON format)
+        new winston.transports.File({
+          filename: 'logs/app.log',
+          format: winston.format.combine(
+            winston.format.timestamp(),
+            winston.format.json(),
+          ),
+        }),
+      ],
     }),
     RedisModule.forRootAsync({
       imports: [ConfigModule],

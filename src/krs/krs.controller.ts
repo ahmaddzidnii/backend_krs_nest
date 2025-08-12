@@ -12,6 +12,7 @@ import { WebResponse } from '../model/web.model';
 import { TakeKRSDto } from './dto/take-krs.dto';
 import { Auth, SessionObject } from '../auth/auth.decorator';
 import { ClassTakenResponse, KrsRequirementsResponse } from './response-model';
+import { DeleteKrsDto } from './dto/delete-krs.dto';
 
 @Controller({
   path: 'krs',
@@ -26,6 +27,16 @@ export class KrsController {
     const data = await this.krsService.getKrsRequirementByNIM(
       session.user.username,
     );
+    return {
+      data,
+    };
+  }
+
+  @Get('get-classes-taken')
+  async getTakenClasses(
+    @Auth() session: SessionObject,
+  ): Promise<WebResponse<ClassTakenResponse[]>> {
+    const data = await this.krsService.getKrsTakenByNIM(session.user.username);
     return {
       data,
     };
@@ -50,19 +61,25 @@ export class KrsController {
     };
   }
 
-  @Get('get-classes-taken')
-  async getTakenClasses(
-    @Auth() session: SessionObject,
-  ): Promise<WebResponse<ClassTakenResponse[]>> {
-    const data = await this.krsService.getKrsTakenByNIM(session.user.username);
-    return {
-      data,
-    };
-  }
-
   @Post('remove')
   @HttpCode(200)
-  async removeKrs(id_kelas: string): Promise<void> {
-    return null;
+  async removeKrs(
+    @Auth() session: SessionObject,
+    @Body(new ValidationPipe({ whitelist: true, forbidNonWhitelisted: true }))
+    deleteKrsDto: DeleteKrsDto,
+  ): Promise<
+    WebResponse<{
+      ok: boolean;
+    }>
+  > {
+    await this.krsService.deleteKrs(
+      session.user.username,
+      deleteKrsDto.classId,
+    );
+    return {
+      data: {
+        ok: true,
+      },
+    };
   }
 }

@@ -41,16 +41,31 @@ export class MahasiswaService {
       periodeAkademikPromise,
     ]);
 
+    const krs = await this.prismaService.kRS.findFirst({
+      where: {
+        AND: [
+          {
+            id_mahasiswa: mahasiswa.id_mahasiswa,
+          },
+          {
+            id_periode: periodeAkademik.id_periode,
+          },
+        ],
+      },
+    });
+
     const { ipk, ips_lalu, jatah_sks, semester_berjalan, sks_kumulatif } =
       mahasiswa;
+
+    const krsDiambil = krs ? krs.total_sks_diambil : 0;
 
     return {
       ipk,
       ips_lalu,
       jatah_sks,
       semester: semester_berjalan.toString(),
-      sisa_sks: jatah_sks - mahasiswa.krs[0].total_sks_diambil,
-      sks_ambil: mahasiswa.krs[0].total_sks_diambil,
+      sisa_sks: jatah_sks - krsDiambil,
+      sks_ambil: krsDiambil,
       sks_kumulatif,
       tahun_akademik: periodeAkademik.tahun_akademik,
     };
