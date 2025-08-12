@@ -8,7 +8,15 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Install the application dependencies
+# This will also install Prisma as a dev dependency
 RUN npm install
+
+# Copy the Prisma schema file first to leverage Docker cache
+COPY prisma ./prisma/
+
+# Generate the Prisma Client
+# This is the crucial step that was missing. It creates all the necessary TypeScript types.
+RUN npx prisma generate
 
 # Copy the rest of the application files
 COPY . .
