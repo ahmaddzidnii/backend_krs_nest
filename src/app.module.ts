@@ -15,6 +15,7 @@ import { ScheduleModule } from './schedule/schedule.module';
 import { MahasiswaModule } from './mahasiswa/mahasiswa.module';
 import { MatakuliahModule } from './matakuliah/matakuliah.module';
 import { KrsScheduleMiddleware } from './common/krs-schedule.middleware';
+import { PeriodService } from './common/period.service';
 
 @Module({
   imports: [
@@ -70,7 +71,7 @@ import { KrsScheduleMiddleware } from './common/krs-schedule.middleware';
     ScheduleModule,
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [AppService, PeriodService],
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {

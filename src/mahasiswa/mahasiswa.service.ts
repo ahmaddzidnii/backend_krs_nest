@@ -1,11 +1,15 @@
 import { HttpException, Injectable } from '@nestjs/common';
 
 import { PrismaService } from '../common/prisma.service';
+import { PeriodService } from 'src/common/period.service';
 import { StudentCommonInformationsResponse } from './response-model';
 
 @Injectable()
 export class MahasiswaService {
-  constructor(private readonly prismaService: PrismaService) {}
+  constructor(
+    private readonly prismaService: PrismaService,
+    private readonly periodService: PeriodService,
+  ) {}
 
   async getCommonStudentInformation(
     nim: string,
@@ -28,13 +32,7 @@ export class MahasiswaService {
       },
     });
 
-    const periodeAkademikPromise = this.prismaService.periodeAkademik.findFirst(
-      {
-        where: {
-          is_active: true,
-        },
-      },
-    );
+    const periodeAkademikPromise = this.periodService.getCurrentPeriod();
 
     const [mahasiswa, periodeAkademik] = await Promise.all([
       mahasiswaPromise,

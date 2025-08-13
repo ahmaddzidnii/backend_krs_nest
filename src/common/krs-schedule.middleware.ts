@@ -1,24 +1,25 @@
 import { HttpException, Injectable, NestMiddleware } from '@nestjs/common';
 
 import { PrismaService } from './prisma.service';
+import { PeriodService } from './period.service';
 
 @Injectable()
 export class KrsScheduleMiddleware implements NestMiddleware {
-  constructor(private prisma: PrismaService) {}
+  constructor(
+    private prisma: PrismaService,
+    private readonly periodService: PeriodService,
+  ) {}
 
   async use(req: any, res: any, next: () => void) {
     const nowUtc = new Date();
 
-    // 1. Ambil periode akademik yang aktif dari database
-    const periode = await this.prisma.periodeAkademik.findFirst({
-      where: { is_active: true },
-    });
+    const periode = await this.periodService.getCurrentPeriod();
 
     if (!periode) {
       throw new HttpException('There are no active academic periods.', 403);
     }
 
-    // 2. Cek rentang tanggal KRS secara keseluruhan (menggunakan UTC)
+    // Cek rentang tanggal KRS secara keseluruhan (menggunakan UTC)
     // Ini memastikan kita berada dalam periode pengisian KRS yang benar (misal: 1 - 15 Agustus)
     const tglMulai = new Date(periode.tanggal_mulai_krs);
     const tglSelesai = new Date(periode.tanggal_selesai_krs);
@@ -35,8 +36,7 @@ export class KrsScheduleMiddleware implements NestMiddleware {
       );
     }
 
-    // 3. Cek rentang jam harian KRS (misal: setiap hari antara jam 08:00 - 15:00 WIB)
-    // Logika ini hanya membandingkan komponen jam dan menit, terlepas dari tanggalnya.
+    // Cek rentang jam harian KRS (misal: setiap hari antara jam 08:00 - 15:00 WIB) dengan membandingkan komponen jam dan menit, terlepas dari tanggalnya.
 
     // Ambil jam dan menit dari database (diasumsikan tersimpan sebagai UTC)
     const jamMulaiKrs = new Date(periode.jam_mulai_harian_krs);

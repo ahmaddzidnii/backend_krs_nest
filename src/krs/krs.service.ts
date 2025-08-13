@@ -2,11 +2,15 @@ import { Prisma } from '@prisma/client';
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 
 import { PrismaService } from '../common/prisma.service';
+import { PeriodService } from 'src/common/period.service';
 import { ClassTakenResponse, KrsRequirementsResponse } from './response-model';
 
 @Injectable()
 export class KrsService {
-  constructor(private readonly prismaService: PrismaService) {}
+  constructor(
+    private readonly prismaService: PrismaService,
+    private readonly periodService: PeriodService,
+  ) {}
 
   /**
    * Method untuk mahasiswa mengambil mata kuliah ke KRS.
@@ -15,9 +19,7 @@ export class KrsService {
    * @param classId ID unik dari kelas yang ditawarkan
    */
   async takeKrs(nim: string, classId: string): Promise<void> {
-    const periodeAkademik = await this.prismaService.periodeAkademik.findFirst({
-      where: { is_active: true },
-    });
+    const periodeAkademik = await this.periodService.getCurrentPeriod();
 
     if (!periodeAkademik) {
       throw new HttpException(
@@ -29,8 +31,6 @@ export class KrsService {
     try {
       await this.prismaService.$transaction(
         async ($tx) => {
-          // --- LANGKAH A: PENGAMBILAN DATA (DI DALAM TRANSAKSI) ---
-
           const mahasiswa = await $tx.mahasiswa.findUnique({
             where: { nim },
             include: {
@@ -63,7 +63,7 @@ export class KrsService {
             },
           });
 
-          // --- LANGKAH B: VALIDASI DATA (DI DALAM TRANSAKSI) ---
+          // VALIDASI DATA
 
           if (!mahasiswa) {
             throw new HttpException(
@@ -160,8 +160,6 @@ export class KrsService {
             }
           }
 
-          // --- LANGKAH C: PENULISAN DATA (DI DALAM TRANSAKSI) ---
-
           const krsRecord = await $tx.kRS.upsert({
             where: {
               id_mahasiswa_id_periode: {
@@ -174,11 +172,7 @@ export class KrsService {
               id_periode: periodeAkademik.id_periode,
               total_sks_diambil: sksKelasBaru,
             },
-            update: {
-              total_sks_diambil: {
-                increment: sksKelasBaru,
-              },
-            },
+            update: {},
           });
 
           await $tx.detailKrs.create({
@@ -204,7 +198,7 @@ export class KrsService {
           // Error ini terjadi jika unique constraint gagal, misal mencoba insert duplikat.
           // Kita tidak punya akses ke `namaKelasFormatted` di sini, jadi pesannya lebih umum.
           throw new HttpException(
-            'MAAF, KELAS YANG DIPILIH SUDAH ADA DI KRS ANDA (DB).',
+            'MAAF, KELAS YANG DIPILIH SUDAH ADA DI KRS ANDA.',
             HttpStatus.CONFLICT,
           );
         }
@@ -236,16 +230,7 @@ export class KrsService {
       },
     });
 
-    const periodeAkademikPromise = this.prismaService.periodeAkademik.findFirst(
-      {
-        where: {
-          is_active: true,
-        },
-        select: {
-          id_periode: true,
-        },
-      },
-    );
+    const periodeAkademikPromise = this.periodService.getCurrentPeriod();
 
     const [mahasiswa, periodeAkademik] = await Promise.all([
       mahasiswaPromise,
@@ -314,13 +299,7 @@ export class KrsService {
       },
     });
 
-    const periodeAkademikPromise = this.prismaService.periodeAkademik.findFirst(
-      {
-        where: {
-          is_active: true,
-        },
-      },
-    );
+    const periodeAkademikPromise = this.periodService.getCurrentPeriod();
 
     const [mahasiswa, periodeAkademik] = await Promise.all([
       mahasiswaPromise,

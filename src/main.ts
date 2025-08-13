@@ -1,13 +1,16 @@
+import cookieParser from 'cookie-parser';
 import { NestFactory } from '@nestjs/core';
 import { ConfigService } from '@nestjs/config';
-import cookieParser from 'cookie-parser';
+import { VersioningType } from '@nestjs/common';
+import { WINSTON_MODULE_NEST_PROVIDER } from 'nest-winston';
 
 import { AppModule } from './app.module';
-import { WINSTON_MODULE_NEST_PROVIDER } from 'nest-winston';
-import { VersioningType } from '@nestjs/common';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+
+  app.getHttpAdapter().getInstance().disable('x-powered-by');
+
   app.enableCors({
     origin: 'http://localhost:3000',
     credentials: true,
