@@ -4,12 +4,14 @@ import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { PrismaService } from '../common/prisma.service';
 import { PeriodService } from 'src/common/period.service';
 import { ClassTakenResponse, KrsRequirementsResponse } from './response-model';
+import { DistributedLockService } from 'src/common/distributed-lock.service';
 
 @Injectable()
 export class KrsService {
   constructor(
     private readonly prismaService: PrismaService,
     private readonly periodService: PeriodService,
+    private readonly distributedLockService: DistributedLockService,
   ) {}
 
   /**
@@ -19,16 +21,26 @@ export class KrsService {
    * @param classId ID unik dari kelas yang ditawarkan
    */
   async takeKrs(nim: string, classId: string): Promise<void> {
-    const periodeAkademik = await this.periodService.getCurrentPeriod();
+    const lockKey = `lock:krs:mahasiswa:${nim}`;
+    const lock = await this.distributedLockService.acquire(lockKey, 5000);
 
-    if (!periodeAkademik) {
+    if (!lock.success) {
       throw new HttpException(
-        'MAAF, TIDAK ADA PERIODE AKADEMIK YANG AKTIF.',
-        HttpStatus.NOT_FOUND,
+        'MAAF, SISTEM SEDANG SIBUK. SILAKAN COBA BEBERAPA SAAT LAGI.',
+        HttpStatus.CONFLICT, // 409 Conflict adalah status yang cocok
       );
     }
 
     try {
+      const periodeAkademik = await this.periodService.getCurrentPeriod();
+
+      if (!periodeAkademik) {
+        throw new HttpException(
+          'MAAF, TIDAK ADA PERIODE AKADEMIK YANG AKTIF.',
+          HttpStatus.NOT_FOUND,
+        );
+      }
+
       await this.prismaService.$transaction(
         async ($tx) => {
           const mahasiswa = await $tx.mahasiswa.findUnique({
@@ -212,6 +224,8 @@ export class KrsService {
         'MAAF, TERJADI KESALAHAN PADA SERVER.',
         HttpStatus.INTERNAL_SERVER_ERROR,
       );
+    } finally {
+      this.distributedLockService.release(lockKey, lock.lockId);
     }
   }
 

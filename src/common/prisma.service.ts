@@ -1,10 +1,18 @@
 import { Logger } from 'winston';
 import { PrismaClient } from '@prisma/client';
 import { WINSTON_MODULE_PROVIDER } from 'nest-winston';
-import { Inject, Injectable, OnModuleInit } from '@nestjs/common';
+import {
+  Inject,
+  Injectable,
+  OnModuleDestroy,
+  OnModuleInit,
+} from '@nestjs/common';
 
 @Injectable()
-export class PrismaService extends PrismaClient implements OnModuleInit {
+export class PrismaService
+  extends PrismaClient
+  implements OnModuleInit, OnModuleDestroy
+{
   constructor(
     @Inject(WINSTON_MODULE_PROVIDER) private readonly logger: Logger,
   ) {
@@ -31,6 +39,9 @@ export class PrismaService extends PrismaClient implements OnModuleInit {
   }
 
   onModuleInit() {
+    this.$connect();
+    this.logger.info('Connected to db');
+
     this.$on('info', (e) => {
       this.logger.info(e);
     });
@@ -43,5 +54,9 @@ export class PrismaService extends PrismaClient implements OnModuleInit {
     this.$on('query', (e) => {
       this.logger.info(e);
     });
+  }
+
+  onModuleDestroy() {
+    this.$disconnect();
   }
 }

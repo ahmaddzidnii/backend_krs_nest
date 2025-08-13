@@ -1,3 +1,6 @@
+import { Redis } from 'ioredis';
+import { Mahasiswa } from '@prisma/client';
+import { RedisService } from '@liaoliaots/nestjs-redis';
 import { HttpException, Injectable } from '@nestjs/common';
 
 import { PrismaService } from '../common/prisma.service';
@@ -6,32 +9,47 @@ import { StudentCommonInformationsResponse } from './response-model';
 
 @Injectable()
 export class MahasiswaService {
+  private readonly redis: Redis;
   constructor(
     private readonly prismaService: PrismaService,
     private readonly periodService: PeriodService,
-  ) {}
+    private readonly redisService: RedisService,
+  ) {
+    this.redis = redisService.getOrThrow();
+  }
+
+  async getMahasiswaByNim(nim: string): Promise<Mahasiswa> {
+    const CACHE_KEY = `mahasiswa-${nim}`;
+    const CACHE_TTL = 3600;
+
+    const cached = await this.redis.get(CACHE_KEY);
+
+    if (cached) {
+      return JSON.parse(cached);
+    }
+
+    const mahasiswaWithTotalSks = await this.prismaService.mahasiswa.findUnique(
+      {
+        where: {
+          nim,
+        },
+      },
+    );
+
+    await this.redis.set(
+      CACHE_KEY,
+      JSON.stringify(mahasiswaWithTotalSks),
+      'EX',
+      CACHE_TTL,
+    );
+
+    return mahasiswaWithTotalSks;
+  }
 
   async getCommonStudentInformation(
     nim: string,
   ): Promise<StudentCommonInformationsResponse> {
-    const mahasiswaPromise = this.prismaService.mahasiswa.findUnique({
-      where: {
-        nim,
-      },
-      include: {
-        krs: {
-          where: {
-            periodeAkademik: {
-              is_active: true,
-            },
-          },
-          select: {
-            total_sks_diambil: true,
-          },
-        },
-      },
-    });
-
+    const mahasiswaPromise = this.getMahasiswaByNim(nim);
     const periodeAkademikPromise = this.periodService.getCurrentPeriod();
 
     const [mahasiswa, periodeAkademik] = await Promise.all([

@@ -1,7 +1,9 @@
 import * as winston from 'winston';
 import { ConfigModule, ConfigService } from '@nestjs/config';
+import { APP_GUARD } from '@nestjs/core';
 import { WinstonModule } from 'nest-winston';
 import { RedisModule } from '@liaoliaots/nestjs-redis';
+import { ThrottlerGuard, ThrottlerModule } from '@nestjs/throttler';
 import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 
 import { AppService } from './app.service';
@@ -21,6 +23,15 @@ import { PeriodService } from './common/period.service';
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
+    }),
+    ThrottlerModule.forRoot({
+      errorMessage: 'Too Many Request.',
+      throttlers: [
+        {
+          ttl: 1000,
+          limit: 10,
+        },
+      ],
     }),
     WinstonModule.forRoot({
       format: winston.format.json(),
@@ -71,7 +82,14 @@ import { PeriodService } from './common/period.service';
     ScheduleModule,
   ],
   controllers: [AppController],
-  providers: [AppService, PeriodService],
+  providers: [
+    AppService,
+    PeriodService,
+    {
+      provide: APP_GUARD,
+      useClass: ThrottlerGuard,
+    },
+  ],
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {

@@ -1,3 +1,4 @@
+import helmet from 'helmet';
 import cookieParser from 'cookie-parser';
 import { NestFactory } from '@nestjs/core';
 import { ConfigService } from '@nestjs/config';
@@ -8,6 +9,9 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  app.enableShutdownHooks();
+
+  app.use(helmet());
 
   app.getHttpAdapter().getInstance().disable('x-powered-by');
 
