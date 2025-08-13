@@ -39,7 +39,7 @@ export class MahasiswaService {
       periodeAkademikPromise,
     ]);
 
-    const krs = await this.prismaService.kRS.findFirst({
+    const krs = await this.prismaService.krs.findFirst({
       where: {
         AND: [
           {

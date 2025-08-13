@@ -160,7 +160,7 @@ export class KrsService {
             }
           }
 
-          const krsRecord = await $tx.kRS.upsert({
+          const krsRecord = await $tx.krs.upsert({
             where: {
               id_mahasiswa_id_periode: {
                 id_mahasiswa: mahasiswa.id_mahasiswa,
@@ -249,7 +249,7 @@ export class KrsService {
       throw new HttpException('You are not eligible to fill out the KRS.', 403);
     }
 
-    const krs = await this.prismaService.kRS.findFirst({
+    const krs = await this.prismaService.krs.findFirst({
       where: {
         AND: [
           {
@@ -350,7 +350,7 @@ export class KrsService {
    * @param nim Nomor Induk Mahasiswa
    */
   async getKrsTakenByNIM(nim: string): Promise<ClassTakenResponse[]> {
-    const krsRecords = await this.prismaService.kRS.findMany({
+    const krsRecords = await this.prismaService.krs.findMany({
       where: {
         mahasiswa: {
           nim,

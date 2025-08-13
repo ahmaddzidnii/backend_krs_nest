@@ -132,7 +132,7 @@ model Mahasiswa {
   updated_at DateTime @updatedAt
 
   user User @relation(fields: [id_user],references: [id_user])
-  krs KRS[]
+  krs Krs[]
   kurikulum Kurikulum @relation(fields: [id_kurikulum], references: [id_kurikulum])
 
   @@map("mahasiswas")
@@ -170,7 +170,7 @@ model PeriodeAkademik {
   updated_at DateTime @updatedAt
 
   kelasDitawarkan KelasDitawarkan[]
-  periodeKrs KRS[]
+  periodeKrs Krs[]
 
   @@map("periode_akademik")
 }
@@ -265,7 +265,7 @@ model DosenPengajarKelas {
   @@map("dosen_pengajar_kelas")
 }
 
-model KRS {
+model Krs {
   id_krs String @id @default(uuid(7))
   id_mahasiswa String
   id_periode String 
@@ -285,7 +285,7 @@ model DetailKrs {
   id_krs String
   id_kelas String
 
-  krs KRS @relation(fields: [id_krs], references: [id_krs])
+  krs Krs @relation(fields: [id_krs], references: [id_krs])
   kelas KelasDitawarkan @relation(fields: [id_kelas],references: [id_kelas])
 
   @@id([id_krs, id_kelas])
