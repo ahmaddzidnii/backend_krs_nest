@@ -12,8 +12,8 @@ import {
 import { LoginDto } from './dto/login.dto';
 import { AuthService } from './auth.service';
 import { ConfigService } from '@nestjs/config';
+import { LoginResponse } from './auth.response';
 import { WebResponse } from '../model/web.model';
-import { LoginResponse } from './response-model';
 import { Auth, SessionObject } from './auth.decorator';
 
 @Controller({

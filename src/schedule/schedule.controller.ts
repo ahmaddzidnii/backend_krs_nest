@@ -12,7 +12,7 @@ import { ScheduleService } from './schedule.service';
 import { ClassStatusDto } from './dto/class-status.dto';
 import { Auth, SessionObject } from '../auth/auth.decorator';
 import { MahasiswaService } from '../mahasiswa/mahasiswa.service';
-import { ClassOfferingList, ClassStatusBatch } from './response-model';
+import { ClassOfferingList, ClassStatusBatch } from './schedule.response';
 
 @Controller({
   path: 'schedules',

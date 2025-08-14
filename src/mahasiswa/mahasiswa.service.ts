@@ -5,7 +5,7 @@ import { HttpException, Injectable } from '@nestjs/common';
 
 import { PrismaService } from '../common/prisma.service';
 import { PeriodService } from 'src/common/period.service';
-import { StudentCommonInformationsResponse } from './response-model';
+import { StudentCommonInformationsResponse } from './mahasiswa.response';
 
 @Injectable()
 export class MahasiswaService {

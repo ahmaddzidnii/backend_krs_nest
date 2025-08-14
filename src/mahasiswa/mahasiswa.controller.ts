@@ -2,7 +2,7 @@ import { Controller, Get } from '@nestjs/common';
 import { WebResponse } from 'src/model/web.model';
 import { MahasiswaService } from './mahasiswa.service';
 import { Auth, SessionObject } from 'src/auth/auth.decorator';
-import { StudentCommonInformationsResponse } from './response-model';
+import { StudentCommonInformationsResponse } from './mahasiswa.response';
 
 @Controller({
   path: 'mahasiswa',

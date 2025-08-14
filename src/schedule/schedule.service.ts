@@ -2,7 +2,7 @@ import { Prisma } from '@prisma/client';
 import { Injectable } from '@nestjs/common';
 
 import { PrismaService } from '../common/prisma.service';
-import { ClassOfferingList, ClassStatusBatch } from './response-model';
+import { ClassOfferingList, ClassStatusBatch } from './schedule.response';
 
 @Injectable()
 export class ScheduleService {

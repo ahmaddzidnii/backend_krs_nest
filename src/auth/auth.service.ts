@@ -7,8 +7,8 @@ import { RedisService } from '@liaoliaots/nestjs-redis';
 import { HttpException, Inject, Injectable } from '@nestjs/common';
 
 import { LoginDto } from './dto/login.dto';
+import { LoginResponse } from './auth.response';
 import { SessionObject } from './auth.decorator';
-import { LoginResponse } from './response-model';
 import { PrismaService } from '../common/prisma.service';
 import { generateSessionId } from '../common/utils/generate-random-string';
 

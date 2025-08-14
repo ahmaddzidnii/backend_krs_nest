@@ -1,13 +1,27 @@
 services:
   # Layanan untuk aplikasi NestJS Anda
-  app:
+  app1:
     build: .
-    container_name: nestjs_app
+    container_name: nestjs_app1
     restart: unless-stopped
     env_file:
       - .env
     ports:
       - '1001:1001'
+    depends_on:
+      - mysql
+      - redis # Tambahkan kembali dependensi ke redis
+    networks:
+      - app-network
+
+  app2:
+    build: .
+    container_name: nestjs_app2
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - '1002:1001'
     depends_on:
       - mysql
       - redis # Tambahkan kembali dependensi ke redis
@@ -66,6 +80,7 @@ services:
     environment:
       PMA_HOST: mysql # Menunjuk ke service mysql
       PMA_PORT: 3306
+      UPLOAD_LIMIT: 64M
     depends_on:
       - mysql # Harus jalan setelah mysql siap
     networks:
