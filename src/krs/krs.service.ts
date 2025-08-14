@@ -112,7 +112,7 @@ export class KrsService {
           );
           if (isAlreadyTaken) {
             throw new HttpException(
-              `MAAF, KELAS ${namaKelasFormatted} SUDAH ADA DI KRS ANDA.`,
+              `MAAF, KELAS {${namaKelasFormatted}} SUDAH ADA DI KRS ANDA.`,
               HttpStatus.BAD_REQUEST,
             );
           }
@@ -124,7 +124,7 @@ export class KrsService {
 
           if (jumlahPendaftar >= kelasBaru.kuota) {
             throw new HttpException(
-              `MAAF, KUOTA UNTUK KELAS ${namaKelasFormatted} SUDAH PENUH.`,
+              `MAAF, KUOTA UNTUK KELAS {${namaKelasFormatted}} SUDAH PENUH.`,
               HttpStatus.BAD_REQUEST,
             );
           }
@@ -168,7 +168,7 @@ export class KrsService {
                   ) {
                     const namaKelasLamaFormatted = `${kelasLama.mataKuliah.nama} - ${kelasLama.nama_kelas}`;
                     throw new HttpException(
-                      `MAAF, JADWAL BENTROK DENGAN KELAS ${namaKelasLamaFormatted}.`,
+                      `MAAF, JADWAL BENTROK DENGAN KELAS {${namaKelasLamaFormatted}}.`,
                       HttpStatus.CONFLICT,
                     );
                   }
@@ -201,11 +201,11 @@ export class KrsService {
             },
           });
         },
-        {
-          isolationLevel: 'ReadUncommitted',
-          maxWait: 8000, // Slightly less than lock timeout
-          timeout: 12000, // Slightly more than lock timeout
-        },
+        // {
+        //   isolationLevel: 'ReadUncommitted',
+        //   maxWait: 8000, // Slightly less than lock timeout
+        //   timeout: 12000, // Slightly more than lock timeout
+        // },
       );
     } catch (error) {
       if (error instanceof HttpException) {
