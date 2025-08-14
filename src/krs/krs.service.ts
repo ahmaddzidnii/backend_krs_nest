@@ -190,11 +190,7 @@ export class KrsService {
               id_periode: periodeAkademik.id_periode,
               total_sks_diambil: sksKelasBaru,
             },
-            update: {
-              total_sks_diambil: {
-                increment: sksKelasBaru, // FIX: Actually update the SKS total
-              },
-            },
+            update: {},
           });
 
           // Add class to KRS
