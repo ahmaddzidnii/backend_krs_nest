@@ -243,6 +243,8 @@ model KelasDitawarkan {
   id_jadwal String
   nama_kelas String
   kuota Int
+  terisi Int @default(0)
+  version Int @default(1)
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
 

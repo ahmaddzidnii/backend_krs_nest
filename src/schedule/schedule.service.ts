@@ -118,6 +118,11 @@ export class ScheduleService {
     };
   }
 
+  /**
+   * Mengambil status kelas berdasarkan ID kelas yang diberikan.
+   * @param classIds Daftar ID kelas yang ingin diperiksa statusnya.
+   * @param nim NIM mahasiswa untuk memeriksa apakah sudah terdaftar di kelas.
+   */
   async getClassStatusBatch(
     classIds: string[],
     nim: string,
@@ -132,14 +137,7 @@ export class ScheduleService {
         select: {
           id_kelas: true,
           kuota: true,
-
-          // Menghitung jumlah mahasiswa terdaftar untuk mendapatkan nilai 'terisi'
-          _count: {
-            select: {
-              detailKrs: true,
-            },
-          },
-
+          terisi: true,
           // Mengecek apakah MAHASISWA INI sudah terdaftar di kelas untuk 'is_joined'
           detailKrs: {
             where: {
@@ -157,9 +155,44 @@ export class ScheduleService {
         },
       },
     );
+    // const classesWithStatus = await this.prismaService.kelasDitawarkan.findMany(
+    //   {
+    //     where: {
+    //       id_kelas: {
+    //         in: classIds,
+    //       },
+    //     },
+    //     select: {
+    //       id_kelas: true,
+    //       kuota: true,
+
+    //       // Menghitung jumlah mahasiswa terdaftar untuk mendapatkan nilai 'terisi'
+    //       _count: {
+    //         select: {
+    //           detailKrs: true,
+    //         },
+    //       },
+
+    //       // Mengecek apakah MAHASISWA INI sudah terdaftar di kelas untuk 'is_joined'
+    //       detailKrs: {
+    //         where: {
+    //           krs: {
+    //             mahasiswa: {
+    //               nim: nim,
+    //             },
+    //           },
+    //         },
+    //         // Kita hanya butuh tahu apakah relasinya ada, jadi select satu field saja sudah cukup
+    //         select: {
+    //           id_krs: true,
+    //         },
+    //       },
+    //     },
+    //   },
+    // );
 
     const result = classesWithStatus.reduce((acc, kelas) => {
-      const terisi = kelas._count.detailKrs;
+      const terisi = kelas.terisi;
       const kuota = kelas.kuota;
       acc[kelas.id_kelas] = {
         id_kelas: kelas.id_kelas,
