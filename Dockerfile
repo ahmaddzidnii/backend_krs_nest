@@ -49,4 +49,4 @@ COPY --from=builder /usr/src/app/prisma/schema.prisma ./prisma/
 EXPOSE 1001
 
 # Command to run the application
-CMD ["node", "dist/src/main"]
+CMD ["node", "dist/main"]

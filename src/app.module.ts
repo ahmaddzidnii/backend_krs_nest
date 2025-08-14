@@ -12,12 +12,12 @@ import { AuthModule } from './auth/auth.module';
 import { AppController } from './app.controller';
 import { DosenModule } from './dosen/dosen.module';
 import { CommonModule } from './common/common.module';
+import { PeriodService } from './common/period.service';
 import { AuthMiddleware } from './auth/auth.middleware';
 import { ScheduleModule } from './schedule/schedule.module';
 import { MahasiswaModule } from './mahasiswa/mahasiswa.module';
 import { MatakuliahModule } from './matakuliah/matakuliah.module';
 import { KrsScheduleMiddleware } from './common/krs-schedule.middleware';
-import { PeriodService } from './common/period.service';
 
 @Module({
   imports: [
@@ -68,7 +68,7 @@ import { PeriodService } from './common/period.service';
           host: configService.get<string>('REDIS_HOST'),
           port: parseInt(configService.get<string>('REDIS_PORT'), 10),
           password: configService.get<string>('REDIS_PASSWORD'),
-          tls: {},
+          tls: process.env.REDIS_TLS === 'true' ? {} : undefined,
         },
       }),
       inject: [ConfigService],

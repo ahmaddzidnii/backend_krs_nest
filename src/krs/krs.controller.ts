@@ -11,7 +11,7 @@ import { KrsService } from './krs.service';
 import { WebResponse } from '../model/web.model';
 import { TakeKRSDto } from './dto/take-krs.dto';
 import { Auth, SessionObject } from '../auth/auth.decorator';
-import { ClassTakenResponse, KrsRequirementsResponse } from './response-model';
+import { ClassTakenResponse, KrsRequirementsResponse } from './krs.response';
 import { DeleteKrsDto } from './dto/delete-krs.dto';
 
 @Controller({
