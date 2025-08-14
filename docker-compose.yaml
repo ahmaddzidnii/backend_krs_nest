@@ -1,7 +1,3 @@
-# Tentukan versi docker-compose yang digunakan
-version: '3.8'
-
-# Definisikan semua layanan (kontainer) yang akan dijalankan
 services:
   # Layanan untuk aplikasi NestJS Anda
   app:
@@ -38,6 +34,8 @@ services:
       - '5540:5540'
     depends_on:
       - redis
+    networks:
+      - app-network
 
   # Layanan untuk MySQL Database
   mysql:
