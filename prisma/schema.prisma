@@ -232,6 +232,8 @@ model JadwalKelas {
   updated_at DateTime @updatedAt
 
   kelas KelasDitawarkan @relation(fields: [id_kelas],references: [id_kelas])
+
+  @@map("jadwal_kelas")
 }
 
 model KelasDitawarkan {
