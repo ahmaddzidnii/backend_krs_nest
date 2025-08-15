@@ -4,16 +4,21 @@ import { NestFactory } from '@nestjs/core';
 import { ConfigService } from '@nestjs/config';
 import { VersioningType } from '@nestjs/common';
 import { WINSTON_MODULE_NEST_PROVIDER } from 'nest-winston';
+import { NestExpressApplication } from '@nestjs/platform-express';
 
 import { AppModule } from './app.module';
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
+  const app = await NestFactory.create<NestExpressApplication>(AppModule);
   app.enableShutdownHooks();
+
+  app.set('trust proxy', true);
 
   app.use(helmet());
 
   app.getHttpAdapter().getInstance().disable('x-powered-by');
+
+  app.getHttpAdapter().getInstance().disable('etag');
 
   app.enableCors({
     origin: ['http://localhost:3000', 'https://krs-dev.masako.my.id'],

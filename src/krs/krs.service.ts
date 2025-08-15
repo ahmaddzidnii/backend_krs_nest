@@ -4,14 +4,12 @@ import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { PrismaService } from '../common/prisma.service';
 import { PeriodService } from 'src/common/period.service';
 import { ClassTakenResponse, KrsRequirementsResponse } from './krs.response';
-import { DistributedLockService } from 'src/common/distributed-lock.service';
 
 @Injectable()
 export class KrsService {
   constructor(
     private readonly prismaService: PrismaService,
     private readonly periodService: PeriodService,
-    private readonly distributedLockService: DistributedLockService,
   ) {}
 
   /**
@@ -68,144 +66,139 @@ export class KrsService {
       );
     }
 
-    const lockKey = `lock:krs:mahasiswa:${mahasiswa.nim}`;
-    const lock = await this.distributedLockService.acquire(lockKey, 10000); // Increase timeout
-
-    if (!lock.success) {
-      throw new HttpException(
-        'MAAF, SISTEM SEDANG SIBUK. SILAKAN COBA BEBERAPA SAAT LAGI.',
-        HttpStatus.CONFLICT,
-      );
-    }
-
     try {
-      await this.prismaService.$transaction(async ($tx) => {
-        const kelasBaru = await $tx.kelasDitawarkan.findUnique({
-          where: { id_kelas: classId },
-          include: {
-            mataKuliah: true,
-            jadwalKelas: true,
-          },
-        });
+      await this.prismaService.$transaction(
+        async ($tx) => {
+          const kelasBaru = await $tx.kelasDitawarkan.findUnique({
+            where: { id_kelas: classId },
+            include: {
+              mataKuliah: true,
+              jadwalKelas: true,
+            },
+          });
 
-        if (!kelasBaru) {
-          throw new HttpException(
-            'MAAF, DATA KELAS TIDAK DITEMUKAN.',
-            HttpStatus.NOT_FOUND,
+          if (!kelasBaru) {
+            throw new HttpException(
+              'MAAF, DATA KELAS TIDAK DITEMUKAN.',
+              HttpStatus.NOT_FOUND,
+            );
+          }
+
+          const krsMahasiswa = mahasiswa.krs[0];
+          const sksKelasBaru = kelasBaru.mataKuliah.sks;
+          const namaKelasFormatted = `${kelasBaru.mataKuliah.nama} - ${kelasBaru.nama_kelas}`;
+
+          // Validation #1: Check if class already taken
+          const isAlreadyTaken = krsMahasiswa?.detailKrs.some(
+            (detail) => detail.id_kelas === classId,
           );
-        }
+          if (isAlreadyTaken) {
+            throw new HttpException(
+              `MAAF, KELAS {${namaKelasFormatted}} SUDAH ADA DI KRS ANDA.`,
+              HttpStatus.BAD_REQUEST,
+            );
+          }
 
-        const krsMahasiswa = mahasiswa.krs[0];
-        const sksKelasBaru = kelasBaru.mataKuliah.sks;
-        const namaKelasFormatted = `${kelasBaru.mataKuliah.nama} - ${kelasBaru.nama_kelas}`;
+          // Validation #2: Check class qouta
+          if (kelasBaru.terisi >= kelasBaru.kuota) {
+            throw new HttpException(
+              `MAAF, KUOTA UNTUK KELAS {${namaKelasFormatted}} SUDAH PENUH.`,
+              HttpStatus.BAD_REQUEST,
+            );
+          }
 
-        // Validation #1: Check if class already taken
-        const isAlreadyTaken = krsMahasiswa?.detailKrs.some(
-          (detail) => detail.id_kelas === classId,
-        );
-        if (isAlreadyTaken) {
-          throw new HttpException(
-            `MAAF, KELAS {${namaKelasFormatted}} SUDAH ADA DI KRS ANDA.`,
-            HttpStatus.BAD_REQUEST,
-          );
-        }
+          // Validation #3: Check SKS limit
+          const totalSksSaatIni = krsMahasiswa?.total_sks_diambil || 0;
+          if (totalSksSaatIni + sksKelasBaru > mahasiswa.jatah_sks) {
+            throw new HttpException(
+              `MAAF, PENAMBAHAN SKS AKAN MELEBIHI BATAS SKS ANDA. SKS SAAT INI: ${totalSksSaatIni}, JATAH SKS: ${mahasiswa.jatah_sks}`,
+              HttpStatus.BAD_REQUEST,
+            );
+          }
 
-        // Validation #2: Check class qouta
-        if (kelasBaru.terisi >= kelasBaru.kuota) {
-          throw new HttpException(
-            `MAAF, KUOTA UNTUK KELAS {${namaKelasFormatted}} SUDAH PENUH.`,
-            HttpStatus.BAD_REQUEST,
-          );
-        }
+          // Validation #4: Check schedule conflicts
+          const jadwalKelasBaru = kelasBaru.jadwalKelas;
+          const kelasSudahAda =
+            krsMahasiswa?.detailKrs.map((detail) => detail.kelas) || [];
 
-        // Validation #3: Check SKS limit
-        const totalSksSaatIni = krsMahasiswa?.total_sks_diambil || 0;
-        if (totalSksSaatIni + sksKelasBaru > mahasiswa.jatah_sks) {
-          throw new HttpException(
-            `MAAF, PENAMBAHAN SKS AKAN MELEBIHI BATAS SKS ANDA. SKS SAAT INI: ${totalSksSaatIni}, JATAH SKS: ${mahasiswa.jatah_sks}`,
-            HttpStatus.BAD_REQUEST,
-          );
-        }
+          for (const jadwalBaru of jadwalKelasBaru) {
+            for (const kelasLama of kelasSudahAda) {
+              for (const jadwalLama of kelasLama.jadwalKelas) {
+                if (jadwalBaru.hari === jadwalLama.hari) {
+                  const mulaiBaru = new Date(jadwalBaru.waktu_mulai);
+                  const selesaiBaru = new Date(jadwalBaru.waktu_selesai);
+                  const mulaiLama = new Date(jadwalLama.waktu_mulai);
+                  const selesaiLama = new Date(jadwalLama.waktu_selesai);
 
-        // Validation #4: Check schedule conflicts
-        const jadwalKelasBaru = kelasBaru.jadwalKelas;
-        const kelasSudahAda =
-          krsMahasiswa?.detailKrs.map((detail) => detail.kelas) || [];
+                  const mulaiBaruInMinutes =
+                    mulaiBaru.getHours() * 60 + mulaiBaru.getMinutes();
+                  const selesaiBaruInMinutes =
+                    selesaiBaru.getHours() * 60 + selesaiBaru.getMinutes();
+                  const mulaiLamaInMinutes =
+                    mulaiLama.getHours() * 60 + mulaiLama.getMinutes();
+                  const selesaiLamaInMinutes =
+                    selesaiLama.getHours() * 60 + selesaiLama.getMinutes();
 
-        for (const jadwalBaru of jadwalKelasBaru) {
-          for (const kelasLama of kelasSudahAda) {
-            for (const jadwalLama of kelasLama.jadwalKelas) {
-              if (jadwalBaru.hari === jadwalLama.hari) {
-                const mulaiBaru = new Date(jadwalBaru.waktu_mulai);
-                const selesaiBaru = new Date(jadwalBaru.waktu_selesai);
-                const mulaiLama = new Date(jadwalLama.waktu_mulai);
-                const selesaiLama = new Date(jadwalLama.waktu_selesai);
-
-                const mulaiBaruInMinutes =
-                  mulaiBaru.getHours() * 60 + mulaiBaru.getMinutes();
-                const selesaiBaruInMinutes =
-                  selesaiBaru.getHours() * 60 + selesaiBaru.getMinutes();
-                const mulaiLamaInMinutes =
-                  mulaiLama.getHours() * 60 + mulaiLama.getMinutes();
-                const selesaiLamaInMinutes =
-                  selesaiLama.getHours() * 60 + selesaiLama.getMinutes();
-
-                // Check time overlap: (StartA < EndB) and (StartB < EndA)
-                if (
-                  mulaiBaruInMinutes < selesaiLamaInMinutes &&
-                  mulaiLamaInMinutes < selesaiBaruInMinutes
-                ) {
-                  const namaKelasLamaFormatted = `${kelasLama.mataKuliah.nama} - ${kelasLama.nama_kelas}`;
-                  throw new HttpException(
-                    `MAAF, JADWAL BENTROK DENGAN KELAS {${namaKelasLamaFormatted}}.`,
-                    HttpStatus.CONFLICT,
-                  );
+                  // Check time overlap: (StartA < EndB) and (StartB < EndA)
+                  if (
+                    mulaiBaruInMinutes < selesaiLamaInMinutes &&
+                    mulaiLamaInMinutes < selesaiBaruInMinutes
+                  ) {
+                    const namaKelasLamaFormatted = `${kelasLama.mataKuliah.nama} - ${kelasLama.nama_kelas}`;
+                    throw new HttpException(
+                      `MAAF, JADWAL BENTROK DENGAN KELAS {${namaKelasLamaFormatted}}.`,
+                      HttpStatus.CONFLICT,
+                    );
+                  }
                 }
               }
             }
           }
-        }
 
-        // Create or update KRS record
-        const krsRecord = await $tx.krs.upsert({
-          where: {
-            id_mahasiswa_id_periode: {
+          // Create or update KRS record
+          const krsRecord = await $tx.krs.upsert({
+            where: {
+              id_mahasiswa_id_periode: {
+                id_mahasiswa: mahasiswa.id_mahasiswa,
+                id_periode: periodeAkademik.id_periode,
+              },
+            },
+            create: {
               id_mahasiswa: mahasiswa.id_mahasiswa,
               id_periode: periodeAkademik.id_periode,
+              total_sks_diambil: sksKelasBaru,
             },
-          },
-          create: {
-            id_mahasiswa: mahasiswa.id_mahasiswa,
-            id_periode: periodeAkademik.id_periode,
-            total_sks_diambil: sksKelasBaru,
-          },
-          update: {},
-        });
+            update: {},
+          });
 
-        // Add class to KRS
-        await $tx.detailKrs.create({
-          data: {
-            id_krs: krsRecord.id_krs,
-            id_kelas: classId,
-          },
-        });
+          // Add class to KRS
+          await $tx.detailKrs.create({
+            data: {
+              id_krs: krsRecord.id_krs,
+              id_kelas: classId,
+            },
+          });
 
-        // update total terisi in kelasDitawarkan
-        await $tx.kelasDitawarkan.update({
-          where: {
-            id_kelas: kelasBaru.id_kelas,
-            version: kelasBaru.version,
-          },
-          data: {
-            terisi: {
-              increment: 1,
+          // update total terisi in kelasDitawarkan
+          await $tx.kelasDitawarkan.update({
+            where: {
+              id_kelas: kelasBaru.id_kelas,
+              version: kelasBaru.version,
             },
-            version: {
-              increment: 1,
+            data: {
+              terisi: {
+                increment: 1,
+              },
+              version: {
+                increment: 1,
+              },
             },
-          },
-        });
-      });
+          });
+        },
+        {
+          isolationLevel: 'Serializable',
+        },
+      );
     } catch (error) {
       if (error instanceof HttpException) {
         throw error;
@@ -241,8 +234,6 @@ export class KrsService {
         'MAAF, TERJADI KESALAHAN PADA SERVER.',
         HttpStatus.INTERNAL_SERVER_ERROR,
       );
-    } finally {
-      await this.distributedLockService.release(lockKey, lock.lockId);
     }
   }
 
@@ -317,8 +308,6 @@ export class KrsService {
           },
         },
       });
-
-      // decrement terisi pada kelas
 
       await $tx.kelasDitawarkan.update({
         where: {
