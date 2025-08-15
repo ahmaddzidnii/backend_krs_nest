@@ -3,6 +3,7 @@ import { Injectable } from '@nestjs/common';
 
 import { PrismaService } from '../common/prisma.service';
 import { ClassOfferingList, ClassStatusBatch } from './schedule.response';
+import { minutesToTimeString } from 'src/common/utils/time-utils';
 
 @Injectable()
 export class ScheduleService {
@@ -93,14 +94,8 @@ export class ScheduleService {
         })),
         jadwal: kelas.jadwalKelas.map((jadwal) => ({
           hari: jadwal.hari,
-          waktu_mulai: new Date(jadwal.waktu_mulai).toLocaleTimeString(
-            'id-ID',
-            { hour: '2-digit', minute: '2-digit', hour12: false },
-          ),
-          waktu_selesai: new Date(jadwal.waktu_selesai).toLocaleTimeString(
-            'id-ID',
-            { hour: '2-digit', minute: '2-digit', hour12: false },
-          ),
+          waktu_mulai: minutesToTimeString(jadwal.waktu_mulai || 0),
+          waktu_selesai: minutesToTimeString(jadwal.waktu_selesai || 0),
           ruangan: jadwal.ruang,
         })),
       };

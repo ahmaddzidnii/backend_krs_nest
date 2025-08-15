@@ -225,8 +225,8 @@ model JadwalKelas {
   id_jadwal String @id @default(uuid(7))
   id_kelas String
   hari Hari
-  waktu_mulai DateTime @db.Time()
-  waktu_selesai DateTime  @db.Time()
+  waktu_mulai Int @default(0)
+  waktu_selesai Int  @default(0)
   ruang String
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt

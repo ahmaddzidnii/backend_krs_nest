@@ -2,7 +2,8 @@ import { Prisma } from '@prisma/client';
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 
 import { PrismaService } from '../common/prisma.service';
-import { PeriodService } from 'src/common/period.service';
+import { PeriodService } from '../common/period.service';
+import { isTimeConflict } from '../common/utils/time-utils';
 import { ClassTakenResponse, KrsRequirementsResponse } from './krs.response';
 
 @Injectable()
@@ -121,35 +122,62 @@ export class KrsService {
           const kelasSudahAda =
             krsMahasiswa?.detailKrs.map((detail) => detail.kelas) || [];
 
+          // for (const jadwalBaru of jadwalKelasBaru) {
+          //   for (const kelasLama of kelasSudahAda) {
+          //     for (const jadwalLama of kelasLama.jadwalKelas) {
+          //       if (jadwalBaru.hari === jadwalLama.hari) {
+          //         const mulaiBaru = new Date(jadwalBaru.waktu_mulai);
+          //         const selesaiBaru = new Date(jadwalBaru.waktu_selesai);
+          //         const mulaiLama = new Date(jadwalLama.waktu_mulai);
+          //         const selesaiLama = new Date(jadwalLama.waktu_selesai);
+
+          //         const mulaiBaruInMinutes =
+          //           mulaiBaru.getHours() * 60 + mulaiBaru.getMinutes();
+          //         const selesaiBaruInMinutes =
+          //           selesaiBaru.getHours() * 60 + selesaiBaru.getMinutes();
+          //         const mulaiLamaInMinutes =
+          //           mulaiLama.getHours() * 60 + mulaiLama.getMinutes();
+          //         const selesaiLamaInMinutes =
+          //           selesaiLama.getHours() * 60 + selesaiLama.getMinutes();
+
+          //         // Check time overlap: (StartA < EndB) and (StartB < EndA)
+          //         if (
+          //           mulaiBaruInMinutes < selesaiLamaInMinutes &&
+          //           mulaiLamaInMinutes < selesaiBaruInMinutes
+          //         ) {
+          //           const namaKelasLamaFormatted = `${kelasLama.mataKuliah.nama} - ${kelasLama.nama_kelas}`;
+          //           throw new HttpException(
+          //             `MAAF, JADWAL BENTROK DENGAN KELAS {${namaKelasLamaFormatted}}.`,
+          //             HttpStatus.CONFLICT,
+          //           );
+          //         }
+          //       }
+          //     }
+          //   }
+          // }
+
           for (const jadwalBaru of jadwalKelasBaru) {
             for (const kelasLama of kelasSudahAda) {
-              for (const jadwalLama of kelasLama.jadwalKelas) {
-                if (jadwalBaru.hari === jadwalLama.hari) {
-                  const mulaiBaru = new Date(jadwalBaru.waktu_mulai);
-                  const selesaiBaru = new Date(jadwalBaru.waktu_selesai);
-                  const mulaiLama = new Date(jadwalLama.waktu_mulai);
-                  const selesaiLama = new Date(jadwalLama.waktu_selesai);
+              const namaKelasLamaFormatted = `${kelasLama.mataKuliah.nama} - ${kelasLama.nama_kelas}`;
 
-                  const mulaiBaruInMinutes =
-                    mulaiBaru.getHours() * 60 + mulaiBaru.getMinutes();
-                  const selesaiBaruInMinutes =
-                    selesaiBaru.getHours() * 60 + selesaiBaru.getMinutes();
-                  const mulaiLamaInMinutes =
-                    mulaiLama.getHours() * 60 + mulaiLama.getMinutes();
-                  const selesaiLamaInMinutes =
-                    selesaiLama.getHours() * 60 + selesaiLama.getMinutes();
+              // Filter jadwal lama hanya yang di hari yang sama
+              const jadwalLamaHariSama = kelasLama.jadwalKelas.filter(
+                (j) => j.hari === jadwalBaru.hari,
+              );
 
-                  // Check time overlap: (StartA < EndB) and (StartB < EndA)
-                  if (
-                    mulaiBaruInMinutes < selesaiLamaInMinutes &&
-                    mulaiLamaInMinutes < selesaiBaruInMinutes
-                  ) {
-                    const namaKelasLamaFormatted = `${kelasLama.mataKuliah.nama} - ${kelasLama.nama_kelas}`;
-                    throw new HttpException(
-                      `MAAF, JADWAL BENTROK DENGAN KELAS {${namaKelasLamaFormatted}}.`,
-                      HttpStatus.CONFLICT,
-                    );
-                  }
+              for (const jadwalLama of jadwalLamaHariSama) {
+                if (
+                  isTimeConflict(
+                    jadwalBaru.waktu_mulai,
+                    jadwalBaru.waktu_selesai,
+                    jadwalLama.waktu_mulai,
+                    jadwalLama.waktu_selesai,
+                  )
+                ) {
+                  throw new HttpException(
+                    `MAAF, JADWAL BENTROK DENGAN KELAS {${namaKelasLamaFormatted}}.`,
+                    HttpStatus.CONFLICT,
+                  );
                 }
               }
             }
