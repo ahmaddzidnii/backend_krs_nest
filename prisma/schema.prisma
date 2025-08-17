@@ -272,7 +272,7 @@ model Krs {
   id_krs String @id @default(uuid(7))
   id_mahasiswa String
   id_periode String 
-  total_sks_diambil Int
+  total_sks_diambil Int @default(0)
   created_at BigInt? 
   updated_at BigInt?
 

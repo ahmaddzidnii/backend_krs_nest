@@ -194,7 +194,6 @@ export class KrsService {
             create: {
               id_mahasiswa: mahasiswa.id_mahasiswa,
               id_periode: periodeAkademik.id_periode,
-              total_sks_diambil: sksKelasBaru,
             },
             update: {},
           });
