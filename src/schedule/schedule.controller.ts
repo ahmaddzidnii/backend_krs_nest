@@ -7,7 +7,7 @@ import {
   ValidationPipe,
 } from '@nestjs/common';
 
-import { WebResponse } from 'src/model/web.model';
+import { WebResponse } from '../model/web.model';
 import { ScheduleService } from './schedule.service';
 import { ClassStatusDto } from './dto/class-status.dto';
 import { Auth, SessionObject } from '../auth/auth.decorator';

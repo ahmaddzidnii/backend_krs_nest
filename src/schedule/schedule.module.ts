@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { ScheduleService } from './schedule.service';
 import { ScheduleController } from './schedule.controller';
-import { MahasiswaModule } from 'src/mahasiswa/mahasiswa.module';
+import { MahasiswaModule } from '../mahasiswa/mahasiswa.module';
 
 @Module({
   imports: [MahasiswaModule],

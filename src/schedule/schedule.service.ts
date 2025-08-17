@@ -3,7 +3,7 @@ import { Injectable } from '@nestjs/common';
 
 import { PrismaService } from '../common/prisma.service';
 import { ClassOfferingList, ClassStatusBatch } from './schedule.response';
-import { minutesToTimeString } from 'src/common/utils/time-utils';
+import { minutesToTimeString } from '../common/utils/time-utils';
 
 @Injectable()
 export class ScheduleService {

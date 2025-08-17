@@ -7,7 +7,7 @@ import {
   OnModuleDestroy,
   OnModuleInit,
 } from '@nestjs/common';
-import { timestampExtension } from 'prisma/extensions';
+import { timestampExtension } from '../../prisma/extensions';
 
 @Injectable()
 export class PrismaService
