@@ -8,6 +8,8 @@
  * MATAKULIAH -> TIDAK TERGANTUNG PADA DEPENDENSI LAIN
  * DETAIL KURIKULUM -> TERGANTUNG PADA KURIKULUM DAN MATAKULIAH
  *
+ * PERIODE -> TIDAK TERGANTUNG PADA DEPENDENSI LAIN
+ *
  *
  * ROLE -> TIDAK TERGANTUNG PADA DEPENDENSI LAIN
  * USER -> TERGANTUNG PADA ROLE
@@ -28,6 +30,7 @@ import { seedMataKuliah } from './matakuliah';
 import { seedDetailKurikulum } from './detail_kurikulum';
 import { seedUsersDosen, seedUsersMahasiswa } from './seed-user';
 import { prisma as prismaCLient } from './prisma';
+import { seedPeriodeAkademik } from './periode-akademik';
 
 const prisma = prismaCLient as PrismaClient;
 async function main() {
@@ -41,6 +44,7 @@ async function main() {
       seedRole(prisma),
       seedFakultas(prisma),
       seedMataKuliah(prisma),
+      seedPeriodeAkademik(prisma),
     ]);
     console.log('✅ Entitas independen berhasil di-seed.');
 

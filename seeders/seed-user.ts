@@ -17,12 +17,16 @@ export const seedUsersMahasiswa = async (prisma: PrismaClient) => {
     return;
   }
 
-  const usersToCreate = dataMhs.map((mhs) => ({
-    username: String(mhs.NIM),
-    password: bcrypt.hashSync(String(mhs.PASSWORD), 10),
-    id_role: role.id_role,
-  }));
+  const userPromises = dataMhs.map(async (mhs) => {
+    const hashedPassword = await bcrypt.hash(String(mhs.PASSWORD), 10);
+    return {
+      username: String(mhs.NIM),
+      password: hashedPassword,
+      id_role: role.id_role,
+    };
+  });
 
+  const usersToCreate = await Promise.all(userPromises);
   await prisma.user.createMany({
     data: usersToCreate,
     skipDuplicates: true,
@@ -44,11 +48,13 @@ export const seedUsersDosen = async (prisma: PrismaClient) => {
     return;
   }
 
-  const usersToCreate = dosenData.data.map((d) => ({
+  const userDosen = dosenData.data.map(async (d) => ({
     username: String(d.nip),
-    password: bcrypt.hashSync(String(d.default_password), 10),
+    password: await bcrypt.hash(String(d.default_password), 10),
     id_role: role.id_role,
   }));
+
+  const usersToCreate = await Promise.all(userDosen);
 
   await prisma.user.createMany({
     data: usersToCreate,
