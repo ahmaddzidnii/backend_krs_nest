@@ -6,9 +6,9 @@ import { timeStringToMinutes } from '../src/common/utils/time-utils';
 type KelasDitawarkan = Prisma.KelasDitawarkanCreateManyInput[];
 
 export async function seedKelasDitawarkan(prisma: PrismaClient) {
-  prisma.$transaction(async ($tx) => {
+  try {
     // Ambil periode akademik yang aktif
-    const periodeAkademik = await $tx.periodeAkademik.findFirst({
+    const periodeAkademik = await prisma.periodeAkademik.findFirst({
       where: { is_active: true },
       select: { id_periode: true },
     });
@@ -18,7 +18,7 @@ export async function seedKelasDitawarkan(prisma: PrismaClient) {
     }
 
     // Ambil semua mata kuliah berdasarkan kode yang ada di data JSON
-    const matakuliah = await $tx.mataKuliah.findMany({
+    const matakuliah = await prisma.mataKuliah.findMany({
       where: {
         kode_matkul: {
           in: dataKelas.map((kelas) => kelas.kode_matkul),
@@ -49,12 +49,12 @@ export async function seedKelasDitawarkan(prisma: PrismaClient) {
         id_matkul: idMatkul,
         id_periode: periodeAkademik.id_periode,
         nama_kelas: kelas.nama_kelas,
-        kuota: Math.random() * 50 + 1, // Random kuota antara 1-50
+        kuota: kelas.kouta,
       };
     });
 
     // Insert kelas ditawarkan
-    const insertedKelas = await $tx.kelasDitawarkan.createMany({
+    const insertedKelas = await prisma.kelasDitawarkan.createMany({
       data: kelasDitawarkanData,
       skipDuplicates: true,
     });
@@ -62,7 +62,7 @@ export async function seedKelasDitawarkan(prisma: PrismaClient) {
     console.log(`Berhasil membuat ${insertedKelas.count} kelas ditawarkan`);
 
     // Ambil data kelas yang baru dibuat untuk mendapatkan ID-nya
-    const createdKelas = await $tx.kelasDitawarkan.findMany({
+    const createdKelas = await prisma.kelasDitawarkan.findMany({
       where: {
         id_periode: periodeAkademik.id_periode,
         id_matkul: {
@@ -115,7 +115,7 @@ export async function seedKelasDitawarkan(prisma: PrismaClient) {
     });
 
     // Insert jadwal kelas
-    const insertedJadwal = await $tx.jadwalKelas.createMany({
+    const insertedJadwal = await prisma.jadwalKelas.createMany({
       data: jadwalKelasData,
       skipDuplicates: true,
     });
@@ -128,7 +128,7 @@ export async function seedKelasDitawarkan(prisma: PrismaClient) {
     );
 
     // Ambil data dosen berdasarkan NIP
-    const dosen = await $tx.dosen.findMany({
+    const dosen = await prisma.dosen.findMany({
       select: {
         id_dosen: true,
         nip: true,
@@ -172,7 +172,7 @@ export async function seedKelasDitawarkan(prisma: PrismaClient) {
     });
 
     // Insert dosen pengajar kelas
-    const insertedDosenPengajar = await $tx.dosenPengajarKelas.createMany({
+    const insertedDosenPengajar = await prisma.dosenPengajarKelas.createMany({
       data: dosenPengajarData,
       skipDuplicates: true,
     });
@@ -180,9 +180,12 @@ export async function seedKelasDitawarkan(prisma: PrismaClient) {
     console.log(
       `Berhasil membuat ${insertedDosenPengajar.count} relasi dosen pengajar`,
     );
-  });
 
-  console.log('Seeding kelas ditawarkan selesai!');
+    console.log('Seeding kelas ditawarkan selesai!');
+  } catch (error) {
+    console.error('Error dalam seeding kelas ditawarkan:', error);
+    throw error;
+  }
 }
 
 function getValueHari(hari: string): Hari {
