@@ -18,7 +18,8 @@ export class AuthMiddleware implements NestMiddleware {
     const sessionId = req.cookies?.session_id || extractBearerToken(req);
     this.logger.debug(`Session ID from cookie: ${sessionId}`);
     if (sessionId) {
-      const sessionData = await this.redis.get(sessionId);
+      const key = `session-${sessionId}`;
+      const sessionData = await this.redis.get(key);
       this.logger.debug(`Session data from Redis: ${sessionData}`);
 
       if (sessionData) {

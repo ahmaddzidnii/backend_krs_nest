@@ -240,7 +240,6 @@ model KelasDitawarkan {
   id_kelas String @id @default(uuid(7))
   id_periode String
   id_matkul String
-  id_jadwal String
   nama_kelas String
   kuota Int
   terisi Int @default(0)

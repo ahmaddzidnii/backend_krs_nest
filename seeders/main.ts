@@ -31,6 +31,7 @@ import { seedDetailKurikulum } from './detail_kurikulum';
 import { seedUsersDosen, seedUsersMahasiswa } from './seed-user';
 import { prisma as prismaCLient } from './prisma';
 import { seedPeriodeAkademik } from './periode-akademik';
+import { seedKelasDitawarkan } from './kelas-ditawarkan';
 
 const prisma = prismaCLient as PrismaClient;
 async function main() {
@@ -77,6 +78,11 @@ async function main() {
     console.log('Seeding Mahasiswa...');
     await seedMahasiswa(prisma);
     console.log('✅ Mahasiswa berhasil di-seed.');
+
+    // --- TIER 6: Kelas Ditawarkan bergantung pada Periode Akademik dan Mata Kuliah ---
+    console.log('Seeding Kelas Ditawarkan...');
+    await seedKelasDitawarkan(prisma);
+    console.log('✅ Kelas Ditawarkan berhasil di-seed.');
 
     console.log('🎉 Proses seeding selesai dengan sukses!');
   } catch (error) {

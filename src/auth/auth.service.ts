@@ -61,7 +61,9 @@ export class AuthService {
       },
     });
 
-    const sessionId = `session-${generateSessionId()}`;
+    const uniqueId = generateSessionId();
+
+    const sessionId = `session-${uniqueId}`;
     const sessionExpInMiutes = this.configService.get(
       'SESSION_EXP_IN_MINUTES',
       60,
@@ -82,7 +84,7 @@ export class AuthService {
     return {
       username: user.username,
       name: user.mahasiswa?.nama || 'Unknown',
-      session_id: sessionId,
+      session_id: uniqueId,
       role: role.nama_role,
     };
   }

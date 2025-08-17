@@ -1,0 +1,982 @@
+[
+  {
+    "kode_matkul": "PJK425203",
+    "nama_matkul": "Analisis & Desain Jaringan Komputer",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Senin",
+        "jam_mulai": "08:00",
+        "jam_selesai": "10:00",
+        "ruang": "FST-400"
+      },
+      {
+        "hari": "Selasa",
+        "jam_mulai": "10:00",
+        "jam_selesai": "12:00",
+        "ruang": "FST-401"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "ASI425102",
+    "nama_matkul": "Basis Data Terdistribusi",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Selasa",
+        "jam_mulai": "10:00",
+        "jam_selesai": "12:00",
+        "ruang": "FST-401"
+      },
+      {
+        "hari": "Rabu",
+        "jam_mulai": "13:00",
+        "jam_selesai": "15:00",
+        "ruang": "FST-402"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF425042",
+    "nama_matkul": "Capita Selecta MBKM Android 3",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Rabu",
+        "jam_mulai": "13:00",
+        "jam_selesai": "15:00",
+        "ruang": "FST-402"
+      },
+      {
+        "hari": "Kamis",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:30",
+        "ruang": "FST-403"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF425043",
+    "nama_matkul": "Capita Selecta MBKM Android 4",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Kamis",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:30",
+        "ruang": "FST-403"
+      },
+      {
+        "hari": "Jumat",
+        "jam_mulai": "08:00",
+        "jam_selesai": "10:00",
+        "ruang": "FST-404"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF425039",
+    "nama_matkul": "Capita Selecta MBKM Cloud Computing 4",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Jumat",
+        "jam_mulai": "08:00",
+        "jam_selesai": "10:00",
+        "ruang": "FST-404"
+      },
+      {
+        "hari": "Senin",
+        "jam_mulai": "10:00",
+        "jam_selesai": "12:00",
+        "ruang": "FST-405"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF425040",
+    "nama_matkul": "Capita Selecta MBKM Machine Learning 3",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Senin",
+        "jam_mulai": "10:00",
+        "jam_selesai": "12:00",
+        "ruang": "FST-405"
+      },
+      {
+        "hari": "Selasa",
+        "jam_mulai": "13:00",
+        "jam_selesai": "15:00",
+        "ruang": "FST-406"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF425041",
+    "nama_matkul": "Capita Selecta MBKM Machine Learning 4",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Selasa",
+        "jam_mulai": "13:00",
+        "jam_selesai": "15:00",
+        "ruang": "FST-406"
+      },
+      {
+        "hari": "Rabu",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:30",
+        "ruang": "FST-407"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF425044",
+    "nama_matkul": "Capita Selecta MBKM Perekayasa Jaringan Komputer 1",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Rabu",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:30",
+        "ruang": "FST-407"
+      },
+      {
+        "hari": "Kamis",
+        "jam_mulai": "08:00",
+        "jam_selesai": "10:00",
+        "ruang": "FST-408"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF425045",
+    "nama_matkul": "Capita Selecta MBKM Perekayasa Jaringan Komputer 2",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Kamis",
+        "jam_mulai": "08:00",
+        "jam_selesai": "10:00",
+        "ruang": "FST-408"
+      },
+      {
+        "hari": "Jumat",
+        "jam_mulai": "10:00",
+        "jam_selesai": "12:00",
+        "ruang": "FST-409"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF425046",
+    "nama_matkul": "Capita Selecta MBKM Perekayasa Jaringan Komputer 3",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Jumat",
+        "jam_mulai": "10:00",
+        "jam_selesai": "12:00",
+        "ruang": "FST-409"
+      },
+      {
+        "hari": "Senin",
+        "jam_mulai": "13:00",
+        "jam_selesai": "15:00",
+        "ruang": "FST-400"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF425047",
+    "nama_matkul": "Capita Selecta MBKM Perekayasa Jaringan Komputer 4",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Senin",
+        "jam_mulai": "13:00",
+        "jam_selesai": "15:00",
+        "ruang": "FST-400"
+      },
+      {
+        "hari": "Selasa",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:30",
+        "ruang": "FST-401"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF425048",
+    "nama_matkul": "Capita Selecta MBKM Perekayasa Jaringan Komputer 5",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Selasa",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:30",
+        "ruang": "FST-401"
+      },
+      {
+        "hari": "Rabu",
+        "jam_mulai": "08:00",
+        "jam_selesai": "10:00",
+        "ruang": "FST-402"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF425034",
+    "nama_matkul": "Capita Selecta MBKM Perekayasa Perangkat Lunak 1",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Rabu",
+        "jam_mulai": "08:00",
+        "jam_selesai": "10:00",
+        "ruang": "FST-402"
+      },
+      {
+        "hari": "Kamis",
+        "jam_mulai": "10:00",
+        "jam_selesai": "12:00",
+        "ruang": "FST-403"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF425035",
+    "nama_matkul": "Capita Selecta MBKM Perekayasa Perangkat Lunak 2",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Kamis",
+        "jam_mulai": "10:00",
+        "jam_selesai": "12:00",
+        "ruang": "FST-403"
+      },
+      {
+        "hari": "Jumat",
+        "jam_mulai": "13:00",
+        "jam_selesai": "15:00",
+        "ruang": "FST-404"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF425036",
+    "nama_matkul": "Capita Selecta MBKM Perekayasa Perangkat Lunak 3",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Jumat",
+        "jam_mulai": "13:00",
+        "jam_selesai": "15:00",
+        "ruang": "FST-404"
+      },
+      {
+        "hari": "Senin",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:30",
+        "ruang": "FST-405"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF425037",
+    "nama_matkul": "Capita Selecta MBKM Perekayasa Perangkat Lunak 4",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Senin",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:30",
+        "ruang": "FST-405"
+      },
+      {
+        "hari": "Selasa",
+        "jam_mulai": "08:00",
+        "jam_selesai": "10:00",
+        "ruang": "FST-406"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF425038",
+    "nama_matkul": "Capita Selecta MBKM Perekayasa Perangkat Lunak 5",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Selasa",
+        "jam_mulai": "08:00",
+        "jam_selesai": "10:00",
+        "ruang": "FST-406"
+      },
+      {
+        "hari": "Rabu",
+        "jam_mulai": "10:00",
+        "jam_selesai": "12:00",
+        "ruang": "FST-407"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PSC425403",
+    "nama_matkul": "Dasar Penalaran dan Representasi Pengetahuan",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Rabu",
+        "jam_mulai": "10:00",
+        "jam_selesai": "12:00",
+        "ruang": "FST-407"
+      },
+      {
+        "hari": "Kamis",
+        "jam_mulai": "13:00",
+        "jam_selesai": "15:00",
+        "ruang": "FST-408"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PSC425404",
+    "nama_matkul": "Ilmu Informasi",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Kamis",
+        "jam_mulai": "13:00",
+        "jam_selesai": "15:00",
+        "ruang": "FST-408"
+      },
+      {
+        "hari": "Jumat",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:30",
+        "ruang": "FST-409"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PJK425202",
+    "nama_matkul": "Komputasi Bergerak",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Jumat",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:30",
+        "ruang": "FST-409"
+      },
+      {
+        "hari": "Senin",
+        "jam_mulai": "08:00",
+        "jam_selesai": "10:00",
+        "ruang": "FST-400"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "ASI425101",
+    "nama_matkul": "Konsep Dasar Sistem Informasi",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Senin",
+        "jam_mulai": "08:00",
+        "jam_selesai": "10:00",
+        "ruang": "FST-400"
+      },
+      {
+        "hari": "Selasa",
+        "jam_mulai": "10:00",
+        "jam_selesai": "12:00",
+        "ruang": "FST-401"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PJK425204",
+    "nama_matkul": "Kriptografi",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Selasa",
+        "jam_mulai": "10:00",
+        "jam_selesai": "12:00",
+        "ruang": "FST-401"
+      },
+      {
+        "hari": "Rabu",
+        "jam_mulai": "13:00",
+        "jam_selesai": "15:00",
+        "ruang": "FST-402"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PSC425401",
+    "nama_matkul": "Logika Fuzzy",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Rabu",
+        "jam_mulai": "13:00",
+        "jam_selesai": "15:00",
+        "ruang": "FST-402"
+      },
+      {
+        "hari": "Kamis",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:30",
+        "ruang": "FST-403"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "ASI425104",
+    "nama_matkul": "Manajemen Risiko",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Kamis",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:30",
+        "ruang": "FST-403"
+      },
+      {
+        "hari": "Jumat",
+        "jam_mulai": "08:00",
+        "jam_selesai": "10:00",
+        "ruang": "FST-404"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "ASI425103",
+    "nama_matkul": "Model Arsitektur Enterprise",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Jumat",
+        "jam_mulai": "08:00",
+        "jam_selesai": "10:00",
+        "ruang": "FST-404"
+      },
+      {
+        "hari": "Senin",
+        "jam_mulai": "10:00",
+        "jam_selesai": "12:00",
+        "ruang": "FST-405"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PSC425405",
+    "nama_matkul": "Pembelajaran Mesin",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Senin",
+        "jam_mulai": "10:00",
+        "jam_selesai": "12:00",
+        "ruang": "FST-405"
+      },
+      {
+        "hari": "Selasa",
+        "jam_mulai": "13:00",
+        "jam_selesai": "15:00",
+        "ruang": "FST-406"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PPL425302",
+    "nama_matkul": "Pemrograman Platform Desktop dan Embedded",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Selasa",
+        "jam_mulai": "13:00",
+        "jam_selesai": "15:00",
+        "ruang": "FST-406"
+      },
+      {
+        "hari": "Rabu",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:30",
+        "ruang": "FST-407"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PPL425301",
+    "nama_matkul": "Pemrograman Platform Web",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Rabu",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:30",
+        "ruang": "FST-407"
+      },
+      {
+        "hari": "Kamis",
+        "jam_mulai": "08:00",
+        "jam_selesai": "10:00",
+        "ruang": "FST-408"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PJK425201",
+    "nama_matkul": "Pemrograman Sistem dan Jaringan",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Kamis",
+        "jam_mulai": "08:00",
+        "jam_selesai": "10:00",
+        "ruang": "FST-408"
+      },
+      {
+        "hari": "Jumat",
+        "jam_mulai": "10:00",
+        "jam_selesai": "12:00",
+        "ruang": "FST-409"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PSC425402",
+    "nama_matkul": "Pemrosesan Citra Digital",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Jumat",
+        "jam_mulai": "10:00",
+        "jam_selesai": "12:00",
+        "ruang": "FST-409"
+      },
+      {
+        "hari": "Senin",
+        "jam_mulai": "13:00",
+        "jam_selesai": "15:00",
+        "ruang": "FST-400"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "ASI425105",
+    "nama_matkul": "Pengalaman Pengguna",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Senin",
+        "jam_mulai": "13:00",
+        "jam_selesai": "15:00",
+        "ruang": "FST-400"
+      },
+      {
+        "hari": "Selasa",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:30",
+        "ruang": "FST-401"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PPL425305",
+    "nama_matkul": "Penjaminan Kualitas Perangkat Lunak",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Selasa",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:30",
+        "ruang": "FST-401"
+      },
+      {
+        "hari": "Rabu",
+        "jam_mulai": "08:00",
+        "jam_selesai": "10:00",
+        "ruang": "FST-402"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PPL425304",
+    "nama_matkul": "Perancangan dan Pembangunan Perangkat Lunak",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Rabu",
+        "jam_mulai": "08:00",
+        "jam_selesai": "10:00",
+        "ruang": "FST-402"
+      },
+      {
+        "hari": "Kamis",
+        "jam_mulai": "10:00",
+        "jam_selesai": "12:00",
+        "ruang": "FST-403"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PPL425303",
+    "nama_matkul": "Rekayasa Kebutuhan Perangkat Lunak",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Kamis",
+        "jam_mulai": "10:00",
+        "jam_selesai": "12:00",
+        "ruang": "FST-403"
+      },
+      {
+        "hari": "Jumat",
+        "jam_mulai": "13:00",
+        "jam_selesai": "15:00",
+        "ruang": "FST-404"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PJK425205",
+    "nama_matkul": "Sistem Terdistribusi",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Jumat",
+        "jam_mulai": "13:00",
+        "jam_selesai": "15:00",
+        "ruang": "FST-404"
+      },
+      {
+        "hari": "Senin",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:30",
+        "ruang": "FST-405"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197510242009121002"
+      },
+      {
+        "nip": "197510242009121002"
+      }
+    ]
+  }
+]
