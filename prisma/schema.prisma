@@ -62,8 +62,8 @@ model Fakultas {
   kode_fakultas String @unique
   nama String
   singkatan String
-  created_at DateTime @default(now())
-  updated_at DateTime @updatedAt
+  created_at BigInt? 
+  updated_at BigInt?
 
   program_studi ProgramStudi[]
 
@@ -76,8 +76,8 @@ model ProgramStudi {
   kode_prodi String @unique
   nama String
   jenjang_studi JenjangStudi
-  created_at DateTime @default(now())
-  updated_at DateTime @updatedAt
+  created_at BigInt? 
+  updated_at BigInt?
 
   kurikulum Kurikulum[]  
 
@@ -91,8 +91,8 @@ model User {
   id_role String
   username String @unique
   password String
-  created_at DateTime @default(now())
-  updated_at DateTime @updatedAt
+  created_at BigInt? 
+  updated_at BigInt?
 
   role Role @relation(fields: [id_role], references: [id_role])
 
@@ -105,8 +105,8 @@ model User {
 model Role {
   id_role String @id @default(uuid(7))
   nama_role String @unique
-  created_at DateTime @default(now())
-  updated_at DateTime @updatedAt
+  created_at BigInt? 
+  updated_at BigInt?
 
   users User[]
 
@@ -128,8 +128,8 @@ model Mahasiswa {
   jatah_sks Int
   status_mahasiswa StatusMahasiswa
   status_pembayaran StatusPembayaran
-  created_at DateTime @default(now())
-  updated_at DateTime @updatedAt
+  created_at BigInt? 
+  updated_at BigInt?
 
   user User @relation(fields: [id_user],references: [id_user])
   krs Krs[]
@@ -147,8 +147,8 @@ model Dosen {
   nama String
   aktif_mengajar Boolean @default(false)
   jenis_dosen JenisDosen
-  created_at DateTime @default(now())
-  updated_at DateTime @updatedAt
+  created_at BigInt? 
+  updated_at BigInt?
 
   mengampuKelas DosenPengajarKelas[]
 
@@ -166,8 +166,8 @@ model PeriodeAkademik {
   jam_mulai_harian_krs DateTime @db.Time()
   jam_selesai_harian_krs DateTime @db.Time()
   is_active Boolean @default(false)
-  created_at DateTime @default(now())
-  updated_at DateTime @updatedAt
+  created_at BigInt? 
+  updated_at BigInt?
 
   kelasDitawarkan KelasDitawarkan[]
   periodeKrs Krs[]
@@ -181,8 +181,8 @@ model Kurikulum {
   kode_kurikulum String @unique
   nama String
   is_active Boolean @default(false)
-  created_at DateTime @default(now())
-  updated_at DateTime @updatedAt
+  created_at BigInt? 
+  updated_at BigInt?
 
   detailKurikulum DetailKurikulum[]
   mahasiswa Mahasiswa[]
@@ -197,8 +197,8 @@ model MataKuliah {
   kode_matkul String @unique
   nama String
   sks Int
-  created_at DateTime @default(now())
-  updated_at DateTime @updatedAt
+  created_at BigInt? 
+  updated_at BigInt?
 
   detailKurikulum DetailKurikulum[]
   kelasDitawarkan KelasDitawarkan[]
@@ -212,8 +212,8 @@ model DetailKurikulum {
   id_matkul String
   jenis_matkul JenisMatkul @default(WAJIB)
   semester_paket Int
-  created_at DateTime @default(now())
-  updated_at DateTime @updatedAt
+  created_at BigInt? 
+  updated_at BigInt?
 
   kurikulum Kurikulum @relation(fields: [id_kurikulum], references: [id_kurikulum])
   mataKuliah MataKuliah @relation(fields: [id_matkul], references: [id_matkul])
@@ -228,8 +228,8 @@ model JadwalKelas {
   waktu_mulai Int @default(0)
   waktu_selesai Int  @default(0)
   ruang String
-  created_at DateTime @default(now())
-  updated_at DateTime @updatedAt
+  created_at BigInt? 
+  updated_at BigInt?
 
   kelas KelasDitawarkan @relation(fields: [id_kelas],references: [id_kelas])
 
@@ -245,8 +245,8 @@ model KelasDitawarkan {
   kuota Int
   terisi Int @default(0)
   version Int @default(1)
-  created_at DateTime @default(now())
-  updated_at DateTime @updatedAt
+  created_at BigInt? 
+  updated_at BigInt?
 
   dosenPengajarKelas DosenPengajarKelas[]
   detailKrs DetailKrs[]
@@ -274,13 +274,14 @@ model Krs {
   id_mahasiswa String
   id_periode String 
   total_sks_diambil Int
-  created_at DateTime @default(now())
-  updated_at DateTime @updatedAt
+  created_at BigInt? 
+  updated_at BigInt?
 
   detailKrs DetailKrs[]
 
   mahasiswa Mahasiswa @relation(fields: [id_mahasiswa], references: [id_mahasiswa])
   periodeAkademik PeriodeAkademik @relation(fields: [id_periode], references: [id_periode])
+
   @@unique([id_mahasiswa,id_periode])
   @@map("krs")
 }

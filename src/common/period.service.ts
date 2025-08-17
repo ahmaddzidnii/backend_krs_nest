@@ -34,7 +34,9 @@ export class PeriodService {
     if (period) {
       await this.redis.set(
         this.CACHE_KEY,
-        JSON.stringify(period),
+        JSON.stringify(period, (_, value) =>
+          typeof value === 'bigint' ? Number(value) : value,
+        ),
         'EX',
         this.CACHE_TTL,
       );

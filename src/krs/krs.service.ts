@@ -493,6 +493,8 @@ export class KrsService {
               ),
               ruangan: j.ruang,
             })) || [],
+          created_at: String(krs.created_at),
+          updated_at: String(krs.updated_at),
         };
       }),
     );

@@ -27,4 +27,6 @@ export class ClassTakenResponse {
     waktu_selesai: string;
     ruangan: string;
   }[];
+  created_at: string;
+  updated_at: string;
 }

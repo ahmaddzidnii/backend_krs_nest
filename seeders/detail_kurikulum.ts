@@ -1,12 +1,7 @@
 import { JenisMatkul, PrismaClient } from '@prisma/client';
 import kurikulumjson from '../seeders/data/detail_kurikulum_penghubung.json';
 
-import dotenv from 'dotenv';
-
-const prisma = new PrismaClient();
-
-export const seedDetailKurikulum = async () => {
-  dotenv.config();
+export const seedDetailKurikulum = async (prisma: PrismaClient) => {
   console.log('🚀 START: Seeding data detail kurikulum...');
 
   try {
@@ -52,21 +47,29 @@ export const seedDetailKurikulum = async () => {
       data: detailKurikulums,
       skipDuplicates: false,
     });
+
+    console.log(
+      `✅ Berhasil menambahkan ${detailKurikulums.length} detail kurikulum`,
+    );
   } catch (error) {
-    console.error('❌ ERROR: Terjadi kegagalan saat seedingi.', error);
+    console.error(
+      '❌ ERROR: Terjadi kegagalan saat seeding detail kurikulum.',
+      error,
+    );
   } finally {
-    console.log('🏁 END: Proses seeding kurikulum selesai.');
-    await prisma.$disconnect();
+    console.log('🏁 END: Proses seeding detail kurikulum selesai.');
   }
 };
 
-seedDetailKurikulum()
-  .then(() => {
-    console.log('✅ Seeding kurikulum selesai.');
-  })
-  .catch((err) => {
-    console.error('❌ Terjadi kesalahan saat seeding kurikulum:', err.message);
-  })
-  .finally(() => {
-    prisma.$disconnect();
-  });
+// Bisa dijalankan langsung
+if (require.main === module) {
+  const prisma = new PrismaClient();
+  seedDetailKurikulum(prisma)
+    .catch((err) => {
+      console.error(
+        '❌ Terjadi kesalahan saat seeding kurikulum:',
+        err.message,
+      );
+    })
+    .finally(() => prisma.$disconnect());
+}

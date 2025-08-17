@@ -28,22 +28,22 @@ export class MahasiswaService {
       return JSON.parse(cached);
     }
 
-    const mahasiswaWithTotalSks = await this.prismaService.mahasiswa.findUnique(
-      {
-        where: {
-          nim,
-        },
+    const mahasiswa = await this.prismaService.mahasiswa.findUnique({
+      where: {
+        nim,
       },
-    );
+    });
 
     await this.redis.set(
       CACHE_KEY,
-      JSON.stringify(mahasiswaWithTotalSks),
+      JSON.stringify(mahasiswa, (_, value) =>
+        typeof value === 'bigint' ? Number(value) : value,
+      ),
       'EX',
       CACHE_TTL,
     );
 
-    return mahasiswaWithTotalSks;
+    return mahasiswa;
   }
 
   async getCommonStudentInformation(

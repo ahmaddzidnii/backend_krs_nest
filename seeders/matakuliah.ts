@@ -1,12 +1,8 @@
 import { PrismaClient } from '@prisma/client';
 import matakuliahJson from '../seeders/data/matakuliah_master.json';
-import dotenv from 'dotenv';
 
-const prisma = new PrismaClient();
-
-export const seedMataKuliah = async () => {
-  dotenv.config();
-  console.log('🚀 START: Seeding data Program Studi...');
+export const seedMataKuliah = async (prisma: PrismaClient) => {
+  console.log('🚀 START: Seeding data Mata Kuliah...');
 
   try {
     const matakuliahs = matakuliahJson.map((m) => ({
@@ -15,28 +11,20 @@ export const seedMataKuliah = async () => {
       sks: m.sks,
     }));
 
-    await prisma.mataKuliah.createMany({
+    const result = await prisma.mataKuliah.createMany({
       data: matakuliahs,
       skipDuplicates: true,
     });
+
     console.log(
-      `✅ Berhasil menambahkan ${matakuliahs.length} kurikulum baru.`,
+      `✅ SUCCESS: Berhasil menambahkan ${result.count} mata kuliah baru.`,
     );
   } catch (error) {
-    console.error('❌ ERROR: Terjadi kegagalan saat seedingi.', error);
+    console.error(
+      '❌ ERROR: Terjadi kegagalan saat seeding mata kuliah.',
+      error,
+    );
   } finally {
-    console.log('🏁 END: Proses seeding kurikulum selesai.');
-    await prisma.$disconnect();
+    console.log('🏁 END: Proses seeding Mata Kuliah selesai.');
   }
 };
-
-seedMataKuliah()
-  .then(() => {
-    console.log('✅ Seeding kurikulum selesai.');
-  })
-  .catch((error) => {
-    console.error('❌ Terjadi kesalahan saat seeding kurikulum:', error);
-  })
-  .finally(() => {
-    prisma.$disconnect();
-  });
