@@ -27,7 +27,12 @@ async function bootstrap() {
   app.getHttpAdapter().getInstance().disable('etag');
 
   app.enableCors({
-    origin: ['http://localhost:3000', 'https://krs-dev.masako.my.id'],
+    origin: [
+      'http://localhost:3000',
+      'http://10.20.30.3:3000',
+      'https://krs-dev.masako.my.id',
+      'https://krs.masako.my.id',
+    ],
     credentials: true,
   });
 
