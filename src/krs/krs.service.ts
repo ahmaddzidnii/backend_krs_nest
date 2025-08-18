@@ -4,6 +4,7 @@ import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { PrismaService } from '../common/prisma.service';
 import { PeriodService } from '../common/period.service';
 import { isTimeConflict } from '../common/utils/time-utils';
+import { MahasiswaService } from 'mahasiswa/mahasiswa.service';
 import { ClassTakenResponse, KrsRequirementsResponse } from './krs.response';
 
 @Injectable()
@@ -11,6 +12,7 @@ export class KrsService {
   constructor(
     private readonly prismaService: PrismaService,
     private readonly periodService: PeriodService,
+    private readonly mahasiswaService: MahasiswaService,
   ) {}
 
   /**
@@ -29,26 +31,7 @@ export class KrsService {
       );
     }
 
-    const mahasiswa = await this.prismaService.mahasiswa.findUnique({
-      where: { nim },
-      include: {
-        krs: {
-          where: { id_periode: periodeAkademik.id_periode },
-          include: {
-            detailKrs: {
-              include: {
-                kelas: {
-                  include: {
-                    mataKuliah: true,
-                    jadwalKelas: true,
-                  },
-                },
-              },
-            },
-          },
-        },
-      },
-    });
+    const mahasiswa = await this.mahasiswaService.getMahasiswaByNim(nim);
 
     if (!mahasiswa) {
       throw new HttpException(
@@ -85,7 +68,40 @@ export class KrsService {
             );
           }
 
-          const krsMahasiswa = mahasiswa.krs[0];
+          // Create or update KRS record
+          await $tx.krs.upsert({
+            where: {
+              id_mahasiswa_id_periode: {
+                id_mahasiswa: mahasiswa.id_mahasiswa,
+                id_periode: periodeAkademik.id_periode,
+              },
+            },
+            create: {
+              id_mahasiswa: mahasiswa.id_mahasiswa,
+              id_periode: periodeAkademik.id_periode,
+            },
+            update: {},
+          });
+
+          const krsMahasiswa = await $tx.krs.findFirst({
+            where: {
+              id_mahasiswa: mahasiswa.id_mahasiswa,
+              id_periode: periodeAkademik.id_periode,
+            },
+            include: {
+              detailKrs: {
+                include: {
+                  kelas: {
+                    include: {
+                      mataKuliah: true,
+                      jadwalKelas: true,
+                    },
+                  },
+                },
+              },
+            },
+          });
+
           const sksKelasBaru = kelasBaru.mataKuliah.sks;
           const namaKelasFormatted = `${kelasBaru.mataKuliah.nama} - ${kelasBaru.nama_kelas}`;
 
@@ -122,40 +138,6 @@ export class KrsService {
           const kelasSudahAda =
             krsMahasiswa?.detailKrs.map((detail) => detail.kelas) || [];
 
-          // for (const jadwalBaru of jadwalKelasBaru) {
-          //   for (const kelasLama of kelasSudahAda) {
-          //     for (const jadwalLama of kelasLama.jadwalKelas) {
-          //       if (jadwalBaru.hari === jadwalLama.hari) {
-          //         const mulaiBaru = new Date(jadwalBaru.waktu_mulai);
-          //         const selesaiBaru = new Date(jadwalBaru.waktu_selesai);
-          //         const mulaiLama = new Date(jadwalLama.waktu_mulai);
-          //         const selesaiLama = new Date(jadwalLama.waktu_selesai);
-
-          //         const mulaiBaruInMinutes =
-          //           mulaiBaru.getHours() * 60 + mulaiBaru.getMinutes();
-          //         const selesaiBaruInMinutes =
-          //           selesaiBaru.getHours() * 60 + selesaiBaru.getMinutes();
-          //         const mulaiLamaInMinutes =
-          //           mulaiLama.getHours() * 60 + mulaiLama.getMinutes();
-          //         const selesaiLamaInMinutes =
-          //           selesaiLama.getHours() * 60 + selesaiLama.getMinutes();
-
-          //         // Check time overlap: (StartA < EndB) and (StartB < EndA)
-          //         if (
-          //           mulaiBaruInMinutes < selesaiLamaInMinutes &&
-          //           mulaiLamaInMinutes < selesaiBaruInMinutes
-          //         ) {
-          //           const namaKelasLamaFormatted = `${kelasLama.mataKuliah.nama} - ${kelasLama.nama_kelas}`;
-          //           throw new HttpException(
-          //             `MAAF, JADWAL BENTROK DENGAN KELAS {${namaKelasLamaFormatted}}.`,
-          //             HttpStatus.CONFLICT,
-          //           );
-          //         }
-          //       }
-          //     }
-          //   }
-          // }
-
           for (const jadwalBaru of jadwalKelasBaru) {
             for (const kelasLama of kelasSudahAda) {
               const namaKelasLamaFormatted = `${kelasLama.mataKuliah.nama} - ${kelasLama.nama_kelas}`;
@@ -183,26 +165,26 @@ export class KrsService {
             }
           }
 
-          // Create or update KRS record
-          const krsRecord = await $tx.krs.upsert({
+          // Add class to KRS
+          await $tx.detailKrs.create({
+            data: {
+              id_krs: krsMahasiswa.id_krs,
+              id_kelas: classId,
+            },
+          });
+
+          // Lock krs untuk optimistic concurrency control
+          await $tx.krs.update({
             where: {
               id_mahasiswa_id_periode: {
                 id_mahasiswa: mahasiswa.id_mahasiswa,
                 id_periode: periodeAkademik.id_periode,
               },
             },
-            create: {
-              id_mahasiswa: mahasiswa.id_mahasiswa,
-              id_periode: periodeAkademik.id_periode,
-            },
-            update: {},
-          });
-
-          // Add class to KRS
-          await $tx.detailKrs.create({
             data: {
-              id_krs: krsRecord.id_krs,
-              id_kelas: classId,
+              version: {
+                increment: 1,
+              },
             },
           });
 
@@ -271,13 +253,7 @@ export class KrsService {
    * @param classId ID unik dari kelas yang ditawarkan
    */
   async deleteKrs(nim: string, classId: string): Promise<void> {
-    const mahasiswaPromise = this.prismaService.mahasiswa.findUnique({
-      where: { nim },
-      select: {
-        id_mahasiswa: true,
-        nim: true,
-      },
-    });
+    const mahasiswaPromise = this.mahasiswaService.getMahasiswaByNim(nim);
 
     const periodeAkademikPromise = this.periodService.getCurrentPeriod();
 
