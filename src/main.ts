@@ -1,26 +1,68 @@
-import helmet from 'helmet';
+import morgan from 'morgan';
+import { Logger } from 'winston';
 import cookieParser from 'cookie-parser';
 import { NestFactory } from '@nestjs/core';
 import { ConfigService } from '@nestjs/config';
 import { VersioningType } from '@nestjs/common';
-import { WINSTON_MODULE_NEST_PROVIDER } from 'nest-winston';
+import { WINSTON_MODULE_PROVIDER } from 'nest-winston';
 import { NestExpressApplication } from '@nestjs/platform-express';
 
 import { AppModule } from './app.module';
 
-// eslint-disable-next-line @typescript-eslint/no-redeclare
-interface BigInt {
-  /** Convert to BigInt to string form in JSON.stringify */
-  toJSON: () => string;
+function maskSensitive(body: any) {
+  if (!body) return body;
+  const sensitive = [
+    'password',
+    'confirmPassword',
+    'confirm_password',
+    'token',
+    'secret',
+  ];
+
+  const clone = { ...body };
+  for (const key of sensitive) {
+    if (clone[key]) clone[key] = undefined;
+  }
+  return clone;
 }
 
-async function bootstrap() {
-  const app = await NestFactory.create<NestExpressApplication>(AppModule);
+function setupMorgan(app: NestExpressApplication, logger: Logger) {
+  morgan.token('body', (req: any) => {
+    try {
+      return JSON.stringify(maskSensitive(req.body));
+    } catch {
+      return '';
+    }
+  });
+
+  const morganMiddleware = morgan(
+    function (tokens, req, res) {
+      return JSON.stringify({
+        method: tokens.method(req, res),
+        url: tokens.url(req, res),
+        status: tokens.status(req, res),
+        contentLength: tokens.res(req, res, 'content-length'),
+        responseTime: `${tokens['response-time'](req, res)} ms`,
+        body: tokens.body(req, res),
+      });
+    },
+    {
+      stream: {
+        write(str) {
+          const data = JSON.parse(str);
+          logger.info('Incoming Request', data);
+        },
+      },
+    },
+  );
+
+  app.use(morganMiddleware);
+}
+
+function commonConfiguration(app: NestExpressApplication) {
   app.enableShutdownHooks();
 
   app.set('trust proxy', true);
-
-  app.use(helmet());
 
   app.getHttpAdapter().getInstance().disable('x-powered-by');
 
@@ -35,22 +77,26 @@ async function bootstrap() {
     ],
     credentials: true,
   });
+  app.use(cookieParser(process.env.COOKIE_SECRET || undefined));
+}
+
+async function bootstrap() {
+  const app = await NestFactory.create<NestExpressApplication>(AppModule);
+  commonConfiguration(app);
 
   app.setGlobalPrefix('api');
-
   app.enableVersioning({
     type: VersioningType.URI,
     defaultVersion: '1',
   });
 
-  app.use(cookieParser());
-
-  const loggerService = app.get(WINSTON_MODULE_NEST_PROVIDER);
-  app.useLogger(loggerService);
+  const logger = app.get<Logger>(WINSTON_MODULE_PROVIDER);
+  setupMorgan(app, logger);
 
   const configService = app.get(ConfigService);
   const port = configService.get('APP_PORT') || 1001;
 
   await app.listen(port);
 }
+
 bootstrap();

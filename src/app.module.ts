@@ -35,9 +35,8 @@ import { KrsScheduleMiddleware } from './common/krs-schedule.middleware';
     }),
     WinstonModule.forRoot({
       format: winston.format.json(),
-      level: 'debug',
+      level: process.env.LOG_LEVEL || 'info',
       transports: [
-        // Console log (warna + timestamp)
         new winston.transports.Console({
           format: winston.format.combine(
             winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
@@ -51,7 +50,6 @@ import { KrsScheduleMiddleware } from './common/krs-schedule.middleware';
           ),
         }),
 
-        // File log (JSON format)
         new winston.transports.File({
           filename: 'logs/app.log',
           format: winston.format.combine(

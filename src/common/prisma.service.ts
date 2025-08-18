@@ -55,7 +55,7 @@ export class PrismaService
       this.logger.error(e);
     });
     this.$on('query', (e) => {
-      this.logger.info(e);
+      this.logger.debug(e);
     });
   }
 
