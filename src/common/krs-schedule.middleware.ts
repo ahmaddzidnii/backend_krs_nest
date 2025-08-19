@@ -16,7 +16,7 @@ export class KrsScheduleMiddleware implements NestMiddleware {
     const periode = await this.periodService.getCurrentPeriod();
 
     if (!periode) {
-      throw new HttpException('There are no active academic periods.', 403);
+      throw new HttpException('Tidak ada periode akademik yang aktif.', 403);
     }
 
     // Cek rentang tanggal KRS secara keseluruhan (menggunakan UTC)
@@ -31,7 +31,7 @@ export class KrsScheduleMiddleware implements NestMiddleware {
 
     if (!isWithinDateRange) {
       throw new HttpException(
-        'The KRS registration schedule has not yet opened or has already closed.',
+        'Akses aplikasi saat ini sedang dinonaktifkan karena bukan masa pengisian KRS.',
         403,
       );
     }
@@ -64,7 +64,7 @@ export class KrsScheduleMiddleware implements NestMiddleware {
       };
 
       throw new HttpException(
-        `KRS can only be accessed between ${formatTime(
+        `KRS hanya dapat diakses antara jam ${formatTime(
           jamMulaiKrs,
         )} - ${formatTime(jamSelesaiKrs)} WIB.`,
         403,
