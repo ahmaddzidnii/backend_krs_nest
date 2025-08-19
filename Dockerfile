@@ -1,50 +1,52 @@
 # ---- Stage 1: Build ----
-# Menggunakan base image yang sama
+# Use a slim Debian-based image which has better compatibility than Alpine
 FROM node:22-slim AS builder
 
-# Memperbarui paket OS untuk menambal kerentanan keamanan
-RUN apt-get update && apt-get upgrade -y && rm -rf /var/lib/apt/lists/*
-
-# Menetapkan working directory
+# Set the working directory
 WORKDIR /usr/src/app
 
-# Menyalin file package terlebih dahulu untuk memanfaatkan cache Docker
+# Copy package files
 COPY package*.json ./
 
-# Menginstal semua dependensi yang dibutuhkan untuk build
+# Install all dependencies (including devDependencies)
 RUN npm install
 
-# Menyalin sisa kode sumber
-# Pastikan Anda memiliki file .dockerignore untuk menghindari penyalinan file yang tidak perlu
+# Copy prisma schema
+COPY prisma ./prisma/
+
+# Generate the Prisma client using the correct binary
+# The schema should have: binaryTargets = ["native", "debian-openssl-3.0.x"]
+# If you stick with alpine, use "linux-musl-openssl-3.0.x"
+RUN npx prisma generate
+
+# Copy the rest of your source code
 COPY . .
 
-# Menjalankan prisma generate dan build
-RUN npx prisma generate
+# Build the application
 RUN npm run build
 
-# Menghapus devDependencies untuk membersihkan node_modules sebelum menyalinnya ke stage berikutnya
-RUN npm prune --production
-
 # ---- Stage 2: Production ----
-# Menggunakan base image yang sama untuk konsistensi
+# Use the same slim image for the final stage
 FROM node:22-slim AS production
-
-# Memperbarui paket OS untuk menambal kerentanan keamanan di image production
-RUN apt-get update && apt-get upgrade -y && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /usr/src/app
 
-# Menyalin artefak yang diperlukan dari stage builder
-# Menggunakan user 'node' yang sudah ada di base image
-COPY --from=builder --chown=node:node /usr/src/app/node_modules ./node_modules
-COPY --from=builder --chown=node:node /usr/src/app/dist ./dist
-COPY --from=builder --chown=node:node /usr/src/app/prisma ./prisma
+# Copy package files for installing production dependencies
+COPY package*.json ./
 
-# Mengganti user ke non-root 'node' yang sudah ada
-USER node
+# Install ONLY production dependencies
+RUN npm install --omit=dev
 
-# Mengekspos port aplikasi
+# Copy the built application from the builder stage
+COPY --from=builder /usr/src/app/dist ./dist
+
+# Copy the generated Prisma client and schema from the builder stage
+# This is crucial for Prisma to work in production
+COPY --from=builder /usr/src/app/node_modules/.prisma ./node_modules/.prisma
+COPY --from=builder /usr/src/app/prisma/schema.prisma ./prisma/
+
+# Expose the application port
 EXPOSE 1001
 
-# Perintah untuk menjalankan aplikasi
+# Command to run the application
 CMD ["node", "dist/src/main"]
