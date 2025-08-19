@@ -2,13 +2,11 @@
 # Menggunakan base image yang sama
 FROM node:22-slim AS builder
 
+# Memperbarui paket OS untuk menambal kerentanan keamanan
+RUN apt-get update && apt-get upgrade -y && rm -rf /var/lib/apt/lists/*
+
 # Menetapkan working directory
 WORKDIR /usr/src/app
-
-# Membuat user non-root untuk keamanan
-# Menjalankan aplikasi sebagai non-root adalah praktik keamanan yang baik.
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 node
 
 # Menyalin file package terlebih dahulu untuk memanfaatkan cache Docker
 COPY package*.json ./
@@ -31,19 +29,18 @@ RUN npm prune --production
 # Menggunakan base image yang sama untuk konsistensi
 FROM node:22-slim AS production
 
+# Memperbarui paket OS untuk menambal kerentanan keamanan di image production
+RUN apt-get update && apt-get upgrade -y && rm -rf /var/lib/apt/lists/*
+
 WORKDIR /usr/src/app
 
-# Membuat user non-root yang sama seperti di stage builder
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 node
+# Menyalin artefak yang diperlukan dari stage builder
+# Menggunakan user 'node' yang sudah ada di base image
+COPY --from=builder --chown=node:node /usr/src/app/node_modules ./node_modules
+COPY --from=builder --chown=node:node /usr/src/app/dist ./dist
+COPY --from=builder --chown=node:node /usr/src/app/prisma ./prisma
 
-# Menyalin artefak yang diperlukan dari stage builder dengan kepemilikan yang benar
-# Ini lebih efisien daripada menjalankan `npm install` lagi
-COPY --from=builder --chown=node:nodejs /usr/src/app/node_modules ./node_modules
-COPY --from=builder --chown=node:nodejs /usr/src/app/dist ./dist
-COPY --from=builder --chown=node:nodejs /usr/src/app/prisma ./prisma
-
-# Mengganti user ke non-root
+# Mengganti user ke non-root 'node' yang sudah ada
 USER node
 
 # Mengekspos port aplikasi
