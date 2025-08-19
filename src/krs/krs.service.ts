@@ -3,7 +3,10 @@ import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 
 import { PrismaService } from '../common/prisma.service';
 import { PeriodService } from '../common/period.service';
-import { isTimeConflict } from '../common/utils/time-utils';
+import {
+  isTimeConflict,
+  minutesToTimeString,
+} from '../common/utils/time-utils';
 import { MahasiswaService } from 'mahasiswa/mahasiswa.service';
 import { ClassTakenResponse, KrsRequirementsResponse } from './krs.response';
 
@@ -453,19 +456,8 @@ export class KrsService {
           jadwal:
             kelas?.jadwalKelas.map((j) => ({
               hari: j.hari,
-              waktu_mulai: new Date(j.waktu_mulai).toLocaleTimeString('id-ID', {
-                hour: '2-digit',
-                minute: '2-digit',
-                hour12: false,
-              }),
-              waktu_selesai: new Date(j.waktu_selesai).toLocaleTimeString(
-                'id-ID',
-                {
-                  hour: '2-digit',
-                  minute: '2-digit',
-                  hour12: false,
-                },
-              ),
+              waktu_mulai: minutesToTimeString(j.waktu_mulai),
+              waktu_selesai: minutesToTimeString(j.waktu_selesai),
               ruangan: j.ruang,
             })) || [],
           created_at: String(krs.created_at),
