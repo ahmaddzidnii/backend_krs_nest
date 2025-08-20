@@ -34,7 +34,6 @@ export class ScheduleController {
 
     const data = await this.scheduleService.getClassScheduleOffered(
       mahasiswa.id_kurikulum,
-      mahasiswa.semester_berjalan,
     );
 
     return {

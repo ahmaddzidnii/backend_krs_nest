@@ -1,13 +1,14 @@
 import { Redis } from 'ioredis';
 import { Logger } from 'winston';
 import { Prisma } from '@prisma/client';
-import { Inject, Injectable } from '@nestjs/common';
 import { RedisService } from '@liaoliaots/nestjs-redis';
 import { WINSTON_MODULE_PROVIDER } from 'nest-winston';
+import { HttpException, Inject, Injectable } from '@nestjs/common';
 
 import { PrismaService } from '../common/prisma.service';
 import { minutesToTimeString } from '../common/utils/time-utils';
 import { ClassOfferingList, ClassStatusBatch } from './schedule.response';
+import { PeriodService } from 'common/period.service';
 
 @Injectable()
 export class ScheduleService {
@@ -18,7 +19,8 @@ export class ScheduleService {
 
   constructor(
     private readonly prismaService: PrismaService,
-    redisService: RedisService,
+    private readonly redisService: RedisService,
+    private readonly periodService: PeriodService,
   ) {
     this.redis = redisService.getOrThrow();
   }
@@ -109,6 +111,16 @@ export class ScheduleService {
     const methodName = 'getClassScheduleOffered';
     const cacheKey = `class-schedule:${idKurikulum}:${semesterPaket || 'all'}`;
 
+    const periodeAkademik = await this.periodService.getCurrentPeriod();
+
+    if (!periodeAkademik) {
+      this.logger.error(`${methodName}: No active academic period found`, {
+        idKurikulum,
+        semesterPaket,
+      });
+      throw new HttpException('No active academic period found', 400);
+    }
+
     this.logger.info(`${methodName} called`, {
       idKurikulum,
       semesterPaket,
@@ -150,7 +162,7 @@ export class ScheduleService {
       // Build where clause for Prisma query
       const whereClause: Prisma.KelasDitawarkanWhereInput = {
         periodeAkademik: {
-          is_active: true,
+          id_periode: periodeAkademik.id_periode,
         },
         mataKuliah: {
           detailKurikulum: {
@@ -285,35 +297,38 @@ export class ScheduleService {
         semesterKeys: Object.keys(groupedBySemester),
       });
 
-      // Cache the result in Redis
-      const cacheSuccess = await this.safeRedisOperation(
-        () =>
-          this.redis.set(
-            cacheKey,
-            JSON.stringify(result),
-            'EX',
-            this.CACHE_EXPIRATION,
-          ),
-        'SET cache',
-        {
-          cacheKey,
-          expirationSeconds: this.CACHE_EXPIRATION,
-          dataSize: JSON.stringify(result).length,
-        },
-      );
+      // Jika result semster paket tidak object kosong, cache hasilnya
 
-      if (cacheSuccess) {
-        this.logger.info(`${methodName}: Successfully cached result`, {
-          cacheKey,
-          expirationSeconds: this.CACHE_EXPIRATION,
-        });
-      } else {
-        this.logger.warn(
-          `${methodName}: Failed to cache result, continuing without cache`,
+      if (Object.keys(result.semester_paket).length > 0) {
+        // Cache the result in Redis
+        const cacheSuccess = await this.safeRedisOperation(
+          () =>
+            this.redis.set(
+              cacheKey,
+              JSON.stringify(result),
+              'EX',
+              this.CACHE_EXPIRATION,
+            ),
+          'SET cache',
           {
             cacheKey,
+            expirationSeconds: this.CACHE_EXPIRATION,
+            dataSize: JSON.stringify(result).length,
           },
         );
+        if (cacheSuccess) {
+          this.logger.info(`${methodName}: Successfully cached result`, {
+            cacheKey,
+            expirationSeconds: this.CACHE_EXPIRATION,
+          });
+        } else {
+          this.logger.warn(
+            `${methodName}: Failed to cache result, continuing without cache`,
+            {
+              cacheKey,
+            },
+          );
+        }
       }
 
       this.logger.info(`${methodName}: Successfully completed`, {

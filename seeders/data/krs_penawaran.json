@@ -1,0 +1,1282 @@
+[
+  {
+    "kode_matkul": "TIF414001",
+    "nama_matkul": "Matematika Diskrit",
+    "nama_kelas": "A",
+    "kouta": 45,
+    "jadwal": [
+      {
+        "hari": "Kamis",
+        "jam_mulai": "08:50",
+        "jam_selesai": "10:35",
+        "ruang": "FST-407"
+      },
+      {
+        "hari": "Jumat",
+        "jam_mulai": "07:00",
+        "jam_selesai": "08:45",
+        "ruang": "FST-407"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Maria Ulfah Siregar, S.Kom. MIT., Ph.D."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF414001",
+    "nama_matkul": "Matematika Diskrit",
+    "nama_kelas": "B",
+    "kouta": 45,
+    "jadwal": [
+      {
+        "hari": "Selasa",
+        "jam_mulai": "08:50",
+        "jam_selesai": "10:35",
+        "ruang": "FST-407"
+      },
+      {
+        "hari": "Jumat",
+        "jam_mulai": "08:50",
+        "jam_selesai": "10:35",
+        "ruang": "FST-407"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Maria Ulfah Siregar, S.Kom. MIT., Ph.D."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF414014",
+    "nama_matkul": "Keamanan Komputer",
+    "nama_kelas": "G",
+    "kouta": 5,
+    "jadwal": [
+      {
+        "hari": "Jumat",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:10",
+        "ruang": "FST-304"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Eko Hadi Gunawan, M.Eng."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF414014",
+    "nama_matkul": "Keamanan Komputer",
+    "nama_kelas": "H",
+    "kouta": 5,
+    "jadwal": [
+      {
+        "hari": "Jumat",
+        "jam_mulai": "13:25",
+        "jam_selesai": "15:10",
+        "ruang": "FST-304"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Eko Hadi Gunawan, M.Eng."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PJK425203",
+    "nama_matkul": "Analisis & Desain Jaringan Komputer",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Senin",
+        "jam_mulai": "10:40",
+        "jam_selesai": "13:20",
+        "ruang": "FST-305"
+      },
+      {
+        "hari": "Rabu",
+        "jam_mulai": "13:25",
+        "jam_selesai": "15:10",
+        "ruang": "FST-102"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Dr. Ir. Bambang Sugiantoro, M.T., IPU., ASEAN Eng."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "ASI425102",
+    "nama_matkul": "Basis Data Terdistribusi",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Rabu",
+        "jam_mulai": "10:40",
+        "jam_selesai": "13:20",
+        "ruang": "FST-305"
+      },
+      {
+        "hari": "Kamis",
+        "jam_mulai": "14:20",
+        "jam_selesai": "16:20",
+        "ruang": "FST-102"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Muhammad Didik Rohmad Wahyudi, S.T., MT."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF425040",
+    "nama_matkul": "Capita Selecta MBKM Machine Learning 3",
+    "nama_kelas": "M",
+    "kouta": 10,
+    "jadwal": [
+      {
+        "hari": "Minggu",
+        "jam_mulai": "07:02",
+        "jam_selesai": "07:02",
+        "ruang": "FST-101"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Nurochman, S.Kom., M.Kom"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF425041",
+    "nama_matkul": "Capita Selecta MBKM Machine Learning 4",
+    "nama_kelas": "M",
+    "kouta": 10,
+    "jadwal": [
+      {
+        "hari": "Minggu",
+        "jam_mulai": "07:03",
+        "jam_selesai": "07:03",
+        "ruang": "FST-101"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Dr. Fitri Wulandari, S.Si., M.Kom."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PSC425403",
+    "nama_matkul": "Dasar Penalaran dan Representasi Pengetahuan",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Senin",
+        "jam_mulai": "13:25",
+        "jam_selesai": "15:10",
+        "ruang": "FST-408"
+      },
+      {
+        "hari": "Selasa",
+        "jam_mulai": "13:25",
+        "jam_selesai": "15:10",
+        "ruang": "FST-304"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Maria Ulfah Siregar, S.Kom. MIT., Ph.D."
+      },
+      {
+        "nip": null,
+        "nama": "Dr. Siti Mutmainah, S.Kom., M.Cs."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PSC425404",
+    "nama_matkul": "Ilmu Informasi",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Selasa",
+        "jam_mulai": "08:50",
+        "jam_selesai": "10:35",
+        "ruang": "FST-409"
+      },
+      {
+        "hari": "Rabu",
+        "jam_mulai": "07:00",
+        "jam_selesai": "08:45",
+        "ruang": "PPB-410"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Dr. Syifaun Nafisah, S.T., MT."
+      },
+      {
+        "nip": null,
+        "nama": "Dr. Siti Mutmainah, S.Kom., M.Cs."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PJK425202",
+    "nama_matkul": "Komputasi Bergerak",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Selasa",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:15",
+        "ruang": "FST-409"
+      },
+      {
+        "hari": "Jumat",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:15",
+        "ruang": "FST-104"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Ir. Muhammad Taufiq Nuruzzaman, S.T. M.Eng., Ph.D."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "ASI425101",
+    "nama_matkul": "Konsep Dasar Sistem Informasi",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Senin",
+        "jam_mulai": "08:50",
+        "jam_selesai": "10:35",
+        "ruang": "FST-408"
+      },
+      {
+        "hari": "Rabu",
+        "jam_mulai": "07:00",
+        "jam_selesai": "08:45",
+        "ruang": "FST-103"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Agus Mulyanto, S.Si., M.Kom."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PJK425204",
+    "nama_matkul": "Kriptografi",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Senin",
+        "jam_mulai": "13:25",
+        "jam_selesai": "15:10",
+        "ruang": "L-RPL"
+      },
+      {
+        "hari": "Selasa",
+        "jam_mulai": "10:40",
+        "jam_selesai": "13:20",
+        "ruang": "FST-305"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Eko Hadi Gunawan, M.Eng."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PSC425401",
+    "nama_matkul": "Logika Fuzzy",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Kamis",
+        "jam_mulai": "07:00",
+        "jam_selesai": "08:45",
+        "ruang": "FST-300"
+      },
+      {
+        "hari": "Jumat",
+        "jam_mulai": "07:00",
+        "jam_selesai": "08:45",
+        "ruang": "FST-300"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Dr. Ir. Shofwatul 'Uyun, S.T., M.Kom., IPM."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "ASI425104",
+    "nama_matkul": "Manajemen Risiko",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Selasa",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:15",
+        "ruang": "FST-305"
+      },
+      {
+        "hari": "Kamis",
+        "jam_mulai": "07:55",
+        "jam_selesai": "09:40",
+        "ruang": "FST-402"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Agus Mulyanto, S.Si., M.Kom."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "ASI425103",
+    "nama_matkul": "Model Arsitektur Enterprise",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Selasa",
+        "jam_mulai": "07:00",
+        "jam_selesai": "08:45",
+        "ruang": "FST-409"
+      },
+      {
+        "hari": "Jumat",
+        "jam_mulai": "13:25",
+        "jam_selesai": "15:10",
+        "ruang": "FST-300"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Muhammad Mustakim, S.T. M.T."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PSC425405",
+    "nama_matkul": "Pembelajaran Mesin",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Kamis",
+        "jam_mulai": "08:50",
+        "jam_selesai": "10:35",
+        "ruang": "FST-300"
+      },
+      {
+        "hari": "Jumat",
+        "jam_mulai": "08:50",
+        "jam_selesai": "10:35",
+        "ruang": "FST-300"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Muhammad Didik Rohmad Wahyudi, S.T., MT."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PPL425302",
+    "nama_matkul": "Pemrograman Platform Desktop dan Embedded",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Senin",
+        "jam_mulai": "07:00",
+        "jam_selesai": "08:45",
+        "ruang": "FST-408"
+      },
+      {
+        "hari": "Jumat",
+        "jam_mulai": "13:25",
+        "jam_selesai": "15:10",
+        "ruang": "FST-104"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Muhammad Galih Wonoseto, M.T."
+      },
+      {
+        "nip": null,
+        "nama": "Ir. Aulia Faqih Rifa'i, M.Kom."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PPL425301",
+    "nama_matkul": "Pemrograman Platform Web",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Senin",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:15",
+        "ruang": "FST-408"
+      },
+      {
+        "hari": "Rabu",
+        "jam_mulai": "10:40",
+        "jam_selesai": "13:20",
+        "ruang": "FST-101"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Dwi Otik Kurniawati, M.Eng."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PJK425201",
+    "nama_matkul": "Pemrograman Sistem dan Jaringan",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Selasa",
+        "jam_mulai": "08:50",
+        "jam_selesai": "10:35",
+        "ruang": "FST-305"
+      },
+      {
+        "hari": "Kamis",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:15",
+        "ruang": "FST-302"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Dr. Ir. Bambang Sugiantoro, M.T., IPU., ASEAN Eng."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PSC425402",
+    "nama_matkul": "Pemrosesan Citra Digital",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Rabu",
+        "jam_mulai": "10:40",
+        "jam_selesai": "13:20",
+        "ruang": "FST-410"
+      },
+      {
+        "hari": "Kamis",
+        "jam_mulai": "13:25",
+        "jam_selesai": "15:10",
+        "ruang": "FST-106"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Nurochman, S.Kom., M.Kom"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "ASI425105",
+    "nama_matkul": "Pengalaman Pengguna",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Rabu",
+        "jam_mulai": "14:20",
+        "jam_selesai": "16:20",
+        "ruang": "FST-409"
+      },
+      {
+        "hari": "Jumat",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:15",
+        "ruang": "FST-300"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Muhammad Galih Wonoseto, M.T."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PPL425305",
+    "nama_matkul": "Penjaminan Kualitas Perangkat Lunak",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Selasa",
+        "jam_mulai": "10:40",
+        "jam_selesai": "13:20",
+        "ruang": "FST-409"
+      },
+      {
+        "hari": "Jumat",
+        "jam_mulai": "07:00",
+        "jam_selesai": "08:45",
+        "ruang": "PPB-411"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Dr. Siti Mutmainah, S.Kom., M.Cs."
+      },
+      {
+        "nip": null,
+        "nama": "Adi Wirawan, S.Kom., M.Cs."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PPL425304",
+    "nama_matkul": "Perancangan dan Pembangunan Perangkat Lunak",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Senin",
+        "jam_mulai": "13:25",
+        "jam_selesai": "15:10",
+        "ruang": "L-SC"
+      },
+      {
+        "hari": "Kamis",
+        "jam_mulai": "08:50",
+        "jam_selesai": "10:35",
+        "ruang": "FST-106"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Dr. Agung Fatwanto, S.Si., M.Kom."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PPL425303",
+    "nama_matkul": "Rekayasa Kebutuhan Perangkat Lunak",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Selasa",
+        "jam_mulai": "13:25",
+        "jam_selesai": "15:10",
+        "ruang": "FST-102"
+      },
+      {
+        "hari": "Kamis",
+        "jam_mulai": "13:25",
+        "jam_selesai": "15:10",
+        "ruang": "FST-303"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Dwi Otik Kurniawati, M.Eng."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PJK425205",
+    "nama_matkul": "Sistem Terdistribusi",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Senin",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:15",
+        "ruang": "FST-303"
+      },
+      {
+        "hari": "Rabu",
+        "jam_mulai": "08:50",
+        "jam_selesai": "10:35",
+        "ruang": "FST-305"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Dr. Ir. Bambang Sugiantoro, M.T., IPU., ASEAN Eng."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF425054",
+    "nama_matkul": "Capita Selecta MBKM Machine Learning 5",
+    "nama_kelas": "M",
+    "kouta": 10,
+    "jadwal": [
+      {
+        "hari": "Minggu",
+        "jam_mulai": "07:04",
+        "jam_selesai": "07:04",
+        "ruang": "FST-101"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Dr. Fitri Wulandari, S.Si., M.Kom."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF425032",
+    "nama_matkul": "Capita Selecta Machine Learning 1",
+    "nama_kelas": "M",
+    "kouta": 10,
+    "jadwal": [
+      {
+        "hari": "Minggu",
+        "jam_mulai": "07:00",
+        "jam_selesai": "07:00",
+        "ruang": "FST-101"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Nurochman, S.Kom., M.Kom"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF425033",
+    "nama_matkul": "Capita Selecta Machine Learning 2",
+    "nama_kelas": "M",
+    "kouta": 10,
+    "jadwal": [
+      {
+        "hari": "Minggu",
+        "jam_mulai": "07:01",
+        "jam_selesai": "07:01",
+        "ruang": "FST-101"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Nurochman, S.Kom., M.Kom"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PPL425312",
+    "nama_matkul": "Augmented dan Virtual Reality",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Selasa",
+        "jam_mulai": "14:20",
+        "jam_selesai": "16:20",
+        "ruang": "PPB-411"
+      },
+      {
+        "hari": "Rabu",
+        "jam_mulai": "07:00",
+        "jam_selesai": "08:45",
+        "ruang": "PPB-411"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Ir. Aulia Faqih Rifa'i, M.Kom."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PJK425212",
+    "nama_matkul": "Forensik Digital",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Rabu",
+        "jam_mulai": "10:40",
+        "jam_selesai": "13:20",
+        "ruang": "FST-103"
+      },
+      {
+        "hari": "Kamis",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:15",
+        "ruang": "FST-300"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Eko Hadi Gunawan, M.Eng."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PJK425213",
+    "nama_matkul": "Kebijakan Keamanan Siber",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Senin",
+        "jam_mulai": "08:50",
+        "jam_selesai": "10:35",
+        "ruang": "L-RPL"
+      },
+      {
+        "hari": "Selasa",
+        "jam_mulai": "08:50",
+        "jam_selesai": "10:35",
+        "ruang": "L-RPL"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Eko Hadi Gunawan, M.Eng."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PSC425412",
+    "nama_matkul": "Komputasi Evolusioner",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Rabu",
+        "jam_mulai": "10:40",
+        "jam_selesai": "13:20",
+        "ruang": "FST-102"
+      },
+      {
+        "hari": "Kamis",
+        "jam_mulai": "14:20",
+        "jam_selesai": "16:00",
+        "ruang": "PPB-411"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Dr. Siti Mutmainah, S.Kom., M.Cs."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PJK425211",
+    "nama_matkul": "Layanan Jejaring Sosial",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Kamis",
+        "jam_mulai": "13:25",
+        "jam_selesai": "15:10",
+        "ruang": "FST-300"
+      },
+      {
+        "hari": "Jumat",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:15",
+        "ruang": "FST-101"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Dr. Ir. Sumarsono, S.T., M.Kom."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "ASI425113",
+    "nama_matkul": "Manajemen proyek Sistem Informasi",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Senin",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:15",
+        "ruang": "FST-302"
+      },
+      {
+        "hari": "Rabu",
+        "jam_mulai": "13:25",
+        "jam_selesai": "15:10",
+        "ruang": "FST-103"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Dr. Fitri Wulandari, S.Si., M.Kom."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF414023",
+    "nama_matkul": "Metode Penelitian",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Selasa",
+        "jam_mulai": "07:00",
+        "jam_selesai": "08:45",
+        "ruang": "FST-102"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Agus Mulyanto, S.Si., M.Kom."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PJK425214",
+    "nama_matkul": "Metode Perancangan Jaringan Komputer",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Rabu",
+        "jam_mulai": "08:50",
+        "jam_selesai": "10:35",
+        "ruang": "FST-103"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Ir. Muhammad Taufiq Nuruzzaman, S.T. M.Eng., Ph.D."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "ASI425114",
+    "nama_matkul": "Metode Perancangan Sistem Informasi",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Selasa",
+        "jam_mulai": "08:50",
+        "jam_selesai": "10:35",
+        "ruang": "FST-102"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Dr. Ir. Sumarsono, S.T., M.Kom."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF414025",
+    "nama_matkul": "Metode Perencanaan Bisnis",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Selasa",
+        "jam_mulai": "12:30",
+        "jam_selesai": "14:15",
+        "ruang": "FST-303"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Muhammad Mustakim, S.T. M.T."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PPL425314",
+    "nama_matkul": "Metode perancangan Perangkat Lunak",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Selasa",
+        "jam_mulai": "10:40",
+        "jam_selesai": "13:20",
+        "ruang": "FST-102"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Dr. Agung Fatwanto, S.Si., M.Kom."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PSC425414",
+    "nama_matkul": "Metode perancangan Sistem Cerdas",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Senin",
+        "jam_mulai": "07:00",
+        "jam_selesai": "08:45",
+        "ruang": "FST-411"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Dr. Ir. Shofwatul 'Uyun, S.T., M.Kom., IPM."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "ASI425111",
+    "nama_matkul": "Model Implementasi Sistem Informasi",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Senin",
+        "jam_mulai": "08:50",
+        "jam_selesai": "10:35",
+        "ruang": "FST-303"
+      },
+      {
+        "hari": "Selasa",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:15",
+        "ruang": "FST-102"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Muhammad Mustakim, S.T. M.T."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PPL425313",
+    "nama_matkul": "Multimedia, Animasi dan Visualisasi",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Kamis",
+        "jam_mulai": "14:20",
+        "jam_selesai": "16:20",
+        "ruang": "FST-402"
+      },
+      {
+        "hari": "Jumat",
+        "jam_mulai": "07:00",
+        "jam_selesai": "08:45",
+        "ruang": "FST-402"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Ir. Aulia Faqih Rifa'i, M.Kom."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PPL425311",
+    "nama_matkul": "Perancangan Komputasi Interaktif",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Rabu",
+        "jam_mulai": "13:25",
+        "jam_selesai": "15:10",
+        "ruang": "L-SC"
+      },
+      {
+        "hari": "Jumat",
+        "jam_mulai": "09:45",
+        "jam_selesai": "11:30",
+        "ruang": "FST-409"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Dr. Agung Fatwanto, S.Si., M.Kom."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF414024",
+    "nama_matkul": "Proyek Penelitian",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Jumat",
+        "jam_mulai": "08:50",
+        "jam_selesai": "10:35",
+        "ruang": "FST-104"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Agus Mulyanto, S.Si., M.Kom."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF414026",
+    "nama_matkul": "Proyek Perintisan Bisnis",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Rabu",
+        "jam_mulai": "15:30",
+        "jam_selesai": "17:15",
+        "ruang": "FST-407"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Muhammad Mustakim, S.T. M.T."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PJK425215",
+    "nama_matkul": "Proyek pengembangan Jaringan Komputer",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Selasa",
+        "jam_mulai": "13:25",
+        "jam_selesai": "15:10",
+        "ruang": "FST-305"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Ir. Muhammad Taufiq Nuruzzaman, S.T. M.Eng., Ph.D."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PPL425315",
+    "nama_matkul": "Proyek pengembangan Perangkat Lunak",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Selasa",
+        "jam_mulai": "07:00",
+        "jam_selesai": "08:45",
+        "ruang": "FST-305"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Dr. Agung Fatwanto, S.Si., M.Kom."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PSC425415",
+    "nama_matkul": "Proyek pengembangan Sistem Cerdas",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Selasa",
+        "jam_mulai": "07:00",
+        "jam_selesai": "08:45",
+        "ruang": "FST-410"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Dr. Ir. Shofwatul 'Uyun, S.T., M.Kom., IPM."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "ASI425115",
+    "nama_matkul": "Proyek pengembangan Sistem Informasi",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Jumat",
+        "jam_mulai": "07:00",
+        "jam_selesai": "08:45",
+        "ruang": "FST-104"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Dr. Ir. Sumarsono, S.T., M.Kom."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PSC425413",
+    "nama_matkul": "Quran Hadis Mining",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Senin",
+        "jam_mulai": "13:25",
+        "jam_selesai": "15:10",
+        "ruang": "FST-410"
+      },
+      {
+        "hari": "Kamis",
+        "jam_mulai": "10:40",
+        "jam_selesai": "13:20",
+        "ruang": "FST-106"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Muhammad Didik Rohmad Wahyudi, S.T., MT."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "ASI425112",
+    "nama_matkul": "Sistem Informasi Enterprise",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Selasa",
+        "jam_mulai": "10:40",
+        "jam_selesai": "13:20",
+        "ruang": "FST-408"
+      },
+      {
+        "hari": "Kamis",
+        "jam_mulai": "10:40",
+        "jam_selesai": "13:20",
+        "ruang": "FST-300"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Dr. Fitri Wulandari, S.Si., M.Kom."
+      }
+    ]
+  },
+  {
+    "kode_matkul": "PSC425411",
+    "nama_matkul": "Visi Komputer",
+    "nama_kelas": "A",
+    "kouta": 30,
+    "jadwal": [
+      {
+        "hari": "Rabu",
+        "jam_mulai": "13:25",
+        "jam_selesai": "15:10",
+        "ruang": "FST-410"
+      },
+      {
+        "hari": "Kamis",
+        "jam_mulai": "07:00",
+        "jam_selesai": "08:45",
+        "ruang": "FST-106"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": null,
+        "nama": "Nurochman, S.Kom., M.Kom"
+      }
+    ]
+  }
+]

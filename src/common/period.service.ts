@@ -1,5 +1,6 @@
 import { Redis } from 'ioredis';
 import { Injectable } from '@nestjs/common';
+import { PeriodeAkademik } from '@prisma/client';
 import { RedisService } from '@liaoliaots/nestjs-redis';
 
 import { PrismaService } from './prisma.service';
@@ -17,7 +18,7 @@ export class PeriodService {
     this.redis = this.redisService.getOrThrow();
   }
 
-  async getCurrentPeriod() {
+  async getCurrentPeriod(): Promise<PeriodeAkademik> {
     // Cek cache di Redis
     const cached = await this.redis.get(this.CACHE_KEY);
 

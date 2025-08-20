@@ -1,5 +1,105 @@
 [
   {
+    "kode_matkul": "TIF414001",
+    "nama_matkul": "Matematika Diskrit",
+    "nama_kelas": "A",
+    "kouta": 45,
+    "jadwal": [
+      {
+        "hari": "Kamis",
+        "jam_mulai": "08:50",
+        "jam_selesai": "10:35",
+        "ruang": "FST-407"
+      },
+      {
+        "hari": "Jumat",
+        "jam_mulai": "07:00",
+        "jam_selesai": "08:45",
+        "ruang": "FST-407"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197801062002122001"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF414001",
+    "nama_matkul": "Matematika Diskrit",
+    "nama_kelas": "B",
+    "kouta": 45,
+    "jadwal": [
+      {
+        "hari": "Selasa",
+        "jam_mulai": "08:50",
+        "jam_selesai": "10:35",
+        "ruang": "FST-407"
+      },
+      {
+        "hari": "Jumat",
+        "jam_mulai": "08:50",
+        "jam_selesai": "10:35",
+        "ruang": "FST-407"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "197801062002122001"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF414014",
+    "nama_matkul": "Keamanan Komputer",
+    "nama_kelas": "A",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Senin",
+        "jam_mulai": "08:00",
+        "jam_selesai": "10:00",
+        "ruang": "FST-400"
+      },
+      {
+        "hari": "Selasa",
+        "jam_mulai": "10:00",
+        "jam_selesai": "12:00",
+        "ruang": "FST-401"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "198712282019031004"
+      }
+    ]
+  },
+  {
+    "kode_matkul": "TIF414014",
+    "nama_matkul": "Keamanan Komputer",
+    "nama_kelas": "B",
+    "kouta": 200,
+    "jadwal": [
+      {
+        "hari": "Senin",
+        "jam_mulai": "08:00",
+        "jam_selesai": "10:00",
+        "ruang": "FST-400"
+      },
+      {
+        "hari": "Selasa",
+        "jam_mulai": "10:00",
+        "jam_selesai": "12:00",
+        "ruang": "FST-401"
+      }
+    ],
+    "dosen": [
+      {
+        "nip": "198712282019031004"
+      }
+    ]
+  },
+  {
     "kode_matkul": "PJK425203",
     "nama_matkul": "Analisis & Desain Jaringan Komputer",
     "nama_kelas": "A",

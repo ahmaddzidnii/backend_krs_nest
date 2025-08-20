@@ -1,6 +1,6 @@
 import { Hari, Prisma, PrismaClient } from '@prisma/client';
 
-import dataKelas from '../seeders/data/data-kelas.json';
+import dataKelas from '../seeders/data/krs_penawaran.json';
 import { timeStringToMinutes } from '../src/common/utils/time-utils';
 
 type KelasDitawarkan = Prisma.KelasDitawarkanCreateManyInput[];
@@ -123,44 +123,92 @@ export async function seedKelasDitawarkan(prisma: PrismaClient) {
     console.log(`Berhasil membuat ${insertedJadwal.count} jadwal kelas`);
 
     // Ambil semua NIP dosen dari data JSON
-    const allNips = dataKelas.flatMap((kelas) =>
-      kelas.dosen.map((dosen) => dosen.nip),
+    // const allNips = dataKelas.flatMap((kelas) =>
+    //   kelas.dosen.map((dosen) => dosen.nip),
+    // );
+
+    const allNamaDosen = dataKelas.flatMap((kelas) =>
+      kelas.dosen.map((dosen) => dosen.nama),
     );
 
     // Ambil data dosen berdasarkan NIP
+    // const dosen = await prisma.dosen.findMany({
+    //   select: {
+    //     id_dosen: true,
+    //     nip: true,
+    //   },
+    //   where: {
+    //     nama: {
+    //       in: allNamaDosen,
+    //     },
+    //   },
+    // });
+
+    // console.log(dosen);
+
+    // // Membuat map untuk dosen berdasarkan NIP
+    // const dosenMap = new Map(dosen.map((d) => [d.nip, d.id_dosen]));
+
+    // // Prepare data dosen pengajar kelas
+    // const dosenPengajarData: Prisma.DosenPengajarKelasCreateManyInput[] = [];
+
+    // dataKelas.forEach((kelas) => {
+    //   const idKelas = kelasMap.get(`${kelas.kode_matkul}-${kelas.nama_kelas}`);
+
+    //   if (!idKelas) {
+    //     console.warn(
+    //       `Kelas ${kelas.kode_matkul}-${kelas.nama_kelas} tidak ditemukan`,
+    //     );
+    //     return;
+    //   }
+
+    //   kelas.dosen.forEach((dosenData) => {
+    //     const idDosen = dosenMap.get(dosenData.nip);
+
+    //     if (!idDosen) {
+    //       console.warn(`Dosen dengan NIP ${dosenData.nip} tidak ditemukan`);
+    //       return;
+    //     }
+
+    //     dosenPengajarData.push({
+    //       id_dosen: idDosen,
+    //       id_kelas: idKelas,
+    //     });
+    //   });
+    // });
+
+    // // Insert dosen pengajar kelas
+    // const insertedDosenPengajar = await prisma.dosenPengajarKelas.createMany({
+    //   data: dosenPengajarData,
+    //   skipDuplicates: true,
+    // });
+
+    // Ambil data dosen berdasarkan nama
     const dosen = await prisma.dosen.findMany({
       select: {
         id_dosen: true,
-        nip: true,
+        nama: true,
       },
       where: {
-        nip: {
-          in: allNips,
+        nama: {
+          in: allNamaDosen,
         },
       },
     });
 
-    // Membuat map untuk dosen berdasarkan NIP
-    const dosenMap = new Map(dosen.map((d) => [d.nip, d.id_dosen]));
+    // Buat map berdasarkan nama
+    const dosenMap = new Map(dosen.map((d) => [d.nama, d.id_dosen]));
 
-    // Prepare data dosen pengajar kelas
     const dosenPengajarData: Prisma.DosenPengajarKelasCreateManyInput[] = [];
 
     dataKelas.forEach((kelas) => {
       const idKelas = kelasMap.get(`${kelas.kode_matkul}-${kelas.nama_kelas}`);
-
-      if (!idKelas) {
-        console.warn(
-          `Kelas ${kelas.kode_matkul}-${kelas.nama_kelas} tidak ditemukan`,
-        );
-        return;
-      }
+      if (!idKelas) return;
 
       kelas.dosen.forEach((dosenData) => {
-        const idDosen = dosenMap.get(dosenData.nip);
-
+        const idDosen = dosenMap.get(dosenData.nama);
         if (!idDosen) {
-          console.warn(`Dosen dengan NIP ${dosenData.nip} tidak ditemukan`);
+          console.warn(`Dosen dengan nama ${dosenData.nama} tidak ditemukan`);
           return;
         }
 
@@ -171,7 +219,6 @@ export async function seedKelasDitawarkan(prisma: PrismaClient) {
       });
     });
 
-    // Insert dosen pengajar kelas
     const insertedDosenPengajar = await prisma.dosenPengajarKelas.createMany({
       data: dosenPengajarData,
       skipDuplicates: true,
@@ -202,6 +249,8 @@ function getValueHari(hari: string): Hari {
       return Hari.Jumat;
     case 'SABTU':
       return Hari.Sabtu;
+    case 'MINGGU':
+      return Hari.Minggu;
     default:
       throw new Error(`Hari tidak valid: ${hari}`);
   }

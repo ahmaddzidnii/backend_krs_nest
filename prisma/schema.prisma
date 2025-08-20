@@ -58,148 +58,134 @@ enum Hari {
 }
 
 model Fakultas {
-  id_fakultas String @id @default(uuid(7))
-  kode_fakultas String @unique
-  nama String
-  singkatan String
-  created_at BigInt? 
-  updated_at BigInt?
-
+  id_fakultas   String         @id @default(uuid(7))
+  kode_fakultas String         @unique
+  nama          String
+  singkatan     String
+  created_at    BigInt?
+  updated_at    BigInt?
   program_studi ProgramStudi[]
 
   @@map("fakultas")
 }
 
 model ProgramStudi {
-  id_prodi String @id @default(uuid(7))
-  id_fakultas String 
-  kode_prodi String @unique
-  nama String
+  id_prodi      String       @id @default(uuid(7))
+  id_fakultas   String
+  kode_prodi    String       @unique
+  nama          String
   jenjang_studi JenjangStudi
-  created_at BigInt? 
-  updated_at BigInt?
-
-  kurikulum Kurikulum[]  
-
-  fakultas Fakultas @relation(fields: [id_fakultas], references: [id_fakultas])
+  created_at    BigInt?
+  updated_at    BigInt?
+  kurikulum     Kurikulum[]
+  fakultas      Fakultas     @relation(fields: [id_fakultas], references: [id_fakultas], onDelete: Cascade) // DITAMBAHKAN: Jika fakultas dihapus, prodi ikut terhapus.
 
   @@map("program_studi")
 }
 
 model User {
-  id_user String @id @default(uuid(7))
-  id_role String
-  username String @unique
-  password String
-  created_at BigInt? 
+  id_user    String     @id @default(uuid(7))
+  id_role    String
+  username   String     @unique
+  password   String
+  created_at BigInt?
   updated_at BigInt?
-
-  role Role @relation(fields: [id_role], references: [id_role])
-
-  mahasiswa Mahasiswa?
-  dosen Dosen?
+  role       Role       @relation(fields: [id_role], references: [id_role])
+  mahasiswa  Mahasiswa?
+  dosen      Dosen?
 
   @@map("users")
 }
 
 model Role {
-  id_role String @id @default(uuid(7))
-  nama_role String @unique
-  created_at BigInt? 
+  id_role    String  @id @default(uuid(7))
+  nama_role  String  @unique
+  created_at BigInt?
   updated_at BigInt?
-
-  users User[]
+  users      User[]
 
   @@map("roles")
 }
- 
-model Mahasiswa {
-  id_mahasiswa        String      @id @default(uuid(7))
-  id_prodi      String
-  id_user     String   @unique
-  id_dpa     String
-  id_kurikulum     String
-  nim         String @unique
-  nama       String
-  ipk        Float
-  ips_lalu Float
-  semester_berjalan Int
-  sks_kumulatif Int
-  jatah_sks Int
-  status_mahasiswa StatusMahasiswa
-  status_pembayaran StatusPembayaran
-  created_at BigInt? 
-  updated_at BigInt?
 
-  user User @relation(fields: [id_user],references: [id_user])
-  krs Krs[]
-  kurikulum Kurikulum @relation(fields: [id_kurikulum], references: [id_kurikulum])
+model Mahasiswa {
+  id_mahasiswa      String          @id @default(uuid(7))
+  id_prodi          String
+  id_user           String          @unique
+  id_dpa            String
+  id_kurikulum      String
+  nim               String          @unique
+  nama              String
+  ipk               Float
+  ips_lalu          Float
+  semester_berjalan Int
+  sks_kumulatif     Int
+  jatah_sks         Int
+  status_mahasiswa  StatusMahasiswa
+  status_pembayaran StatusPembayaran
+  created_at        BigInt?
+  updated_at        BigInt?
+  user              User            @relation(fields: [id_user], references: [id_user], onDelete: Cascade) // DITAMBAHKAN: Jika user dihapus, data mahasiswa ikut terhapus.
+  krs               Krs[]
+  kurikulum         Kurikulum       @relation(fields: [id_kurikulum], references: [id_kurikulum])
 
   @@map("mahasiswas")
 }
 
-
 model Dosen {
-  id_dosen String @id @default(uuid(7))
-  id_prodi String
-  id_user String @unique
-  nip String @unique
-  nama String
-  aktif_mengajar Boolean @default(false)
-  jenis_dosen JenisDosen
-  created_at BigInt? 
-  updated_at BigInt?
-
-  mengampuKelas DosenPengajarKelas[]
-
-  user User @relation(fields: [id_user],references: [id_user])
+  id_dosen       String               @id @default(uuid(7))
+  id_prodi       String
+  id_user        String               @unique
+  nip            String               @unique
+  nama           String
+  aktif_mengajar Boolean              @default(false)
+  jenis_dosen    JenisDosen
+  created_at     BigInt?
+  updated_at     BigInt?
+  mengampuKelas  DosenPengajarKelas[]
+  user           User                 @relation(fields: [id_user], references: [id_user], onDelete: Cascade) // DITAMBAHKAN: Jika user dihapus, data dosen ikut terhapus.
 
   @@map("dosens")
 }
 
 model PeriodeAkademik {
-  id_periode String @id @default(uuid(7))
-  tahun_akademik String
-  jenis_semester JenisSemester
-  tanggal_mulai_krs DateTime @db.Date()
-  tanggal_selesai_krs DateTime @db.Date()
-  jam_mulai_harian_krs DateTime @db.Time()
-  jam_selesai_harian_krs DateTime @db.Time()
-  is_active Boolean @default(false)
-  created_at BigInt? 
-  updated_at BigInt?
-
-  kelasDitawarkan KelasDitawarkan[]
-  periodeKrs Krs[]
+  id_periode           String            @id @default(uuid(7))
+  tahun_akademik       String
+  jenis_semester       JenisSemester
+  tanggal_mulai_krs    DateTime          @db.Date()
+  tanggal_selesai_krs  DateTime          @db.Date()
+  jam_mulai_harian_krs DateTime          @db.Time()
+  jam_selesai_harian_krs DateTime          @db.Time()
+  is_active            Boolean           @default(false)
+  created_at           BigInt?
+  updated_at           BigInt?
+  kelasDitawarkan      KelasDitawarkan[]
+  periodeKrs           Krs[]
 
   @@map("periode_akademik")
 }
 
 model Kurikulum {
-  id_kurikulum String @id @default(uuid(7))
-  id_prodi String
-  kode_kurikulum String @unique
-  nama String
-  is_active Boolean @default(false)
-  created_at BigInt? 
-  updated_at BigInt?
-
+  id_kurikulum    String            @id @default(uuid(7))
+  id_prodi        String
+  kode_kurikulum  String            @unique
+  nama            String
+  is_active       Boolean           @default(false)
+  created_at      BigInt?
+  updated_at      BigInt?
   detailKurikulum DetailKurikulum[]
-  mahasiswa Mahasiswa[]
-
-  programStudi ProgramStudi @relation(fields: [id_prodi], references: [id_prodi])
+  mahasiswa       Mahasiswa[]
+  programStudi    ProgramStudi      @relation(fields: [id_prodi], references: [id_prodi], onDelete: Cascade) // DITAMBAHKAN: Jika prodi dihapus, kurikulumnya ikut terhapus.
 
   @@map("kurikulum")
 }
 
 model MataKuliah {
-  id_matkul String @id @default(uuid(7))
-  kode_matkul String @unique
-  nama String
-  sks Int
-  created_at BigInt? 
-  updated_at BigInt?
-
+  id_matkul       String            @id @default(uuid(7))
+  kode_matkul     String            @unique
+  nama            String
+  sks             Int
+  created_at      BigInt?
+  updated_at      BigInt?
   detailKurikulum DetailKurikulum[]
   kelasDitawarkan KelasDitawarkan[]
 
@@ -207,52 +193,48 @@ model MataKuliah {
 }
 
 model DetailKurikulum {
-  id_detail_kurikulum String @id @default(uuid(7))
-  id_kurikulum String
-  id_matkul String
-  jenis_matkul JenisMatkul @default(WAJIB)
-  semester_paket Int
-  created_at BigInt? 
-  updated_at BigInt?
-
-  kurikulum Kurikulum @relation(fields: [id_kurikulum], references: [id_kurikulum])
-  mataKuliah MataKuliah @relation(fields: [id_matkul], references: [id_matkul])
+  id_detail_kurikulum String      @id @default(uuid(7))
+  id_kurikulum        String
+  id_matkul           String
+  jenis_matkul        JenisMatkul @default(WAJIB)
+  semester_paket      Int
+  created_at          BigInt?
+  updated_at          BigInt?
+  kurikulum           Kurikulum   @relation(fields: [id_kurikulum], references: [id_kurikulum], onDelete: Cascade) // DITAMBAHKAN: Jika kurikulum dihapus, detailnya ikut terhapus.
+  mataKuliah          MataKuliah  @relation(fields: [id_matkul], references: [id_matkul], onDelete: Cascade) // DITAMBAHKAN: Jika matkul dihapus, dari kurikulum juga hilang.
 
   @@map("detail_kurikulum")
 }
 
 model JadwalKelas {
-  id_jadwal String @id @default(uuid(7))
-  id_kelas String
-  hari Hari
-  waktu_mulai Int @default(0)
-  waktu_selesai Int  @default(0)
-  ruang String
-  created_at BigInt? 
-  updated_at BigInt?
-
-  kelas KelasDitawarkan @relation(fields: [id_kelas],references: [id_kelas])
+  id_jadwal     String          @id @default(uuid(7))
+  id_kelas      String
+  hari          Hari
+  waktu_mulai   Int             @default(0)
+  waktu_selesai Int             @default(0)
+  ruang         String
+  created_at    BigInt?
+  updated_at    BigInt?
+  kelas         KelasDitawarkan @relation(fields: [id_kelas], references: [id_kelas], onDelete: Cascade) // DITAMBAHKAN: Jika kelas dihapus, jadwalnya ikut terhapus.
 
   @@map("jadwal_kelas")
 }
 
 model KelasDitawarkan {
-  id_kelas String @id @default(uuid(7))
-  id_periode String
-  id_matkul String
-  nama_kelas String
-  kuota Int
-  terisi Int @default(0)
-  version Int @default(1)
-  created_at BigInt? 
-  updated_at BigInt?
-
+  id_kelas           String               @id @default(uuid(7))
+  id_periode         String
+  id_matkul          String
+  nama_kelas         String
+  kuota              Int
+  terisi             Int                  @default(0)
+  version            Int                  @default(1)
+  created_at         BigInt?
+  updated_at         BigInt?
   dosenPengajarKelas DosenPengajarKelas[]
-  detailKrs DetailKrs[]
-  jadwalKelas JadwalKelas[]
-
-  periodeAkademik PeriodeAkademik @relation(fields: [id_periode], references: [id_periode])
-  mataKuliah MataKuliah @relation(fields: [id_matkul], references: [id_matkul])
+  detailKrs          DetailKrs[]
+  jadwalKelas        JadwalKelas[]
+  periodeAkademik    PeriodeAkademik      @relation(fields: [id_periode], references: [id_periode], onDelete: Cascade) // DITAMBAHKAN: Jika periode dihapus, kelas yg ditawarkan ikut terhapus.
+  mataKuliah         MataKuliah           @relation(fields: [id_matkul], references: [id_matkul], onDelete: Cascade) // DITAMBAHKAN: Jika matkul dihapus, kelas yg ditawarkan ikut terhapus.
 
   @@map("kelas_ditawarkan")
 }
@@ -260,38 +242,34 @@ model KelasDitawarkan {
 model DosenPengajarKelas {
   id_kelas String
   id_dosen String
-
-  kelasDitawarkan KelasDitawarkan @relation(fields: [id_kelas], references: [id_kelas])
-  dosen Dosen @relation(fields: [id_dosen], references: [id_dosen])
+  kelasDitawarkan KelasDitawarkan @relation(fields: [id_kelas], references: [id_kelas], onDelete: Cascade) // DITAMBAHKAN: Jika kelas dihapus, relasi ini ikut terhapus.
+  dosen           Dosen           @relation(fields: [id_dosen], references: [id_dosen], onDelete: Cascade) // DITAMBAHKAN: Jika dosen dihapus, relasi ini ikut terhapus.
 
   @@id([id_kelas, id_dosen])
   @@map("dosen_pengajar_kelas")
 }
 
 model Krs {
-  id_krs String @id @default(uuid(7))
-  id_mahasiswa String
-  id_periode String 
-  total_sks_diambil Int @default(0)
-  version Int @default(1)
-  created_at BigInt? 
-  updated_at BigInt?
+  id_krs             String          @id @default(uuid(7))
+  id_mahasiswa       String
+  id_periode         String
+  total_sks_diambil  Int             @default(0)
+  version            Int             @default(1)
+  created_at         BigInt?
+  updated_at         BigInt?
+  detailKrs          DetailKrs[]
+  mahasiswa          Mahasiswa       @relation(fields: [id_mahasiswa], references: [id_mahasiswa], onDelete: Cascade) // DITAMBAHKAN: Jika mahasiswa dihapus, semua KRS-nya ikut terhapus.
+  periodeAkademik    PeriodeAkademik @relation(fields: [id_periode], references: [id_periode], onDelete: Cascade) // DITAMBAHKAN: Jika periode dihapus, KRS di periode itu ikut terhapus.
 
-  detailKrs DetailKrs[]
-
-  mahasiswa Mahasiswa @relation(fields: [id_mahasiswa], references: [id_mahasiswa])
-  periodeAkademik PeriodeAkademik @relation(fields: [id_periode], references: [id_periode])
-
-  @@unique([id_mahasiswa,id_periode])
+  @@unique([id_mahasiswa, id_periode])
   @@map("krs")
 }
 
 model DetailKrs {
-  id_krs String
+  id_krs   String
   id_kelas String
-
-  krs Krs @relation(fields: [id_krs], references: [id_krs])
-  kelas KelasDitawarkan @relation(fields: [id_kelas],references: [id_kelas])
+  krs      Krs             @relation(fields: [id_krs], references: [id_krs], onDelete: Cascade) // DITAMBAHKAN: Jika KRS utama dihapus, detailnya ikut terhapus.
+  kelas    KelasDitawarkan @relation(fields: [id_kelas], references: [id_kelas], onDelete: Cascade) // DITAMBAHKAN: Jika kelas dihapus, data di KRS mahasiswa juga ikut terhapus.
 
   @@id([id_krs, id_kelas])
   @@map("detail_krs")
